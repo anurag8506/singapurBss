@@ -384,7 +384,7 @@ export default function Home() {
                     <div className="row justify-center">
                         <div className="col-md-12 sm:pb-2">
                             <div className="text-center pb-2  ">
-                                <div className='d-flex justify-center'>
+                                <div className='d-flex justify-center sm:pb-2 pb-3'>
                                     <div className=" px-2 py-[10px] font-[cd-m]  text-[13px] font-[500]  text-[#212833] border border-black rounded-[30px] sm:w-[180px] w-[180px] tracking-wider ">HOW IT WORKS</div>
                                 </div>
 
@@ -397,7 +397,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='d-flex justify-center'>
-                        <div className='col-md-10'>
+                        <div className='col-md-10 mb-4'>
                             <div className='row align-items-center justify-between'>
                                 <div className='col-md-5 mb-4'>     <Image src='/assets/Rectangle 4607.png' alt=".." width='3000' height='3000' className="w-full" /></div>
                                 <div className='col-md-5 mb-4'>
@@ -409,13 +409,13 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className='row align-items-center justify-between'>
-                                <div className='col-md-5 order-md-1 order-2'>
+                                <div className='col-md-5 mb-4 order-md-1 order-2'>
                                 <p className='text-[22px] font-[cd-se] text-[#000] leading-[20px] '>Why outsource your corporate secretarial services?</p>
                                     <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[16px]  mb-0 '>Outsourcing corporate secretarial services gives business owners peace of mind and more time to focus on their core activities, all while remaining compliant with legal and regulatory requirements. With Cloud Bss, you will get tailored advice from onshore experts.
 
                                     </p>
                                 </div>
-                                <div className='col-md-5 order-md-2 order-1'>
+                                <div className='col-md-5 mb-4 order-md-2 order-1'>
                                 <Image src='/assets/Rectangle 4608.png' alt=".." width='3000' height='3000' className="w-full" />
                                 </div>
                                 </div>
