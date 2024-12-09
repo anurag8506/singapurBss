@@ -223,7 +223,7 @@ export default function Home() {
              <>
             <Header />
 
-            <section>
+            <section className='bg-[#FFFCF5] '>
                 <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
                     <div className="container-fluid p-0">
                         <div className="row justify-center  pb-5">

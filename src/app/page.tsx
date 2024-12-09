@@ -303,10 +303,10 @@ export default function Home() {
 
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[22px]  p-0 ml-2 text-[#212833]">Treasury</span>
+                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Treasury</span>
                                             </div>
                                         </div>
-                                        <p className="font-[cd-r] font-[500] text-[16px]  text-[#454545]  ">Your client has all the information in real time on the financial status of their business.</p>
+                                        <p className="font-[cd-r] font-[500] text-[16px]  text-[#454545] ">Your client has all the information in real time on the financial status of their business.</p>
                                     </div>
                             
                                 
@@ -318,14 +318,14 @@ export default function Home() {
     <svg width="25" height="25" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M28.05 16.5C28.05 15.587 27.3103 14.85 26.4 14.85H6.6C5.68975 14.85 4.95 15.587 4.95 16.5C4.95 17.413 5.68975 18.15 6.6 18.15H26.4C27.3103 18.15 28.05 17.413 28.05 16.5ZM33 28.05V26.4C33 25.487 32.2603 24.75 31.35 24.75C30.4397 24.75 29.7 25.487 29.7 26.4V28.05C29.7 28.9602 28.9589 29.7 28.05 29.7H26.4C25.4898 29.7 24.75 30.437 24.75 31.35C24.75 32.263 25.4898 33 26.4 33H28.05C30.7794 33 33 30.7794 33 28.05ZM33 6.6V4.95C33 2.22062 30.7794 0 28.05 0H26.4C25.4898 0 24.75 0.737 24.75 1.65C24.75 2.563 25.4898 3.3 26.4 3.3H28.05C28.9589 3.3 29.7 4.03975 29.7 4.95V6.6C29.7 7.513 30.4397 8.25 31.35 8.25C32.2603 8.25 33 7.513 33 6.6ZM8.25 31.35C8.25 30.437 7.51025 29.7 6.6 29.7H4.95C4.04112 29.7 3.3 28.9602 3.3 28.05V26.4C3.3 25.487 2.56025 24.75 1.65 24.75C0.73975 24.75 0 25.487 0 26.4V28.05C0 30.7794 2.22062 33 4.95 33H6.6C7.51025 33 8.25 32.263 8.25 31.35ZM1.65 8.25C0.73975 8.25 0 7.513 0 6.6V4.95C0 2.22062 2.22062 0 4.95 0H6.6C7.51025 0 8.25 0.737 8.25 1.65C8.25 2.563 7.51025 3.3 6.6 3.3H4.95C4.04112 3.3 3.3 4.03975 3.3 4.95V6.6C3.3 7.513 2.56025 8.25 1.65 8.25Z" fill="#212833" />
                                             </svg>
-      <span className="font-[cd-se] font-[500] text-[18px] text-[#212833] leading-none">
+      <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833] leading-[20px]">
         Digitization of expenses
       </span>
     </div>
   </div>
 
   {/* Description Text */}
-  <p className="font-[cd-r] font-[500] text-[14px] text-[#454545] mt-2 mb-0">
+  <p className="font-[cd-r] font-[500] text-[16px] text-[#454545] mt-2 mb-0">
     If your client generates a deductible expense, with a photo of the ticket
     or invoice, CleverScan technology will extract the data.
   </p>
@@ -361,7 +361,7 @@ export default function Home() {
 
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[20x] p-0 ml-2 text-[#212833]">Reports</span>
+                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Reports</span>
                                             </div>
                                         </div>
                                         <p  className="font-[cd-r] font-[500] text-[16px] text-[#454545]" >
@@ -369,7 +369,7 @@ export default function Home() {
                                     </div>
                                
                                 <div className="w-full pb-5 ">
-                                    <button className="w-full border border-dark py-[12px] rounded-full text-[#212833] font-[cd-m] font-[500] sm:text-[14px] text-[14px] ">
+                                    <button className="w-full border border-dark py-[12px] rounded-full text-[#212833] font-[cd-m] font-[500] text-[14px]  ">
                                         Schedule a Demo
                                     </button>
                                 </div>
