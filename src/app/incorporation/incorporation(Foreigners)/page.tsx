@@ -412,7 +412,7 @@ export default function Home() {
                                             className="w-full px-4 py-2 text-black form-control border border-black mb-4 focus:outline-none focus:ring-2  rounded-full !rounded-full bg-transparent"
                                         />
 
-                                        <button className="bg-[#212833] text-white font-medium sm:w-[280px] w-full px-6 py-2 rounded-full mb-4">
+                                        <button className="bg-[#212833] text-white font-[cd-m] sm:w-[280px] w-full px-6 py-2 rounded-full mb-4">
                                             Check The Name
                                         </button>
                                     </div>
