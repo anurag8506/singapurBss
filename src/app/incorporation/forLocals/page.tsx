@@ -91,7 +91,7 @@ export default function Home() {
                                             <div className="col-md-6 mb-2">
                                                 <div className="d-flex justify-content-end ">
                                                     <div className="col-md-6">
-                                                        <Image src='/assets/https___lottiefiles.com_animations_business-partnership-contract-handshake-1simYO5B3U.gif' alt=".." width='15000' height='3000' className="w-full rounded" />
+                                                        <Image src='/assets/https___lottiefiles.com_animations_business-partnership-contract-handshake-1simYO5B3U.gif' alt=".."  width='200' height='100' className="w-full rounded" />
 
                                                     </div>
 
@@ -130,7 +130,7 @@ export default function Home() {
                                                 <div className="d-flex justify-content-end ">
                                                     <div className="col-md-6">
                                                         <div className="p-2">
-                                                            <Image src='/assets/https___lottiefiles.com_animations_team-DcyvCbHDCB.gif' alt=".." width='15000' height='3000' className="w-full rounded" />
+                                                            <Image src='/assets/https___lottiefiles.com_animations_team-DcyvCbHDCB.gif' alt=".."  width='200' height='100' className="w-full rounded" />
 
                                                         </div>
 
@@ -171,8 +171,8 @@ export default function Home() {
                                             <div className="col-md-6 mb-2">
                                                 <div className="d-flex justify-content-end ">
                                                     <div className="col-md-6">
-                                                        <div className="h-[100px] w-[100px]">
-                                                            <Image src='/assets/https___lottiefiles.com_animations_walking-business-woman-N2iuLD2WkH.gif' alt=".." width='15000' height='100' className="w-full rounded" />
+                                                        <div className="sm:h-[100px] sm:w-[100px]">
+                                                            <Image src='/assets/https___lottiefiles.com_animations_walking-business-woman-N2iuLD2WkH.gif' alt=".." width='200' height='100' className="rounded" />
 
                                                         </div>
 
@@ -214,7 +214,7 @@ export default function Home() {
                                                 <div className="d-flex justify-content-end ">
                                                     <div className="col-md-6">
                                                         <div className="p-2">
-                                                            <Image src='/assets/https___lottiefiles.com_animations_team-cH56A8t9Ul.gif' alt=".." width='15000' height='3000' className="w-full rounded" />
+                                                            <Image src='/assets/https___lottiefiles.com_animations_team-cH56A8t9Ul.gif' alt=".."  width='200' height='100' className="w-full rounded" />
 
                                                         </div>
 
@@ -257,7 +257,7 @@ export default function Home() {
                                                 <div className="d-flex justify-content-end ">
                                                     <div className="col-md-6">
                                                         <div className="p-2">
-                                                            <Image src='/assets/https___lottiefiles.com_animations_team-CgSs0tVAqL.gif' alt=".." width='15000' height='3000' className="w-full rounded" />
+                                                            <Image src='/assets/https___lottiefiles.com_animations_team-CgSs0tVAqL.gif' alt=".."  width='200' height='100' className="w-full rounded" />
 
                                                         </div>
 

@@ -74,3 +74,8 @@ body {
     transform: translateX(-2413px);
   }
 }
+@media (max-width: 800px) {
+  .p-text {
+      text-align: center !important;
+  }
+}
