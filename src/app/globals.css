@@ -78,4 +78,8 @@ body {
   .p-text {
       text-align: center !important;
   }
+  .header-text-para
+  {
+    padding-top: 10px;
+  }
 }

@@ -1,14 +1,18 @@
 'use client'
-import Header from '../../components/header';
+import Header from '../components/header';
 import Footer from '../../components/footer'
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { useState } from "react";
 
 export default function Home() {
     const [activeRegStep, setActiveRegStep] = useState<number | null>(null);
+    const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
     const regStep = (index: number) => {
         setActiveRegStep(activeRegStep === index ? null : index);
+    };
+    const toggleFAQ = (index: number) => {
+        setActiveFAQ(activeFAQ === index ? null : index);
     };
     return (
         <>
@@ -155,7 +159,6 @@ export default function Home() {
             <section className="bg-[#000] overflow-hidden sm:px-20 px-6 py-5 ">
                 <div className="container-fluid p-0">
                     <div className="row align-items-center">
-
                         <div className="col-md-6 mb-2">
                             <div className="col-md-9">
                                 <p className='font-[cd-se] text-[#fff] sm:text-[40px] text-[28px] leading-[32px] sm:leading-[43px]  mb-0 p-text '>Got questions? Chat with our local experts</p>
@@ -166,11 +169,7 @@ export default function Home() {
                                         Schedule a call
                                     </button>
                                 </div>
-
-
-
                             </div>
-
                         </div>
                         <div className="col-md-6 ">
                             <div className='d-flex justify-end'>
@@ -214,7 +213,7 @@ export default function Home() {
                                     <div className="flex-grow-1">
                                         <p className="font-[cd-se] font-[500]  text-[#212833]  text-[22px]  leading-[25px] sm:h-[45px] text-center pt-4">
                                             Local Entrepreneurs
-                                            
+
                                         </p>
                                         <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-0 text-center leading-[19px] pr-2 pl-2">
                                             For Hong Kong entrepreneurs seeking hassle-free incorporation.
@@ -264,12 +263,12 @@ export default function Home() {
                         <div className="col-md-6">
                             <p className='text-[18px] text-[#212833] text-center sm:pt-4'>THE PROCESS</p>
                             <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[45px] leading-[30px]  sm:pt-3">4 Steps to Registering Your Business in Hong Kong</p>
-                        
+
                         </div>
                     </div>
                     <div className="row justify-center pt-5">
                         <div className="col-md-10 mb-4">
-                     
+
                             <div  >
 
                                 <div>
@@ -278,13 +277,13 @@ export default function Home() {
                                         onClick={() => regStep(1)}
                                     >
                                         <div className='flex gap-3 align-items-center'>
-                                        <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>1</div>
+                                            <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>1</div>
 
 
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">Meet the official requirements</span>
+                                            <span className="font-[cd-m] text-[#212833] text-[16px]">Meet the official requirements</span>
 
                                         </div>
-                                        
+
                                         <span className="font-[cd-m] text-[#212833] text-[16px]">{activeRegStep === 1 ? "-" : "+"}</span>
                                     </div>
                                     {activeRegStep === 1 && (
@@ -299,13 +298,13 @@ export default function Home() {
                                         onClick={() => regStep(2)}
                                     >
                                         <div className='flex gap-3 align-items-center'>
-                                        <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>2</div>
+                                            <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>2</div>
 
 
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">Register Your Company</span>
+                                            <span className="font-[cd-m] text-[#212833] text-[16px]">Register Your Company</span>
 
                                         </div>
-                                        
+
                                         <span className="font-[cd-m] text-[#212833] text-[16px]">{activeRegStep === 2 ? "-" : "+"}</span>
                                     </div>
                                     {activeRegStep === 2 && (
@@ -320,13 +319,13 @@ export default function Home() {
                                         onClick={() => regStep(3)}
                                     >
                                         <div className='flex gap-3 align-items-center'>
-                                        <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>3</div>
+                                            <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>3</div>
 
 
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">Establish Your Accounting Schedule</span>
+                                            <span className="font-[cd-m] text-[#212833] text-[16px]">Establish Your Accounting Schedule</span>
 
                                         </div>
-                                        
+
                                         <span className="font-[cd-m] text-[#212833] text-[16px]">{activeRegStep === 3 ? "-" : "+"}</span>
                                     </div>
                                     {activeRegStep === 3 && (
@@ -341,13 +340,13 @@ export default function Home() {
                                         onClick={() => regStep(4)}
                                     >
                                         <div className='flex gap-3 align-items-center'>
-                                        <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>4</div>
+                                            <div className='bg-[#0061FE] rounded-[50%] text-white w-8 h-8 flex items-center justify-center'>4</div>
 
 
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">Set Up Your Business Banking Account</span>
+                                            <span className="font-[cd-m] text-[#212833] text-[16px]">Set Up Your Business Banking Account</span>
 
                                         </div>
-                                        
+
                                         <span className="font-[cd-m] text-[#212833] text-[16px]">{activeRegStep === 4 ? "-" : "+"}</span>
                                     </div>
                                     {activeRegStep === 4 && (
@@ -376,7 +375,7 @@ export default function Home() {
                                     <div className=" px-2 py-[7px] font-[cd-m]  text-[13px] font-[500]  text-[#212833]  border border-black rounded-[30px] sm:w-[120px] w-[120px] ">PRICING</div>
                                 </div>
 
-                                <div className="row justify-center  sm:pb-4 pb-3">
+                                <div className="row justify-center  pb-3">
                                     <div className="col-md-6 sm:pt-3 pt-4  ">
                                         <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[28px]   text-[#212833]   sm:leading-[40px] leading-[32px] text-center   ">Customizable Plans to Suit Your Business</p>
                                         <p className='text-[16px]'>Tailored Registration Packages to Suit Your Requirements. From Registration Only to Full Compliance Services.</p>
@@ -412,25 +411,28 @@ export default function Home() {
 
                     </div>
                     <div className='row justify-center'>
-                        <div className='col-md-4 mb-4'>
-                            <div className='bg-[#F3EFE7] rounded-[20px] p-2 '>
-                                <div className='bg-[#FFFDFA] rounded-[20px] p-4'>
-                                    <p className='font-[cd-se] text-[20px]  text-[#212833] '>Essential</p>
+                        <div className='col-md-4 mb-4 d-flex'>
+                            <div className='bg-[#F3EFE7] rounded-[20px] p-2 w-full'>
+                                <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
+                                    <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
                                     <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
                                     <div className='align-items-center d-flex gap-2'>
-                                    <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
-                                    <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
+                                        <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
+                                        <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]' >Get this plan</button>
+                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                        Get this plan
+                                    </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px]  text-[#212833]  text-[16px] border border-dark rounded-full ' >Talk to an expert</button>
-
+                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                            Talk to an expert
+                                        </button>
                                     </div>
                                 </div>
-                                <div className='p-4 '>
-                                    <p className='font-[cd-se] text-[18px]  text-[#212833]  pt-3'>Incorporation</p>
-                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r]  text-[#212833] ">
+                                <div className='p-4'>
+                                    <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
+                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
                                         <li>Incorporation application</li>
                                         <li>Certificate of Incorporation (CI)</li>
                                         <li>Articles of Association</li>
@@ -439,37 +441,41 @@ export default function Home() {
                                         <li>Neobank account opening assistance</li>
                                     </ul>
                                     <div className='pt-2'>
-                                        <p className='font-[cd-se] text-[18px]  text-[#212833]  pt-3'>Corporate Secretary</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r]  text-[#212833] ">
+                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
+                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
                                             <li>Personal Corporate Secretary On‑demand support via live chat</li>
                                             <li>Annual General Meeting papers</li>
                                             <li>Annual Returns Filing (NAR1)</li>
                                             <li>Automated reminders of filing deadlines</li>
                                             <li>Online shares distribution management and capital table</li>
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-4 mb-4'>
-                            <div className='bg-[#F3EFE7] rounded-[20px] p-2 '>
-                                <div className='bg-[#FFFDFA] rounded-[20px] p-4'>
-                                    <p className='font-[cd-se] text-[20px]  text-[#212833] '>All-inclusive</p>
+
+                        <div className='col-md-4 mb-4 d-flex'>
+                            <div className='bg-[#F3EFE7] rounded-[20px] p-2 w-full'>
+                                <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
+                                    <p className='font-[cd-se] text-[20px] text-[#212833]'>All-inclusive</p>
                                     <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
                                     <div className='align-items-center d-flex gap-2'>
-                                    <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
-                                    <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>7,800</p>
+                                        <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
+                                        <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>7,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]' >Get this plan</button>
+                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                        Get this plan
+                                    </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px]  text-[#212833]  text-[16px] border border-dark rounded-full ' >Talk to an expert</button>
-
+                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                            Talk to an expert
+                                        </button>
                                     </div>
                                 </div>
-                                <div className='p-4 '>
-                                    <p className='font-[cd-se] text-[18px]  text-[#212833]  pt-3'>Incorporation</p>
-                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r]  text-[#212833] ">
+                                <div className='p-4'>
+                                    <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
+                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
                                         <li>Incorporation application</li>
                                         <li>Certificate of Incorporation (CI)</li>
                                         <li>Articles of Association</li>
@@ -478,153 +484,187 @@ export default function Home() {
                                         <li>Neobank account opening assistance</li>
                                     </ul>
                                     <div className='pt-2'>
-                                        <p className='font-[cd-se] text-[18px]  text-[#212833]  pt-3'>Corporate Secretary</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r]  text-[#212833] ">
+                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
+                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
                                             <li>Personal Corporate Secretary On‑demand support via live chat</li>
                                             <li>Annual General Meeting papers</li>
                                             <li>Annual Returns Filing (NAR1)</li>
                                             <li>Automated reminders of filing deadlines</li>
                                             <li>Online shares distribution management and capital table</li>
                                         </ul>
-                                        <p className='font-[cd-se] text-[18px]  text-[#212833]  pt-3'>Registered Address</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r]  text-[#212833] ">
+                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Registered Address</p>
+                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
                                             <li>Registered address for 1 year</li>
                                             <li>Notifications when you receive mail</li>
                                             <li>Scanning and forwarding of notices and documents to this address</li>
-                                         
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
+
 
 
                 </div>
             </section>
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  py-5">
-                <div className="container-fluid p-0">
+            <section className="bg-[#F3EFE7] sm:px-20 px-6  py-[20px]">
+                <div className="overflow-hidden">
                     <div className="row justify-center">
                         <div className="col-md-6">
-                            <div className="text-center">
-                                <p className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[40px] leading-[30px]">Explore over 600 resources for managing small business finances</p>
-
+                            <p className='text-[18px] text-[#212833] text-center sm:pt-4'>WHAT YOU GET</p>
+                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[30px] ">Set Your New Hong Kong Business Up for Success</p>
+                        </div>
+                    </div>
+                    <div className='flex justify-center pt-4'>
+                        <div className='col-md-10'>
+                            <div className='row justify-between align-items-center'>
+                                <div className='col-md-5 mb-4'>
+                                <Image src="/assets/Rectangle 4630.png" className="w-full" width={1080} height={1080} alt="no-img" />
+                                </div>
+                                <div className='col-md-5 mb-4'>
+                                    <p className='font-[cd-se] text-[#000] sm:text-[25px] text-[20px] sm:leading-[28px] leading-[23px]'>Business Bank Account Opening, Simplified</p>
+                                    <p className='font-[cd-r] text-[#000] text-[16px]'>We connect you with our partner banks and assist with your business bank account application. Our partners include HSBC, DBS, Transwap, Airwallex, and WorldFirst.</p>
+                                    <Image src="/assets/aaaaa.png" width={200} height={100} alt="no-img" />
+                                </div>
+                            </div>
+                            <div className='row justify-between align-items-center'>
+                                <div className='col-md-5 mb-4 order-md-2 order-1'>
+                                <Image src="/assets/Rectangle 4631.png" className="w-full" width={1080} height={1080} alt="no-img" />
+                                </div>
+                                <div className='col-md-5 order-md-1 order-2'>
+                                    <p className='font-[cd-se] text-[#000] sm:text-[25px] text-[20px] sm:leading-[28px] leading-[23px]'>Ongoing Business Support Beyond Startup</p>
+                                    <p className='font-[cd-r] text-[#000] text-[16px]'>From company registration to accounting and bookkeeping services, our local accountants have you covered for the first year and beyond.</p>
+                                 
+                                </div>
+                            </div>
+                            <div className='row justify-between align-items-center'>
+                                <div className='col-md-5 mb-4 order-md-1 order-1'>
+                                <Image src="/assets/Rectangle 4639.png" className="w-full" width={1080} height={1080} alt="no-img" />
+                                </div>
+                                <div className='col-md-5 mb-4 order-md-2 order-2'>
+                                    <p className='font-[cd-se] text-[#000] sm:text-[25px] text-[20px] sm:leading-[28px] leading-[23px]'>Ensure Proper Tax Compliance</p>
+                                    <p className='font-[cd-r] text-[#000] text-[16px]'>
+                                    We&apos;ll provide information on Hong Kong tax rates and local allowances, ensuring you stay tax-compliant while doing business in Hong Kong.
+                                        </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="row justify-between pt-14">
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 20.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[16px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 21.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[14px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 22.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[14px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                
 
                 </div>
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-5 py-5">
-                <div className="container-fluid p-0">
-                    <div className="row align-items-center">
-                        <div className="col-md-6 mb-4">
 
-                            <p className="font-[cd-se]  no-underline sm:text-[38px] text-[30px]  text-[#fff]  sm:leading-[38px] leading-[30px]">Get tips on how to run your business smarter</p>
-                            <div className="col-md-9">
-                                <p className='font-[cd-r] text-[#ABABAB] text-[16px]  pt-4 mb-0'>Learn crucial tips on how to save money and build a flourishing business, with real entrepreneurs sharing their own experiences.</p>
-                                <div className="sm:flex  items-center gap-4  pt-4">
-                                    <input
-                                        type="email"
-                                        placeholder="Email address"
-                                        className="w-full px-4 py-2 rounded-full  text-[#0D0D0D]  border border-gray-400 mb-4 "
-                                    />
-                                    <button className="bg-white  text-[#0D0D0D]  font-[cd-m] px-6 py-2 rounded-full w-[140px] w-full mb-4 ">
-                                        SUBSCRIBE
-                                    </button>
-
-                                </div>
-                                <p className="text-[#fff] text-[14px]"><a className="no-underline text-[#ABABAB] " href="#">By clicking, you agree to our</a> Terms & Conditions, Privacy and Data Protection Policy
-                                </p>
+            </section>          
+            <section className="bg-[#fff] sm:px-20 px-6  py-5">
+                <div className="overflow-hidden">
+                    <div className="row justify-center">
+                        <div className="col-md-6 sm:pt-4">
+                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[30px]">Frequently Asked Questions on Company Registration</p>
+                            <div className="d-flex justify-center">
+                                <button className="text-[#212833] underline mt-2 text-center font-[cd-m] text-[16px]">More FAQs</button>
 
                             </div>
-
-
-                        </div>
-                        <div className="col-md-6 ">
-                            <Image src="/assets/original-4703d0ba72b72f87fa49a618a24a1f6d 1.gif" className="w-full"
-                                width={1080}
-                                height={1080}
-                                alt="no-img"
-                            />
                         </div>
                     </div>
+                    <div className="row pt-5">
+                        <div className="col-md-12 mb-4">
+                            {/* FAQs */}
+                            <div  >
+
+                                <div>
+                                    <div
+                                        className="flex justify-between items-center  cursor-pointer "
+                                        onClick={() => toggleFAQ(1)}
+                                    >
+                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
+                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 1 ? "-" : "+"}</span>
+                                    </div>
+                                    {activeFAQ === 1 && (
+                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
+                                        </p>
+                                    )}
+                                </div>
+                                <div>
+                                    <div
+                                        className="flex justify-between items-center  cursor-pointer "
+                                        onClick={() => toggleFAQ(2)}
+                                    >
+                                        <p className="font-[cd-m] text-[#212833] text-[16px]">What happens if my company name is already taken?</p>
+                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 2 ? "-" : "+"}</span>
+                                    </div>
+                                    {activeFAQ === 2 && (
+                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
+                                        </p>
+                                    )}
+                                </div>
+                                <div>
+                                    <div
+                                        className="flex justify-between items-center  cursor-pointer "
+                                        onClick={() => toggleFAQ(3)}
+                                    >
+                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
+                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 3 ? "-" : "+"}</span>
+                                    </div>
+                                    {activeFAQ === 3 && (
+                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
+                                        </p>
+                                    )}
+                                </div>
+                                <div>
+                                    <div
+                                        className="flex justify-between items-center  cursor-pointer "
+                                        onClick={() => toggleFAQ(4)}
+                                    >
+                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
+                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 4 ? "-" : "+"}</span>
+                                    </div>
+                                    {activeFAQ === 4 && (
+                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
+                                        </p>
+                                    )}
+                                </div>
+                                <div>
+                                    <div
+                                        className="flex justify-between items-center  cursor-pointer "
+                                        onClick={() => toggleFAQ(5)}
+                                    >
+                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
+                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 5 ? "-" : "+"}</span>
+                                    </div>
+                                    {activeFAQ === 5 && (
+                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
+                                        </p>
+                                    )}
+                                </div>
+                                <div>
+                                    <div
+                                        className="flex justify-between items-center  cursor-pointer "
+                                        onClick={() => toggleFAQ(6)}
+                                    >
+                                        <p className="font-[cd-m] text-[#212833] text-[16px]">How do I check if my company is registered or not?</p>
+                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 6 ? "-" : "+"}</span>
+                                    </div>
+                                    {activeFAQ === 6 && (
+                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
+                                        </p>
+                                    )}
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
-
 
 
 

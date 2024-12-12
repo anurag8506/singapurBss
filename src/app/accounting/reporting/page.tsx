@@ -5,6 +5,12 @@ import Header from '../../components/header';
 import Footer from '../../components/footer'
 import Image from 'next/image';
 import { useState } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 export default function Home() {
@@ -224,6 +230,171 @@ export default function Home() {
                   
                 </div>
             </section>
+              
+
+  <section className="bg-[#000] overflow-hidden sm:px-20 px-6  py-10">
+                <div className="container-fluid p-0">
+                <div className="row justify-center">
+                        <div className="col-md-12 sm:pb-2">
+                            <div className="text-center pb-2">
+                                <div className="row justify-center  sm:pb-4 pb-3">
+                                    <div className="col-md-6 sm:pt-3 pt-4  ">
+                                        <p className="font-[cd-se]    sm:text-[40px] text-[25px]  text-[#fff]  sm:leading-[40px] leading-[30px] text-center   ">Trusted by Cloud Bss entrepreneurs around the world</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                    <div className="row pt-4" >
+  <div className="col-md-3 mb-4  d-flex flex-column align-items-center">
+    <p className="font-[cd-se] sm:text-[40px] text-[25px] text-[#D9D9D9] sm:leading-[40px] leading-[30px] text-center mb-2">
+      89%
+    </p>
+    <p className="text-center font-[cd-r] text-[18px] text-[#D9D9D9] px-4">
+      of customers recommend Cloud BSS service
+    </p>
+  </div>
+  <div className="col-md-3 mb-4  d-flex flex-column align-items-center">
+    <p className="font-[cd-se] sm:text-[40px] text-[25px] text-[#D9D9D9] sm:leading-[40px] leading-[30px] text-center mb-2">
+      15,000+
+    </p>
+    <p className="text-center font-[cd-r] text-[18px] text-[#D9D9D9] px-4">
+      of customers recommend Cloud BSS service
+    </p>
+  </div>
+  <div className="col-md-3 mb-4  d-flex flex-column align-items-center">
+    <div className="d-flex justify-center mb-2 h-[40px]" >
+      <Image
+        src="/assets/Group 17707.png"
+        width={120}
+        height={60}
+        alt="Cloud BSS Service"
+      />
+    </div>
+    <p className="text-center font-[cd-r] text-[18px] text-[#D9D9D9] px-4">
+      of customers recommend Cloud BSS service
+    </p>
+  </div>
+  <div className="col-md-3 mb-4  d-flex flex-column align-items-center">
+    <div className="d-flex justify-center mb-2 h-[40px]" >
+      <Image
+        src="/assets/Group 17706.png"
+        width={120}
+        height={60}
+        alt="Cloud BSS Service"
+      />
+    </div>
+    <p className="text-center font-[cd-r] text-[18px] text-[#D9D9D9] px-4">
+      of customers recommend Cloud BSS service
+    </p>
+  </div>
+</div>
+
+                <Swiper
+      spaceBetween={10} 
+      loop={true} 
+  
+      modules={[Navigation]} 
+      className="items-center"
+      navigation={{
+        nextEl: '.custom-next', 
+        prevEl: '.custom-prev', 
+      }}
+      breakpoints={{
+        640: { 
+          slidesPerView: 1, 
+        },
+        768: { 
+          slidesPerView: 2, 
+        },
+        1024: { 
+          slidesPerView: 3, 
+        },
+      }}
+    >
+   <SwiperSlide>
+        <div className="sm:mb-0 col-11">
+    <div  className="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between w-full rounded-[20px]">
+      <div  className="flex items-center">
+            <Image src="/assets/Rectangle 4628.png" alt=".."className="w-12 h-12 rounded-full" width='8000' height='100' />
+        <div  className="ml-3">
+          <h4  className="font-[cd-m] text-[18px] m-0 p-0">Tingsager Michael</h4>
+          <p  className="font-[cd-r] text-[16px] m-0 p-0">Tingsager Consulting Pte. Ltd.</p>
+        </div>
+      </div>
+      <p  className="mt-3 text-sm text-gray-600">
+        I&apos;ve moved not just one business to Cloud Bss, but a number. If you&apos;re a
+        small business it&apos;s the place to be—you&apos;ll save time and sleep.
+      </p>
+    </div>
+ 
+        </div>,
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="sm:mb-0 col-11">
+    <div  className="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between w-full rounded-[20px]">
+      <div  className="flex items-center">
+            <Image src="/assets/Rectangle 4628.png" alt=".."className="w-12 h-12 rounded-full" width='8000' height='100' />
+        <div  className="ml-3">
+          <h4  className="font-[cd-m] text-[18px] m-0 p-0">Tingsager Michael</h4>
+          <p  className="font-[cd-r] text-[16px] m-0 p-0">Tingsager Consulting Pte. Ltd.</p>
+        </div>
+      </div>
+      <p  className="mt-3 text-sm text-gray-600">
+        I&apos;ve moved not just one business to Cloud Bss, but a number. If you&apos;re a
+        small business it&apos;s the place to be—you&apos;ll save time and sleep.
+      </p>
+    </div>
+ 
+        </div>,
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="sm:mb-0 col-11">
+    <div  className="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between w-full rounded-[20px]">
+      <div  className="flex items-center">
+            <Image src="/assets/Rectangle 4628.png" alt=".."className="w-12 h-12 rounded-full" width='8000' height='100' />
+        <div  className="ml-3">
+          <h4  className="font-[cd-m] text-[18px] m-0 p-0">Tingsager Michael</h4>
+          <p  className="font-[cd-r] text-[16px] m-0 p-0">Tingsager Consulting Pte. Ltd.</p>
+        </div>
+      </div>
+      <p  className="mt-3 text-sm text-gray-600">
+        I&apos;ve moved not just one business to Cloud Bss, but a number. If you&apos;re a
+        small business it&apos;s the place to be—you&apos;ll save time and sleep.
+      </p>
+    </div>
+ 
+        </div>,
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="sm:mb-0 col-11">
+    <div  className="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between w-full rounded-[20px]">
+      <div  className="flex items-center">
+            <Image src="/assets/Rectangle 4628.png" alt=".."className="w-12 h-12 rounded-full" width='8000' height='100' />
+        <div  className="ml-3">
+          <h4  className="font-[cd-m] text-[18px] m-0 p-0">Tingsager Michael</h4>
+          <p  className="font-[cd-r] text-[16px] m-0 p-0">Tingsager Consulting Pte. Ltd.</p>
+        </div>
+      </div>
+      <p  className="mt-3 text-sm text-gray-600">
+        I&apos;ve moved not just one business to Cloud Bss, but a number. If you&apos;re a
+        small business it&apos;s the place to be—you&apos;ll save time and sleep.
+      </p>
+    </div>
+ 
+        </div>,
+      </SwiperSlide>
+
+     
+      
+
+    </Swiper>
+                 
+                </div>
+            </section>
+
             <section className="bg-[#F3EFE7] sm:px-20 px-6  py-5">
                 <div className="overflow-hidden">
                     <div className="row justify-center">

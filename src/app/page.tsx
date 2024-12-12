@@ -73,8 +73,8 @@ export default function Home() {
 
                 <section className=" overflow-hidden ">
                     <div className="container-fluid p-0  ">
-                        <div className="row justify-center sm:px-20 px-6 " >
-                            <div className="col-md-12 sm:pt-4">
+                        <div className="row justify-center  sm:px-0 px-6 " >
+                            <div className="col-md-12 sm:pt-4 ">
                                 <Image src='/assets/trusted.png' alt=".." width='3000' height='3000' className="w-full" />
 
                             </div>
