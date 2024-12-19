@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Header from './components/header';
 import Link from "next/link";
-import Footer from '../components/footer'
+import Footer from './components/footer'
 
 import "../globals.css";
 

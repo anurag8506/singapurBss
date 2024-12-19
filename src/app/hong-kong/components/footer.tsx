@@ -25,85 +25,52 @@ export default function Header1() {
            <section className="bg-[#212833] overflow-hidden sm:px-20 px-6 sm:py-5 py-5">
         <div className="container-fluid p-0">
         <div  className="row justify-content-between ">
-            <div className="col-md-2 ">
+            <div className="col-md-3 ">
                 <div className=" ">
-                <div className="col-md-12">
+                <div className=" d-flex justify-content-end ">
                 <div  className="col-12">
                   <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">
-                    INCORPORATION
+                  SOLUTIONS FOR BUSINESS
                   </h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline ">
-                        For Foreigners
+                      Company Registration
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline">
-                        For India & PRs
+                      Company Secretary
                       </a>
                     </li>
                   </ul>
-                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >OTHER SERVICES</h3>
-                  <ul className="list-unstyled">
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Nominee Directo
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                        For India & PRs
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                        For India & PRs
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                       Convert Sole Proprietorship into Pte Ltd .
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Special Purpose Vehicle (SPV)
-                      </a>
-                    </li>
-                  </ul>
-              
+                 
                 </div>
                 </div>
               
                 </div>
             </div>
-            <div className="col-md-2 ">
-                <div className=" ">
-                <div className="col-md-12">
-                <div  className="col-12">
+            <div className="col-md-3 ">
+                <div className=" d-flex justify-end ">
+                <div className=" d-flex justify-content-end ">
+                <div  className="col-12 ">
                   <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">
                   ACCOUNTING
                   </h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline ">
-                      Accounting & Tax
+                      Accounting Services
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline">
-                      Ecommerce Accounting
+                      Accounting for Ecommerce
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline">
-                      Accounting for Amazon
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      GST Registration
+                      Company Audit
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
@@ -111,13 +78,70 @@ export default function Header1() {
                       Bookkeeping
                       </a>
                     </li>
+                  
 
                   </ul>
-                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >COMPANY</h3>
+                 
+              
+                </div>
+                </div>
+              
+                </div>
+            </div>
+
+
+            <div className="col-md-3 ">
+                <div className=" d-flex justify-end ">
+                <div className=" d-flex justify-content-end ">
+                <div  className="col-12">
+               
+                  <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]"> RESOURCES</h3>
                   <ul className="list-unstyled">
+                    <li className="font-[cd-r] mb-2 text-[14px]">
+                      <a href="#" className="text-white no-underline hover:underline ">
+                      Our Blog
+                      </a>
+                    </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline">
+                   Guides
+                      </a>
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <a href="#" className="text-white no-underline hover:underline">
+                      Margin Calculator
+                      </a>
+                    </li>
+                
+
+                  </ul>
+                
+              
+                </div>
+                </div>
+              
+                </div>
+            </div>
+            <div className="col-md-3  ">
+                <div>
+                <div className=" d-flex justify-content-end ">
+                <div >
+              
+                  <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">COMPANY</h3>
+                  <ul className="list-unstyled">
+                    <li className="font-[cd-r] mb-2 text-[14px]">
+                      <a href="#" className="text-white no-underline hover:underline ">
                       About Us
+                      </a>
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <a href="#" className="text-white no-underline hover:underline">
+                      Our Partners
+                      </a>
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <a href="#" className="text-white no-underline hover:underline">
+                      Career at Cloud Bss
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
@@ -125,11 +149,7 @@ export default function Header1() {
                       Contact Us
                       </a>
                     </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Careers at CloudBss
-                      </a>
-                    </li>
+
                     <li  className="font-[cd-r] mb-2 text-[14px]">
                       <a href="#" className="text-white no-underline hover:underline">
                       Privacy Policy
@@ -145,112 +165,6 @@ export default function Header1() {
                       Terms of Business
                       </a>
                     </li>
-                  </ul>
-              
-                </div>
-                </div>
-              
-                </div>
-            </div>
-
-
-            <div className="col-md-2 ">
-                <div className=" ">
-                <div className="col-md-12">
-                <div  className="col-12">
-                  <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]"> FEATURES</h3>
-                  <ul className="list-unstyled">
-                    <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
-                      Invoicing
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Ecommerce Insights
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Personal Expenses
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Purchases
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Demo
-                      </a>
-                    </li>
-
-                  </ul>
-                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >COMPANY SECRETARY
-                  </h3>
-                  <ul className="list-unstyled">
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Company Secretary
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                Annual Return Filing
-                      </a>
-                    </li>
-                   
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Transfer of Shares
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Allotment of Shares
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Switch Secretary
-                      </a>
-                    </li>
-                  
-                  
-                  </ul>
-              
-                </div>
-                </div>
-              
-                </div>
-            </div>
-            <div className="col-md-2  ">
-                <div className=" ">
-                <div className="col-md-12">
-                <div  className="col-12">
-                  <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">PARTNERS</h3>
-                  <ul className="list-unstyled">
-                    <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
-                      Our Partners
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Ecommerce Insights
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Aspire Business Account
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      White Label Solutions
-                      </a>
-                    </li>
                 
 
                   </ul>
@@ -263,66 +177,7 @@ export default function Header1() {
             </div>
 
 
-            <div className="col-md-2 ">
-                <div className=" ">
-                <div className="col-md-12">
-                <div  className="col-12">
-                    <div>
-
-                        
-                    </div>
-                  <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">RESOURCES</h3>
-                  <ul className="list-unstyled">
-                    <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
-                      Our Blog
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Webinars
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Company Name Search
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      SSIC Business Activity Code Search
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Founder’s Career Test
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Startup Name Generator
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Margin Calculator
-                      </a>
-                    </li>
-                   
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Ebay Fee Calculator
-                      </a>
-                    </li>
-
-                  </ul>
-                
-              
-                </div>
-                </div>
-              
-                </div>
-            </div>
+          
         </div>
         </div>
       </section>
@@ -345,18 +200,11 @@ export default function Header1() {
                 >
                   <button className="flex items-center text-lg hover:text-gray-900 group font-[cd-r]">
                   <div className="d-flex items-center gap-3 text-[#fff]">
-          <svg className="shadow rounded-circle" width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M505 252.475C505 391.969 392 505 252.5 505C113 505 0 391.969 0 252.475C0 247.274 0.15 242.124 0.51 237.023H504.51C504.837 242.124 505 247.274 505 252.475Z" fill="#F2F2F2" />
-                            <path d="M505 252.475H0C0 247.274 0.15 242.124 0.51 237.023C8.43 104.75 118.27 0 252.51 0C386.75 0 496.57 104.75 504.55 237.023C504.85 242.124 505 247.274 505 252.475Z" fill="#EF2B2D" />
-                            <path d="M172.98 102.48L177.07 113.722L188.97 114.262L179.43 121.472L182.7 133.114L172.76 126.423L162.84 132.973L166.25 121.572L156.83 114.042L168.83 113.872L172.98 102.48Z" fill="white" />
-                            <path d="M253.47 102.48L257.56 113.722L269.46 114.262L259.92 121.472L263.2 133.114L253.25 126.423L243.33 132.973L246.75 121.572L237.32 114.042L249.33 113.872L253.47 102.48Z" fill="white" />
-                            <path d="M193.711 143.634L197.801 154.875L209.701 155.425L200.161 162.626L203.441 174.277L193.491 167.587L183.571 174.137L186.991 162.736L177.561 155.205L189.561 155.035L193.711 143.634Z" fill="white" />
-                            <path d="M239.189 143.634L243.269 154.875L255.179 155.425L245.629 162.626L248.909 174.277L238.959 167.587L229.049 174.137L232.459 162.736L223.039 155.205L235.039 155.035L239.189 143.634Z" fill="white" />
-                            <path d="M214.65 73.6177L218.74 84.8688L230.64 85.4088L221.1 92.6196L224.37 104.261L214.43 97.57L204.51 104.121L207.92 92.7196L198.5 85.1888L210.5 85.0188L214.65 73.6177Z" fill="white" />
-                            <path d="M189.859 198.15C179.411 201.845 168.23 202.979 157.253 201.459C146.276 199.939 135.824 195.807 126.773 189.411C117.723 183.016 110.338 174.542 105.239 164.702C100.14 154.862 97.4755 143.943 97.4688 132.86C97.462 121.777 100.113 110.854 105.2 101.008C110.287 91.1615 117.661 82.6791 126.704 76.2723C135.746 69.8656 146.194 65.7213 157.169 64.1874C168.144 62.6535 179.327 63.7747 189.779 67.4568C172.651 67.7668 156.329 74.7922 144.329 87.0199C132.329 99.2476 125.611 115.699 125.622 132.833C125.632 149.966 132.37 166.409 144.385 178.622C156.4 190.835 172.73 197.841 189.859 198.13V198.15Z" fill="white" />
-                            <path opacity="0.12" d="M393.219 72.8876C350.809 39.5048 297.934 22.2501 243.999 24.1928C120.329 28.3532 21.439 131.993 22.789 255.736C23.0098 277.969 26.4764 300.051 33.0791 321.282C34.4202 325.652 37.1596 329.461 40.876 332.123C44.5924 334.784 49.0801 336.151 53.649 336.014C304.779 327.483 381.699 151.865 399.989 95.2898C401.282 91.3111 401.327 87.0318 400.116 83.0271C398.906 79.0224 396.499 75.484 393.219 72.8876Z" fill="white" />
+                  <svg width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 252.5C0 113.048 113.048 0 252.5 0V0C391.952 0 505 113.048 505 252.5V252.5C505 391.952 391.952 505 252.5 505V505C113.048 505 0 391.952 0 252.5V252.5Z" fill="#D80027" />
+                            <path d="M270.754 201.363C265.672 222.505 256.64 218.474 252.207 236.911C226.1 230.635 210.02 204.38 216.297 178.269C222.572 152.162 248.829 136.082 274.937 142.358C266.072 179.235 275.3 182.454 270.754 201.363ZM203.003 217.029C221.541 228.397 214.913 235.741 231.079 245.654C217.04 268.545 187.104 275.723 164.212 261.685C141.32 247.647 134.141 217.708 148.18 194.817C180.512 214.644 186.422 206.862 203.003 217.029ZM196.967 286.306C213.507 272.188 218.443 280.759 232.867 268.448C250.301 288.873 247.875 319.563 227.451 336.997C207.025 354.431 176.335 352.004 158.903 331.581C187.749 306.961 182.174 298.933 196.967 286.306ZM260.989 313.455C252.671 293.363 262.348 291.314 255.1 273.794C279.912 263.526 308.352 275.315 318.623 300.128C328.891 324.94 317.1 353.38 292.287 363.649C277.782 328.606 268.427 331.427 260.989 313.455ZM306.592 260.956C284.913 262.657 285.955 252.819 267.052 254.302C264.952 227.532 284.954 204.127 311.725 202.025C338.496 199.93 361.901 219.931 364 246.701C326.19 249.666 325.979 259.437 306.592 260.956Z" fill="#F0F0F0" />
                           </svg>
-                          Singapore
+                          Hong Kong
           </div>
        
                   </button>
