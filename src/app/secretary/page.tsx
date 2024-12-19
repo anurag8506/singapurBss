@@ -20,17 +20,17 @@ export default function Home() {
             <Header />
 
             <section className='bg-[#FFFCF5]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
+                <div className="overflow-hidden sm:px-20 px-6 py-4 sm:pt-[100px] pt-[50px] ">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center pb-4 pt-4">
+                        <div className="row align-items-center pb-4 ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-8'>
-                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] sm:leading-[40px] leading-[30px]">Company Secretarial services in India</p>
+                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] sm:leading-[40px] leading-[30px] p-text">Company Secretarial services in India</p>
 
 
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833]">Focus on your business and outsource corporate secretary expertise to us. Our dedicated experts support your business with tracking tax deadlines, filing documents and staying compliant.</p>
+                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833] p-text">Focus on your business and outsource corporate secretary expertise to us. Our dedicated experts support your business with tracking tax deadlines, filing documents and staying compliant.</p>
                                     <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2">
                                         <button className="bg-[#212833] text-white font-[cd-m] sm:w-[180px]  w-[180px]  px-6 py-[10px] rounded-full mb-4">
                                             Get Started

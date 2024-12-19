@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Footer from '../../components/footer'
 import Image from 'next/image';
 
+
 import { useState } from "react";
 
 export default function Home() {
@@ -18,30 +19,31 @@ export default function Home() {
         <>
             <Header />
             <section className='bg-[#fff]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32">
+                <div className="overflow-hidden sm:px-20 px-6 sm:pt-[100px] pt-[50px]">
                     <div className="container-fluid p-0">
                         <div className="row align-items-center pb-[20px]">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-se] text-[#212833] text-[33px] leading-[35px] p-text sm:text-left sm:text-[45px] sm:leading-[45px]">
+                                    <p className="font-[cd-b] text-[#212833] text-[28px] p-text sm:text-left sm:text-[45px] sm:leading-[45px] leading-[31px] ">
                                         Hong Kong Company Formation Services
                                     </p>
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] p-text sm:text-left text-[18px]  text-[#212833]  ">Let Cloud Bss manage your Hong Kong company formation online, from bank accounts to compliance. No paperwork, quick registration, and expert support throughout.</p>
+                                    <p className="font-[cd-r] p-text sm:text-left text-[18px]  text-[#212833] p-text  ">Let Cloud Bss manage your Hong Kong company formation online, from bank accounts to compliance. No paperwork, quick registration, and expert support throughout.</p>
                                     <div className="flex sm:justify-start justify-center   items-center sm:pt-[50px] pt-[10px] pb-2 gap-3">
-                                        <button className="bg-[#212833] border border-dark  text-white font-[cd-m] sm:w-[160px]  w-[160px]  px-4 py-[10px] rounded-full sm:mb-4 tracking-wider">
+                                        <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] ">
                                             Get Started
                                         </button>
-                                        <button className="bg-[#fff] border border-dark text-[#000] font-[cd-m] sm:w-[160px]  w-[160px]  px-4 py-[10px] rounded-full sm:mb-4 tracking-wider">
+                                        <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] ">
                                             Pricing
                                         </button>
                                     </div>
+                                 
                                 </div>
                             </div>
                             <div className='col-md-6 mb-4'>
                                 <div className='d-flex justify-content-end'>
-                                    <div className='col-md-12'>
+                                    <div className='col-md-10'>
                                         <Image
                                             src="/assets/hong.png"
                                             alt=".."
@@ -60,18 +62,18 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6 py-[20px]">
+            <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6 py-[30px]">
                 <div className="row justify-center">
                     <div className="col-md-12 ">
                         <div className="text-center  ">
                             <div className='d-flex justify-center'>
-                                <div className=" px-2 py-[10px] font-[cd-m]  text-[16px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider ">
+                                <div className=" px-2 py-[10px] font-[cd-m]  text-[16px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider sm:pt-[40px] pt-[20px]">
                                     WHY CLOUD BSS
                                 </div>
 
                             </div>
                             <div className="row justify-center  pb-3">
-                                <div className="col-md-5 sm:pt-4 pt-2  ">
+                                <div className="col-md-6 sm:pt-[40px] pt-[10px] sm:pb-[40px] pb-[10px]  ">
                                     <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[28px] text-[#212833]   sm:leading-[43px] leading-[32px] text-center">Effortless Company Formation in Hong Kong</p>
                                 </div>
                             </div>
@@ -189,7 +191,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  py-[20px]">
+            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  sm:py-[50px] py-[30px]">
                 <div className="row justify-center">
                     <div className="col-md-12 sm:pb-2">
                         <div className="text-center   ">
@@ -257,12 +259,12 @@ export default function Home() {
 
                 </div>
             </section>
-            <section className="bg-[#F3EFE7] sm:px-20 px-6  py-[20px]">
+            <section className="bg-[#F3EFE7] sm:px-20 px-6  sm:py-[40px] py-[20px]">
                 <div className="overflow-hidden">
                     <div className="row justify-center">
                         <div className="col-md-6">
                             <p className='text-[18px] text-[#212833] text-center sm:pt-4'>THE PROCESS</p>
-                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[45px] leading-[30px]  sm:pt-3">4 Steps to Registering Your Business in Hong Kong</p>
+                            <p className="font-[cd-se] text-center  sm:text-[40px] text-[28px] text-[#212833] sm:leading-[45px] leading-[30px]  sm:pt-3">4 Steps to Registering Your Business in Hong Kong</p>
 
                         </div>
                     </div>
@@ -366,7 +368,7 @@ export default function Home() {
             </section>
 
 
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  py-10">
+            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  sm:py-[50px] py-[20px]">
                 <div className="container-fluid p-0">
                     <div className="row justify-center">
                         <div className="col-md-12 sm:pb-2">
@@ -421,11 +423,11 @@ export default function Home() {
                                         <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                    <button  className="font-[cd-m] font-[500] text-[16px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[10px] rounded-[30px] text-center bg-[#fff] hover:bg-[#212833] hover:text-[#fff] w-full ">
                                         Get this plan
                                     </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                        <button className="font-[cd-m] font-[500] text-[16px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[10px] rounded-[30px] text-center bg-[#fff] hover:bg-[#212833] hover:text-[#fff] w-full ">
                                             Talk to an expert
                                         </button>
                                     </div>
@@ -464,11 +466,11 @@ export default function Home() {
                                         <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>7,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                    <button className="font-[cd-m] font-[500] text-[16px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[10px] rounded-[30px] text-center bg-[#fff] hover:bg-[#212833] hover:text-[#fff] w-full ">
                                         Get this plan
                                     </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                        <button className="font-[cd-m] font-[500] text-[16px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[10px] rounded-[30px] text-center bg-[#fff] hover:bg-[#212833] hover:text-[#fff] w-full ">
                                             Talk to an expert
                                         </button>
                                     </div>
@@ -508,12 +510,12 @@ export default function Home() {
 
                 </div>
             </section>
-            <section className="bg-[#F3EFE7] sm:px-20 px-6  py-[20px]">
+            <section className="bg-[#F3EFE7] sm:px-20 px-6  sm:py-[50px] py-[30px]">
                 <div className="overflow-hidden">
                     <div className="row justify-center">
                         <div className="col-md-6">
                             <p className='text-[18px] text-[#212833] text-center sm:pt-4'>WHAT YOU GET</p>
-                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[30px] ">Set Your New Hong Kong Business Up for Success</p>
+                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[31px] ">Set Your New Hong Kong Business Up for Success</p>
                         </div>
                     </div>
                     <div className='flex justify-center pt-4'>

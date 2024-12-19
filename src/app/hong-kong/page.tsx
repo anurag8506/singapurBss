@@ -12,20 +12,11 @@ export default function Home() {
         <>
             <div className="bg-[#f3efe7]">
                 <Header />
-                <section className="overflow-hidden sm:px-20 px-6  pt-32 pb-4">
+                <section className="overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[50px] pb-5">
                     <div className="flex items-center justify-center">
                         <div className="flex items-center px-4 py-2 border rounded-full border-black">
                             <div className="flex-space-x-2">
-                                <Image
-                                    src="/assets/Group 17583.png"
-                                    alt="Person 1"
-
-                                    width='50'
-                                    height='20'
-
-                                />
-
-
+                                <Image src="/assets/Group 17583.png"  alt="Person 1" width='50' height='20'/>
                             </div>
 
                             <div className="ml-3 font-[cd-m] font-[500] no-underline sm:text-[13px] text-[#000]">
@@ -41,20 +32,30 @@ export default function Home() {
                             <div className="row justify-center ">
                                 <div className="col-md-8">
                                     <div className="text-center">
-                                        <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px] text-[#000] text-center sm:leading-[46px] leading-[30px]">Seamless Incorporation and Accounting Experts for Business Growth</p>
+                                        <p className="font-[cd-b]  no-underline sm:text-[45px] text-[28px] text-[#000] text-center sm:leading-[46px] leading-[31px]">Seamless Incorporation and Accounting Experts for Business Growth</p>
 
                                     </div>
                                 </div>
-                                <div className="col-md-8  pb-5 pt-2">
-                                    <div className="text-center" >
-                                        <Link href="/">
-                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#000] bg-[#fff] opacity-100 px-5 py-[10px] rounded-[30px] text-center">Login</button>
+                                <div className="col-md-8 mb-4 pt-4 ">
+                                    <div className="text-center">
+                                        <div className="flex justify-center  gap-2">
+                                            <div className="mb-3">
+                                            <Link href="#">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] w-full">
+                                                Login
+                                            </button>
                                         </Link>
-                                        <Link href='/'>
-                                            <button className="font-[cd-m] font-[500] ms-[15px] text-[14px] text-[#fff] bg-[#000] px-5 py-[10px] rounded-[30px] text-center ">Schedule a call</button>
+                                            </div>
+                                            <div>
+                                            <Link href="#">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center  bg-[#fff]  hover:bg-[#000] hover:text-[#fff] w-full">
+                                                Schedule a call
+                                            </button>
                                         </Link>
-
-
+                                                </div>
+                                        </div>
+                                    
+                                      
                                     </div>
                                 </div>
                                 <div className="col-md-8">
@@ -79,7 +80,7 @@ export default function Home() {
                         <div className="col-md-6 pb-4">
                             <div className="text-center  ">
                                 <p className="text-[#353535] font-[cd-r] text-[16px]">WHAT WE DO</p>
-                                <p className="font-[cd-se]  sm:text-[35px] text-[30px]  text-[#000] text-center sm:leading-[38px] leading-[35px]">Customized Services for Every Stage of Your Business</p>
+                                <p className="font-[cd-se]  sm:text-[35px] text-[28px]  text-[#000] text-center sm:leading-[38px] leading-[31px]">Customized Services for Every Stage of Your Business</p>
                             </div>
                         </div>
                     </div>
@@ -255,7 +256,7 @@ export default function Home() {
                         <div className="row  sm:pt-5 pt-4 sm:pb-5 pb-4 justify-content-center  ">
                             <div className="col-md-6">
                                 <p className="font-[cd-r]   text-[16px]  text-[#353535] text-center">WHY CHOOSE US</p>
-                                <p className="font-[cd-se]  sm:text-[40px] text-[30px]  text-[#000] text-center sm:leading-[40px] leading-[30px]">Your Partners, From Formation to Filing and Beyond</p>
+                                <p className="font-[cd-se]  sm:text-[40px] text-[28px]  text-[#000] text-center sm:leading-[40px] leading-[31px]">Your Partners, From Formation to Filing and Beyond</p>
                             </div>
 
                         </div>
@@ -278,8 +279,8 @@ export default function Home() {
                                 <p className="font-[cd-r] text-[16px]">All of our experts advising you are full-time company employees. We don&apos;t use call centres, out staffing or outsourcing. Our team helps you set up a company, pay the right tax, track deadlines and manage filing.</p>
 
                                   </div>
-                                <Link href='/'>
-                                            <button className="font-[cd-m] font-[500]  text-[14px] border border-dark text-[#000] px-5 py-[10px] rounded-[30px] text-center ">Schedule a call</button>
+                                <Link href='#'>
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center  hover:bg-[#000] hover:text-[#fff] ">Schedule a call</button>
                                         </Link>
 
                                 </div>
@@ -303,8 +304,8 @@ export default function Home() {
                                 Our proprietary software streamlines bookkeeping, taxes, compliance, and more. It&apos;s your financial data, all in one place..</p>
 
                                     </div>
-                                <Link href='/'>
-                                            <button className="font-[cd-m] font-[500]  text-[14px] border border-dark text-[#000] px-5 py-[10px] rounded-[30px] text-center ">Schedule a call</button>
+                                <Link href='#'>
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center  hover:bg-[#000] hover:text-[#fff] ">Schedule a call</button>
                                         </Link>
 
                                 </div>

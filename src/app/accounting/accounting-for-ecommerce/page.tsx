@@ -14,19 +14,19 @@ export default function Home() {
             <Header />
 
             <section className='bg-[#FFFCF5]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
+                <div className="overflow-hidden sm:px-20 px-6 sm:pt-[100px] pt-[50px] ">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center pb-10 pt-4">
+                        <div className="row align-items-center pb-10 ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-9'>
-                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[30px] text-[#212833]  sm:leading-[40px] leading-[30px]">Time-saving 
+                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[30px] text-[#212833]  sm:leading-[40px] leading-[30px] p-text">Time-saving
                                     ecommerce accounting
                                     </p>
 
 
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833]  ">It is time to leave traditional accounting behind. Our software integrates with multiple ecommerce platforms to keep your bookkeeping accurate. Choose Cloud Bss for ecommerce accounting services, tax filings, and reporting.</p>
+                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833] p-text ">It is time to leave traditional accounting behind. Our software integrates with multiple ecommerce platforms to keep your bookkeeping accurate. Choose Cloud Bss for ecommerce accounting services, tax filings, and reporting.</p>
                                     <div className='sm:flex sm:justify-start justify-center   '>
                                     <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2 sm:mr-4">
                                         <button className="bg-[#212833] border border-dark text-white font-[cd-m] sm:w-[220px] w-full  px-6 py-[10px] rounded-full mb-4 ">

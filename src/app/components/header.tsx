@@ -1,218 +1,482 @@
-"use client";
-import Image from "next/image";
-import Link from 'next/link'
-import { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function Header1() {
-  const [width, setWidth] = useState(560);
-  const [menu, setMenu] = useState(false);
-  const updateDimensions = () => {
-    console.log("call update dem")
-    setWidth(window.innerWidth);
-    console.log("width,", window.innerWidth)
+
+"use client"
+import React, { useState } from "react";
+import Link from "next/link";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null); 
+  const handleMouseEnter = (menu: string) => {
+    setOpenMenu(menu);
   };
 
-  useEffect(() => {
-
-
-    if (typeof window !== "undefined") {
-      console.log("called")
-      setWidth(window.innerWidth);
-      window.addEventListener("resize", updateDimensions);
-      return () => window.removeEventListener("resize", updateDimensions);
-    }
-  }, []);
-
-  const menuToggle = () => {
-    setMenu(!menu);
+  const handleMenuClick = (menuName: string) => {
+    setOpenMenu(openMenu === menuName ? null : menuName);
   };
+  const handleMouseLeave = () => {
+    setOpenMenu(null);
+  };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-
-    <div>
-      <header className="absolute  w-100  py-6 items-center  sm:px-20 px-6   pb-10 ">
-        <div className="container-fluid ">
-          <div className="row align-items-center justify-between">
-            <div className="col-md-2">
-              <div className="row ">
-                <div className="col-md-9 col-5">
-                  <Link href="/">
-                    <Image
-                      src="/assets/logo_bss.png" className="w-full"
-                      width={140}
-                      height={50}
-                      alt="no-img"
-                    /></Link>
-                </div>
-              </div>
-              <div className="sm:hidden block absolute right-[22px] top-[30px]" onClick={menuToggle} >
-                {menu ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" stroke="#000" /><path d="M6 6l12 12" stroke="#000" /></svg> :
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>}
-              </div>
+    <section className="">
+      <header className="sm:px-24 px-6 flex justify-between items-center py-4 px-6 ">
+        <div className="col-12 flex justify-between">
+          <div className="col-md-3">
+            <div className="flex items-center space-x-2">
+              <Link  href="/"
+                className="no-underline">
+              <svg width="142" height="54" viewBox="0 0 202 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.9244 14.9517C8.42554 14.3356 2.07586 26.9608 0.963385 33.3504C-3.28114 17.1938 7.52414 7.73487 13.4573 5.025C28.2447 -0.862571 38.9587 7.47815 42.4673 12.3845C49.0395 20.942 47.6018 30.612 46.0615 34.3773C40.4477 49.6439 27.0638 51.2926 21.0735 50.2087C9.41326 48.0987 10.8616 35.8035 13.4573 31.5533C18.248 23.7092 26.0148 25.2207 27.9195 27.8736C29.8657 31.9244 33.2252 32.0667 34.9367 31.5533C38.8389 30.1156 39.1299 26.7325 38.7876 25.2207C37.4868 17.964 29.0035 15.3511 24.9244 14.9517Z" fill="#212833" />
+                <path d="M70.7458 38.5563C61.6218 38.5563 55.669 32.7148 55.669 24.2028C55.669 15.5796 61.6218 9.79368 70.7458 9.79368C79.0352 9.79368 85.0993 14.4669 85.0993 21.3655V21.9218H79.1465V21.588C79.1465 17.3042 76.031 15.1902 70.6345 15.1902C64.4035 15.1902 61.6218 18.1387 61.6218 24.2028C61.6218 30.1556 64.4035 33.1599 70.6345 33.1599C76.031 33.1599 79.1465 31.0458 79.1465 26.762V26.3725H85.0993V26.9845C85.0993 33.8831 79.0352 38.5563 70.7458 38.5563ZM95.551 38H89.5426V0.725381H95.551V38ZM115.246 38.5563C106.066 38.5563 99.8909 32.7148 99.8909 24.2028C99.8909 15.5796 106.066 9.79368 115.246 9.79368C124.481 9.79368 130.656 15.5796 130.656 24.2028C130.656 32.7148 124.481 38.5563 115.246 38.5563ZM115.246 33.2155C121.978 33.2155 124.759 30.0444 124.759 24.2028C124.759 18.3056 121.978 15.0789 115.246 15.0789C108.57 15.0789 105.788 18.3056 105.788 24.2028C105.788 30.0444 108.57 33.2155 115.246 33.2155ZM146.533 38.5563C138.744 38.5563 134.961 33.3824 134.961 26.9845V10.35H140.914V25.3711C140.914 30.5451 143.306 33.1599 149.148 33.1599C155.267 33.1599 158.105 30.0444 158.105 24.0359V10.35H164.057V38H158.55V29.4324H158.216C157.326 34.1056 153.654 38.5563 146.533 38.5563ZM181.7 38.5563C172.965 38.5563 168.125 32.7148 168.125 24.2028C168.125 15.5796 172.91 9.79368 181.31 9.79368C187.875 9.79368 191.603 13.1873 192.715 17.8606H193.049V0.725381H199.058V38H193.55V30.0444H193.16C191.992 35.5521 187.931 38.5563 181.7 38.5563ZM174.189 24.2028C174.189 30.8232 177.583 33.0486 183.536 33.0486C189.433 33.0486 193.049 30.2669 193.049 24.481V24.0359C193.049 18.1387 189.6 15.2458 183.425 15.2458C177.639 15.2458 174.189 17.5268 174.189 24.2028ZM55.824 51H54.6121V42.7982H55.9342V46.5686H56.0076C56.2524 45.5403 57.0604 44.7935 58.5171 44.7935C60.3901 44.7935 61.4184 46.0667 61.4184 47.9641C61.4184 49.8371 60.3779 51.1224 58.4437 51.1224C57.0604 51.1224 56.1668 50.4614 55.9097 49.2495H55.824V51ZM55.9342 48.0253C55.9342 49.2984 56.7176 49.9105 58.0275 49.9105C59.3618 49.9105 60.0963 49.4208 60.0963 47.9641C60.0963 46.4951 59.3496 45.9932 58.052 45.9932C56.6809 45.9932 55.9342 46.6298 55.9342 47.9274V48.0253ZM65.1136 51.1224C63.3998 51.1224 62.5674 49.984 62.5674 48.5762V44.9159H63.8772V48.2212C63.8772 49.3596 64.4036 49.935 65.689 49.935C67.0355 49.935 67.6599 49.2495 67.6599 47.9274V44.9159H68.9697V51H67.7578V49.1148H67.6843C67.4885 50.1431 66.6805 51.1224 65.1136 51.1224ZM73.2924 51.1224C71.3338 51.1224 70.2198 50.3512 70.2198 48.9434V48.9067H71.5419V49.0046C71.5419 49.8003 72.0193 50.0574 73.2924 50.0574C74.4798 50.0574 74.8348 49.8126 74.8348 49.2739C74.8348 48.772 74.541 48.6129 73.6719 48.4905L72.007 48.2701C70.8563 48.1232 70.1586 47.6336 70.1586 46.6175C70.1586 45.5525 71.1256 44.7935 72.9986 44.7935C74.8593 44.7935 75.9855 45.5403 75.9855 46.9848V47.0215H74.6757V46.948C74.6757 46.2258 74.3085 45.8463 72.9619 45.8463C71.8479 45.8463 71.4562 46.0911 71.4562 46.6665C71.4562 47.1439 71.701 47.3153 72.6191 47.4377L74.0269 47.6336C75.4714 47.8172 76.1324 48.3069 76.1324 49.3107C76.1324 50.4491 75.0062 51.1224 73.2924 51.1224ZM78.6532 44.2059H77.3312V42.7982H78.6532V44.2059ZM78.6532 51H77.3312V44.9159H78.6532V51ZM81.4444 51H80.1223V44.9159H81.3342V46.8011H81.4199C81.6036 45.7729 82.4115 44.7935 83.9539 44.7935C85.6433 44.7935 86.4757 45.932 86.4757 47.3398V51H85.1536V47.6948C85.1536 46.5563 84.6395 45.981 83.3786 45.981C82.0443 45.981 81.4444 46.6665 81.4444 47.9886V51ZM90.959 51.1224C88.9636 51.1224 87.6538 49.9962 87.6538 47.9641C87.6538 46.0667 88.9514 44.7935 90.9345 44.7935C92.8197 44.7935 94.1051 45.8341 94.1051 47.6825C94.1051 47.9029 94.0928 48.0743 94.0561 48.2579H88.8902C88.9391 49.4331 89.5145 50.0574 90.9222 50.0574C92.1954 50.0574 92.7218 49.6412 92.7218 48.9189V48.821H94.0438V48.9312C94.0438 50.2288 92.7707 51.1224 90.959 51.1224ZM90.91 45.8341C89.5634 45.8341 88.9758 46.4339 88.9024 47.5234H92.8564V47.4989C92.8564 46.3727 92.2076 45.8341 90.91 45.8341ZM98.2169 51.1224C96.2582 51.1224 95.1442 50.3512 95.1442 48.9434V48.9067H96.4663V49.0046C96.4663 49.8003 96.9438 50.0574 98.2169 50.0574C99.4043 50.0574 99.7593 49.8126 99.7593 49.2739C99.7593 48.772 99.4655 48.6129 98.5964 48.4905L96.9315 48.2701C95.7808 48.1232 95.083 47.6336 95.083 46.6175C95.083 45.5525 96.0501 44.7935 97.9231 44.7935C99.7838 44.7935 100.91 45.5403 100.91 46.9848V47.0215H99.6002V46.948C99.6002 46.2258 99.2329 45.8463 97.8864 45.8463C96.7724 45.8463 96.3806 46.0911 96.3806 46.6665C96.3806 47.1439 96.6255 47.3153 97.5436 47.4377L98.9514 47.6336C100.396 47.8172 101.057 48.3069 101.057 49.3107C101.057 50.4491 99.9307 51.1224 98.2169 51.1224ZM105.132 51.1224C103.174 51.1224 102.06 50.3512 102.06 48.9434V48.9067H103.382V49.0046C103.382 49.8003 103.859 50.0574 105.132 50.0574C106.32 50.0574 106.675 49.8126 106.675 49.2739C106.675 48.772 106.381 48.6129 105.512 48.4905L103.847 48.2701C102.696 48.1232 101.999 47.6336 101.999 46.6175C101.999 45.5525 102.966 44.7935 104.839 44.7935C106.699 44.7935 107.826 45.5403 107.826 46.9848V47.0215H106.516V46.948C106.516 46.2258 106.148 45.8463 104.802 45.8463C103.688 45.8463 103.296 46.0911 103.296 46.6665C103.296 47.1439 103.541 47.3153 104.459 47.4377L105.867 47.6336C107.311 47.8172 107.972 48.3069 107.972 49.3107C107.972 50.4491 106.846 51.1224 105.132 51.1224ZM114.385 51.1224C112.426 51.1224 111.312 50.3512 111.312 48.9434V48.9067H112.634V49.0046C112.634 49.8003 113.112 50.0574 114.385 50.0574C115.572 50.0574 115.927 49.8126 115.927 49.2739C115.927 48.772 115.633 48.6129 114.764 48.4905L113.099 48.2701C111.949 48.1232 111.251 47.6336 111.251 46.6175C111.251 45.5525 112.218 44.7935 114.091 44.7935C115.952 44.7935 117.078 45.5403 117.078 46.9848V47.0215H115.768V46.948C115.768 46.2258 115.401 45.8463 114.054 45.8463C112.94 45.8463 112.549 46.0911 112.549 46.6665C112.549 47.1439 112.793 47.3153 113.712 47.4377L115.119 47.6336C116.564 47.8172 117.225 48.3069 117.225 49.3107C117.225 50.4491 116.099 51.1224 114.385 51.1224ZM121.484 51.1224C119.489 51.1224 118.179 49.9962 118.179 47.9641C118.179 46.0667 119.476 44.7935 121.459 44.7935C123.345 44.7935 124.63 45.8341 124.63 47.6825C124.63 47.9029 124.618 48.0743 124.581 48.2579H119.415C119.464 49.4331 120.039 50.0574 121.447 50.0574C122.72 50.0574 123.247 49.6412 123.247 48.9189V48.821H124.569V48.9312C124.569 50.2288 123.296 51.1224 121.484 51.1224ZM121.435 45.8341C120.088 45.8341 119.501 46.4339 119.427 47.5234H123.381V47.4989C123.381 46.3727 122.733 45.8341 121.435 45.8341ZM129.856 51H128.46C127.15 51 126.343 50.4246 126.343 48.9434V46.0177H125.314V44.9159H126.343V43.5816H127.652V44.9159H129.856V46.0177H127.652V48.87C127.652 49.6167 127.995 49.8126 128.754 49.8126H129.856V51ZM133.462 51.1224C131.748 51.1224 130.915 49.984 130.915 48.5762V44.9159H132.225V48.2212C132.225 49.3596 132.752 49.935 134.037 49.935C135.384 49.935 136.008 49.2495 136.008 47.9274V44.9159H137.318V51H136.106V49.1148H136.032C135.837 50.1431 135.029 51.1224 133.462 51.1224ZM140.086 53.0811H138.764V44.9159H139.976V46.6053H140.086C140.331 45.4791 141.188 44.7935 142.62 44.7935C144.505 44.7935 145.57 46.0789 145.57 47.9641C145.57 49.8493 144.529 51.1224 142.632 51.1224C141.261 51.1224 140.38 50.4002 140.135 49.2862H140.086V53.0811ZM140.086 48.062C140.086 49.3107 140.881 49.9227 142.179 49.9227C143.489 49.9227 144.248 49.4208 144.248 47.9641C144.248 46.4951 143.477 46.0054 142.204 46.0054C140.845 46.0054 140.086 46.642 140.086 47.9519V48.062ZM151.945 51.1224C149.986 51.1224 148.872 50.3512 148.872 48.9434V48.9067H150.194V49.0046C150.194 49.8003 150.672 50.0574 151.945 50.0574C153.132 50.0574 153.487 49.8126 153.487 49.2739C153.487 48.772 153.194 48.6129 152.324 48.4905L150.66 48.2701C149.509 48.1232 148.811 47.6336 148.811 46.6175C148.811 45.5525 149.778 44.7935 151.651 44.7935C153.512 44.7935 154.638 45.5403 154.638 46.9848V47.0215H153.328V46.948C153.328 46.2258 152.961 45.8463 151.614 45.8463C150.5 45.8463 150.109 46.0911 150.109 46.6665C150.109 47.1439 150.353 47.3153 151.272 47.4377L152.679 47.6336C154.124 47.8172 154.785 48.3069 154.785 49.3107C154.785 50.4491 153.659 51.1224 151.945 51.1224ZM159.044 51.1224C157.049 51.1224 155.739 49.9962 155.739 47.9641C155.739 46.0667 157.036 44.7935 159.02 44.7935C160.905 44.7935 162.19 45.8341 162.19 47.6825C162.19 47.9029 162.178 48.0743 162.141 48.2579H156.975C157.024 49.4331 157.6 50.0574 159.007 50.0574C160.28 50.0574 160.807 49.6412 160.807 48.9189V48.821H162.129V48.9312C162.129 50.2288 160.856 51.1224 159.044 51.1224ZM158.995 45.8341C157.648 45.8341 157.061 46.4339 156.987 47.5234H160.941V47.4989C160.941 46.3727 160.293 45.8341 158.995 45.8341ZM164.747 51H163.425V44.9159H164.637V46.5563H164.723C164.906 45.577 165.567 44.7935 166.816 44.7935C168.199 44.7935 168.799 45.7851 168.799 46.9358V47.7315H167.489V47.1929C167.489 46.3237 167.122 45.9198 166.216 45.9198C165.176 45.9198 164.747 46.4951 164.747 47.5846V51ZM173.779 51H172.164L169.324 44.9159H170.78L172.947 49.7146H173.045L175.212 44.9159H176.644L173.779 51ZM178.889 44.2059H177.567V42.7982H178.889V44.2059ZM178.889 51H177.567V44.9159H178.889V51ZM183.431 51.1224C181.423 51.1224 180.113 49.8371 180.113 47.9641C180.113 46.0667 181.423 44.7935 183.431 44.7935C185.255 44.7935 186.589 45.8218 186.589 47.3398V47.4622H185.279V47.3887C185.279 46.4461 184.594 45.981 183.406 45.981C182.035 45.981 181.423 46.6298 181.423 47.9641C181.423 49.2739 182.035 49.935 183.406 49.935C184.594 49.935 185.279 49.4698 185.279 48.5272V48.4415H186.589V48.5762C186.589 50.0941 185.255 51.1224 183.431 51.1224ZM190.872 51.1224C188.877 51.1224 187.567 49.9962 187.567 47.9641C187.567 46.0667 188.864 44.7935 190.848 44.7935C192.733 44.7935 194.018 45.8341 194.018 47.6825C194.018 47.9029 194.006 48.0743 193.969 48.2579H188.803C188.852 49.4331 189.428 50.0574 190.835 50.0574C192.108 50.0574 192.635 49.6412 192.635 48.9189V48.821H193.957V48.9312C193.957 50.2288 192.684 51.1224 190.872 51.1224ZM190.823 45.8341C189.477 45.8341 188.889 46.4339 188.815 47.5234H192.769V47.4989C192.769 46.3727 192.121 45.8341 190.823 45.8341ZM198.13 51.1224C196.171 51.1224 195.057 50.3512 195.057 48.9434V48.9067H196.379V49.0046C196.379 49.8003 196.857 50.0574 198.13 50.0574C199.317 50.0574 199.672 49.8126 199.672 49.2739C199.672 48.772 199.379 48.6129 198.509 48.4905L196.845 48.2701C195.694 48.1232 194.996 47.6336 194.996 46.6175C194.996 45.5525 195.963 44.7935 197.836 44.7935C199.697 44.7935 200.823 45.5403 200.823 46.9848V47.0215H199.513V46.948C199.513 46.2258 199.146 45.8463 197.799 45.8463C196.685 45.8463 196.294 46.0911 196.294 46.6665C196.294 47.1439 196.539 47.3153 197.457 47.4377L198.864 47.6336C200.309 47.8172 200.97 48.3069 200.97 49.3107C200.97 50.4491 199.844 51.1224 198.13 51.1224Z" fill="#212833" />
+              </svg>
+              </Link>
             </div>
-            <div className="col-md-10">
-              <div className={(width < 500) ? menu ? "row flex justify-between items-center absolute sm:px-0 px-6 bg-[#fff] w-100 left-0 top-[80px] pt-10 pb-28 " : "hidden " : "row flex justify-between items-center"}>
-                <div className="col-md-9">
-                  <div className="text-start items-center sm:flex justify-center gap-[80px]">
-                    <Link href="#" className=" no-underline block ">
-                      <span className="font-[cd-m] font-[500] text-[#212833] text-end text-[13px]  ">
-                        About
-                      </span>
-                    </Link>
-                    <span className="block  menulist  font-[cd-m] font-[500] text-[#212833]  text-[13px] ">
-                      Incorporation
-                      <div className="menu-item   relative sm:absolute py-[12px]  sm:top-[60px]">
-
-                        <ul className="rounded-lg max-w-md  bg-[#fff] border-1 border-[#A2A2A2] px-4 py-3 z-10">
-                          <li className="pt-[5px]">
-                            <Link
-                              href="/incorporation/forLocals"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >For Locals
-                            </Link>
-                          </li>
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="/incorporation/incorporation(Foreigners)"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >For Foreigners
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
+          </div>
+          <div className="col-md-6 flex justify-center items-center">
+            <nav className="hidden md:flex space-x-6 gap-4 text-black font-medium">
+              <a href="/about" className="hover:text-gray-900 text-black text-lg no-underline" >About</a>
+              <div className="relative flex space-x-8">
+                <div
+                  className="relative"
+                  onMouseEnter={() => handleMouseEnter("products")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button className="flex items-center text-lg hover:text-gray-900 group font-[cd-r]">
+                  Incorporation
+                    <span className="ml-1 text-sm icon icon-tabler icons-tabler-filled icon-tabler-caret-down transform transition-transform duration-300 group-hover:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="icon icon-tabler icons-tabler-filled icon-tabler-caret-up"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" /></svg>
                     </span>
-                    <span className="block  menulist  font-[cd-m] font-[500] text-[#212833]  text-[13px]  ">
-                      Accounting
+                  </button>
 
-
-                      <div className="menu-item  relative sm:absolute py-[12px]  sm:top-[60px]">
-
-                        <ul className="rounded-lg max-w-md  bg-[#fff] border-1 border-[#A2A2A2] px-4 py-3 z-10">
-                          <h2 className="font-[cd-m] font-[500] text-[#A2A2A2] text-[13px]"> GET STARTED</h2>
-                          <li className="pt-[5px]">
-                            <Link
-                              href="/accounting/accounting-services"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            > Accounting Services
-                            </Link>
+                  {openMenu === "products" && (
+                    <div className="absolute left-[-2] top-[20px] py-1 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
+                      <ul className="pl-5 py-0 space-y-2 mt-3">
+              
+                        <Link  href="/incorporation/forLocals" className="no-underline" >
+                          <li className="mb-3 leading-[18px] text-[16px] font-[500] text-[#000] hover:text-[#0073fd] twxt-[cdm-r]">
+                          For Locals
                           </li>
-                          <li className="pt-[5px]">
-                            <Link
-                              href="/accounting/accounting-for-ecommerce"
-                              className="font-[cd-r] font-[500] no-underline   text-[#000]"
-                            >Accounting for Ecommerce
-                            </Link>
+                        </Link>
+                        <Link
+                          href="/incorporation/incorporation(Foreigners)"
+                          className=" no-underline"
+                        >
+                          <li className="mb-3 leading-[18px] text-[16px] font-[500] text-[#000] hover:text-[#0073fd]">
+                          incorporation(Foreigners)
                           </li>
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="#"
-                              className="font-[cd-r] font-[500] no-underline   text-[#000]"
-                            >Bookkeeping
-                            </Link>
-
-                          </li>
-                          <h2 className="font-[cd-m] font-[500] text-[#A2A2A2] text-[13px] pt-3">EXPLORE MENU</h2>
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="/accounting/invoicing"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >Invoicing
-                            </Link>
-                          </li>
-
-
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="/accounting/ecommerce-insights"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >Ecommerce Insights
-                            </Link>
-                          </li>
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="/accounting/reporting"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >Reporting
-                            </Link>
-                          </li>
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="/accounting/personal-expenses"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >Personal Expenses
-                            </Link>
-                          </li>
-
-                          <li className="pt-[5pxx]">
-                            <Link
-                              href="/accounting/purchases"
-                              className="font-[cd-r] font-[500] no-underline  text-[#000]"
-                            >Purchases
-                            </Link>
-                          </li>
-
-
-
-                        </ul>
-                      </div>
-                    </span>
-
-
-
-                    <Link href="/secretary" className=" no-underline block z-10 menulist ff-type font-[100] cursor-pointer  text-[#000] text-start text-[13px] ">
-                      <span className="block   font-[cd-m] font-[500] text-[#212833]  text-[13px]  ">
-                        Secretary
-
-                      </span>
-                    </Link>
-
-
-                  </div>
+                        </Link>
+                    
+                      </ul>
+                    </div>
+                  )}
                 </div>
 
-                <div className="col-md-3 ">
-                  <div className="sm:text-end align-items-center sm:flex sm:justify-end">
-                    <Link href="#" className=" no-underline block  header-text-para ">
-                      <span className="block  menulist  font-[cd-m] font-[500] text-[#212833]  text-[13px]  header-text-para  align-items-center">
-                        <div className="flex align-items-center">
-                          <svg className="mr-4" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25.2373 16.5176C25.5795 15.3622 25.7647 14.1424 25.7647 12.8824C25.7647 10.475 25.1005 8.22055 23.9451 6.29222V6.2882C23.941 6.28015 23.933 6.27612 23.933 6.26807C21.6786 2.51608 17.5683 0 12.8824 0C6.31235 0 0.881636 4.9436 0.100643 11.3043V11.3123C0.0345394 11.8331 0.000926614 12.3574 0 12.8824C0 19.9837 5.78096 25.7647 12.8824 25.7647C18.6875 25.7647 23.6069 21.904 25.2132 16.6142C25.2253 16.582 25.2333 16.5498 25.2373 16.5176ZM0.780993 12.8824C0.780993 12.5643 0.797096 12.2543 0.82125 11.9403C2.10546 12.5321 3.87276 13.0957 6.09094 13.615C6.22379 13.6472 6.36469 13.6714 6.49754 13.7036C6.54585 15.2616 6.72298 16.735 7.0088 18.0836C6.99673 18.0796 6.98062 18.0796 6.96855 18.0756C4.77855 17.6287 2.79789 16.9524 1.2198 16.119C0.937996 15.0885 0.780993 14.0015 0.780993 12.8824ZM2.43557 6.78739C3.61108 7.18996 5.57162 7.72941 6.94037 8.02732C6.64649 9.52086 6.48546 11.1553 6.48546 12.8824V12.9025L6.26807 12.8542C3.94925 12.3147 2.15779 11.731 0.913842 11.1151C1.13928 9.5571 1.66665 8.09575 2.43557 6.78739ZM24.8227 10.9299C23.4217 11.8115 21.4572 12.5885 19.5127 13.0313C19.4363 13.0474 19.3517 13.0595 19.2752 13.0756C19.2752 13.0112 19.2792 12.9468 19.2792 12.8824C19.2792 11.26 19.1383 9.71813 18.8767 8.30107C18.8968 8.29704 18.9129 8.29704 18.933 8.29301C20.4105 8.03537 22.375 7.32281 23.4097 6.92024C24.1021 8.14004 24.5892 9.49268 24.8227 10.9299ZM18.4983 12.8824C18.4983 12.9951 18.4942 13.1038 18.4942 13.2165C16.8638 13.4983 15.1166 13.6352 13.2729 13.6311V8.71572C14.8818 8.74205 16.4902 8.64245 18.0836 8.41781C18.3493 9.80669 18.4983 11.3163 18.4983 12.8824ZM7.26645 12.8824C7.26645 11.2278 7.43151 9.63358 7.72539 8.18029C9.27529 8.46612 10.8735 8.6352 12.4919 8.69156V13.6271C10.7326 13.5788 8.95323 13.3896 7.26645 13.0635V12.8824ZM13.2729 7.93472V0.813199C15.2938 1.12721 17.057 3.86471 17.9266 7.6489C16.4411 7.85824 14.8872 7.95485 13.2729 7.93472ZM12.4919 0.813199V7.90654C10.9339 7.85018 9.39204 7.68513 7.89447 7.4154C8.78013 3.75601 10.5152 1.12318 12.4919 0.813199ZM7.28658 13.8606C8.97336 14.1746 10.7407 14.3598 12.4919 14.4081V18.6995C10.9138 18.6553 9.36386 18.5023 7.87031 18.2406C7.55228 16.892 7.34697 15.4105 7.28658 13.8606ZM12.4919 19.4765V24.9475C10.6481 24.6576 9.01362 22.3509 8.08368 19.0659C9.51684 19.3034 10.9903 19.4363 12.4919 19.4765ZM13.2729 24.9515V19.4966H13.4299C14.8831 19.4966 16.2881 19.404 17.6327 19.2229C16.6987 22.4233 15.0885 24.6657 13.2729 24.9515ZM13.2729 18.7076V14.4202H13.3896C15.173 14.4202 16.8719 14.2793 18.4701 14.0176C18.3976 15.5756 18.1842 17.053 17.8541 18.3936C16.4008 18.611 14.863 18.7156 13.2729 18.7076ZM19.2591 13.8727C19.4 13.8445 19.5449 13.8244 19.6818 13.7962C21.5739 13.3695 23.4861 12.6287 24.9314 11.7833C24.9636 12.1456 24.9837 12.512 24.9837 12.8864C24.9837 14.0418 24.8187 15.1609 24.5127 16.2197C23.0192 17.1295 21.0425 17.834 18.7801 18.2527L18.7156 18.2648C19.0135 16.9121 19.2028 15.4347 19.2591 13.8727ZM22.995 6.24392C21.9604 6.64246 20.1528 7.28658 18.8002 7.5241L18.7237 7.53618C18.0796 4.6296 16.9242 2.32285 15.4709 1.06279C18.5989 1.74717 21.2841 3.64732 22.995 6.24392ZM10.2978 1.06279C8.88882 2.28259 7.75759 4.48467 7.10542 7.26645C5.82926 6.98868 4.02574 6.49754 2.8623 6.10704C4.57324 3.57888 7.21814 1.73509 10.2978 1.06279ZM1.56199 17.1617C3.07566 17.8743 4.83491 18.4379 6.81154 18.8404C6.94037 18.8686 7.07322 18.8847 7.20204 18.9129C7.86629 21.4974 8.95323 23.5425 10.2938 24.7059C6.27612 23.8243 2.99917 20.9419 1.56199 17.1617ZM15.4669 24.7019C16.7752 23.5667 17.8461 21.586 18.5144 19.082C18.6472 19.0578 18.7881 19.0417 18.921 19.0176C20.9378 18.6472 22.681 18.0756 24.1343 17.3227C22.6689 21.0264 19.4282 23.8364 15.4669 24.7019Z" fill="#212833" />
+           
+                <div
+                  className="relative"
+                  onMouseEnter={() => handleMouseEnter("services")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button className="flex items-center text-lg hover:text-gray-900 group">
+                  Accounting
+                    <span className="ml-1 text-sm icon icon-tabler icons-tabler-filled icon-tabler-caret-down transform transition-transform duration-300 group-hover:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="icon icon-tabler icons-tabler-filled icon-tabler-caret-up"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" /></svg>
+                    </span>
+                  </button>
+
+                  {openMenu === "services" && (
+                    <div className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
+                      <ul className="pl-5 py-2 space-y-2 mt-3">
+                        <p className="font-[cd-m] text-[18px] text-[#9F9F9F]">GET STARTED</p>
+                        <Link href="/accounting/accounting-services" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                        Accounting Services 
+                        </li> </Link>
+                        <Link href="/accounting/accounting-for-ecommerce" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Accounting for Ecommerce
+                        </li>
+                        </Link>
+                        <Link href="/accounting/bookkeeping" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Bookkeeping
+                        </li>
+                        </Link>
+                        <p className="font-[cd-m] text-[18px] text-[#9F9F9F] pb-3">EXPLORE MENU</p>
+                        <Link href="/accounting/invoicing" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Invoicing
+                        </li>
+                        </Link>
+                        <Link href="/accounting/ecommerce-insights" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Ecommerce Insights
+                        </li>
+                        </Link>
+                        <Link href="/accounting/reporting" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Reporting
+                        </li>
+                        </Link>
+                        <Link href="/accounting/personal-expenses" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Personal Expenses
+                        </li>
+                        </Link>
+                        <Link href="/accounting/purchases" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Purchases
+                        </li>
+                        </Link>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+
+                {/* Dropdown 3 */}
+                {/* <div
+        className="relative"
+        onMouseEnter={() => handleMouseEnter("about")}
+        onMouseLeave={handleMouseLeave}
+      >
+        <button className="flex items-center text-lg hover:text-gray-900">
+          About Us
+          <span className="ml-1 text-sm">▼</span>
+        </button>
+        {openMenu === "about" && (
+          <div className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
+            <ul className="pl-5 py-2 space-y-2 mt-4">
+              <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Our Story <br />
+                <span className="text-[14px] font-[400] text-[#949494]">
+                  Learn more about us
+                </span>
+              </li>
+              <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                Contact Us
+                <br />
+                <span className="text-[14px] font-[400] text-[#949494]">
+                  Get in touch with our team
+                </span>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div> */}
+              </div>
+              <Link href="/secretary" className="no-underline" >
+                <span className="hover:text-gray-900 text-lg text-black no-underline"> Secretary
+                </span>
+              </Link>
+              <Link href="/pricing" className="no-underline" >
+                <span className="hover:text-gray-900 text-lg text-black no-underline"> Pricing
+                </span>
+              </Link>
+            </nav>
+          </div>
+          <div className="col-md-3 flex justify-end align-items-center">
+            <div className="hidden md:flex items-center space-x-4">
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("countryDropdown")}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="flex items-center text-gray-600 cursor-pointer">
+
+                  <svg className="shadow rounded-circle" width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M505 252.475C505 391.969 392 505 252.5 505C113 505 0 391.969 0 252.475C0 247.274 0.15 242.124 0.51 237.023H504.51C504.837 242.124 505 247.274 505 252.475Z" fill="#F2F2F2" />
+                    <path d="M505 252.475H0C0 247.274 0.15 242.124 0.51 237.023C8.43 104.75 118.27 0 252.51 0C386.75 0 496.57 104.75 504.55 237.023C504.85 242.124 505 247.274 505 252.475Z" fill="#EF2B2D" />
+                    <path d="M172.98 102.48L177.07 113.722L188.97 114.262L179.43 121.472L182.7 133.114L172.76 126.423L162.84 132.973L166.25 121.572L156.83 114.042L168.83 113.872L172.98 102.48Z" fill="white" />
+                    <path d="M253.47 102.48L257.56 113.722L269.46 114.262L259.92 121.472L263.2 133.114L253.25 126.423L243.33 132.973L246.75 121.572L237.32 114.042L249.33 113.872L253.47 102.48Z" fill="white" />
+                    <path d="M193.711 143.634L197.801 154.875L209.701 155.425L200.161 162.626L203.441 174.277L193.491 167.587L183.571 174.137L186.991 162.736L177.561 155.205L189.561 155.035L193.711 143.634Z" fill="white" />
+                    <path d="M239.189 143.634L243.269 154.875L255.179 155.425L245.629 162.626L248.909 174.277L238.959 167.587L229.049 174.137L232.459 162.736L223.039 155.205L235.039 155.035L239.189 143.634Z" fill="white" />
+                    <path d="M214.65 73.6177L218.74 84.8688L230.64 85.4088L221.1 92.6196L224.37 104.261L214.43 97.57L204.51 104.121L207.92 92.7196L198.5 85.1888L210.5 85.0188L214.65 73.6177Z" fill="white" />
+                    <path d="M189.859 198.15C179.411 201.845 168.23 202.979 157.253 201.459C146.276 199.939 135.824 195.807 126.773 189.411C117.723 183.016 110.338 174.542 105.239 164.702C100.14 154.862 97.4755 143.943 97.4688 132.86C97.462 121.777 100.113 110.854 105.2 101.008C110.287 91.1615 117.661 82.6791 126.704 76.2723C135.746 69.8656 146.194 65.7213 157.169 64.1874C168.144 62.6535 179.327 63.7747 189.779 67.4568C172.651 67.7668 156.329 74.7922 144.329 87.0199C132.329 99.2476 125.611 115.699 125.622 132.833C125.632 149.966 132.37 166.409 144.385 178.622C156.4 190.835 172.73 197.841 189.859 198.13V198.15Z" fill="white" />
+                    <path opacity="0.12" d="M393.219 72.8876C350.809 39.5048 297.934 22.2501 243.999 24.1928C120.329 28.3532 21.439 131.993 22.789 255.736C23.0098 277.969 26.4764 300.051 33.0791 321.282C34.4202 325.652 37.1596 329.461 40.876 332.123C44.5924 334.784 49.0801 336.151 53.649 336.014C304.779 327.483 381.699 151.865 399.989 95.2898C401.282 91.3111 401.327 87.0318 400.116 83.0271C398.906 79.0224 396.499 75.484 393.219 72.8876Z" fill="white" />
+                  </svg>
+
+
+                  <span className="ml-2 font-[400]">SK</span>
+                </div>
+                {openMenu === "countryDropdown" && (
+                  <ul className="absolute font-[400] pr-14 bg-white shadow-md rounded-md top-[20px] right-[-15px] mt-1 py-1">
+                    <li className="px-1 py-2 cursor-pointer">
+                      <Link href="/" className="no-underline hover:text-[#0073fd] text-[#000]">
+                        <span className="text-inherit flex gap-3  text-[16px] font-[400]">
+                          <svg width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M505 252.475C505 391.969 392 505 252.5 505C113 505 0 391.969 0 252.475C0 247.274 0.15 242.124 0.51 237.023H504.51C504.837 242.124 505 247.274 505 252.475Z" fill="#F2F2F2" />
+                            <path d="M505 252.475H0C0 247.274 0.15 242.124 0.51 237.023C8.43 104.75 118.27 0 252.51 0C386.75 0 496.57 104.75 504.55 237.023C504.85 242.124 505 247.274 505 252.475Z" fill="#EF2B2D" />
+                            <path d="M172.98 102.48L177.07 113.722L188.97 114.262L179.43 121.472L182.7 133.114L172.76 126.423L162.84 132.973L166.25 121.572L156.83 114.042L168.83 113.872L172.98 102.48Z" fill="white" />
+                            <path d="M253.47 102.48L257.56 113.722L269.46 114.262L259.92 121.472L263.2 133.114L253.25 126.423L243.33 132.973L246.75 121.572L237.32 114.042L249.33 113.872L253.47 102.48Z" fill="white" />
+                            <path d="M193.711 143.634L197.801 154.875L209.701 155.425L200.161 162.626L203.441 174.277L193.491 167.587L183.571 174.137L186.991 162.736L177.561 155.205L189.561 155.035L193.711 143.634Z" fill="white" />
+                            <path d="M239.189 143.634L243.269 154.875L255.179 155.425L245.629 162.626L248.909 174.277L238.959 167.587L229.049 174.137L232.459 162.736L223.039 155.205L235.039 155.035L239.189 143.634Z" fill="white" />
+                            <path d="M214.65 73.6177L218.74 84.8688L230.64 85.4088L221.1 92.6196L224.37 104.261L214.43 97.57L204.51 104.121L207.92 92.7196L198.5 85.1888L210.5 85.0188L214.65 73.6177Z" fill="white" />
+                            <path d="M189.859 198.15C179.411 201.845 168.23 202.979 157.253 201.459C146.276 199.939 135.824 195.807 126.773 189.411C117.723 183.016 110.338 174.542 105.239 164.702C100.14 154.862 97.4755 143.943 97.4688 132.86C97.462 121.777 100.113 110.854 105.2 101.008C110.287 91.1615 117.661 82.6791 126.704 76.2723C135.746 69.8656 146.194 65.7213 157.169 64.1874C168.144 62.6535 179.327 63.7747 189.779 67.4568C172.651 67.7668 156.329 74.7922 144.329 87.0199C132.329 99.2476 125.611 115.699 125.622 132.833C125.632 149.966 132.37 166.409 144.385 178.622C156.4 190.835 172.73 197.841 189.859 198.13V198.15Z" fill="white" />
+                            <path opacity="0.12" d="M393.219 72.8876C350.809 39.5048 297.934 22.2501 243.999 24.1928C120.329 28.3532 21.439 131.993 22.789 255.736C23.0098 277.969 26.4764 300.051 33.0791 321.282C34.4202 325.652 37.1596 329.461 40.876 332.123C44.5924 334.784 49.0801 336.151 53.649 336.014C304.779 327.483 381.699 151.865 399.989 95.2898C401.282 91.3111 401.327 87.0318 400.116 83.0271C398.906 79.0224 396.499 75.484 393.219 72.8876Z" fill="white" />
                           </svg>
 
-                          <span>SK</span>
-                        </div>
+                          Singapore</span>
+                      </Link>
+                    </li>
+                    <li className="px-1 py-2  cursor-pointer">
+                      <Link href="/hong-kong" className="no-underline hover:text-[#0073fd] text-[#000]">
+                        <span className="text-inherit block flex gap-3 ">
+                          <svg width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 252.5C0 113.048 113.048 0 252.5 0V0C391.952 0 505 113.048 505 252.5V252.5C505 391.952 391.952 505 252.5 505V505C113.048 505 0 391.952 0 252.5V252.5Z" fill="#D80027" />
+                            <path d="M270.754 201.363C265.672 222.505 256.64 218.474 252.207 236.911C226.1 230.635 210.02 204.38 216.297 178.269C222.572 152.162 248.829 136.082 274.937 142.358C266.072 179.235 275.3 182.454 270.754 201.363ZM203.003 217.029C221.541 228.397 214.913 235.741 231.079 245.654C217.04 268.545 187.104 275.723 164.212 261.685C141.32 247.647 134.141 217.708 148.18 194.817C180.512 214.644 186.422 206.862 203.003 217.029ZM196.967 286.306C213.507 272.188 218.443 280.759 232.867 268.448C250.301 288.873 247.875 319.563 227.451 336.997C207.025 354.431 176.335 352.004 158.903 331.581C187.749 306.961 182.174 298.933 196.967 286.306ZM260.989 313.455C252.671 293.363 262.348 291.314 255.1 273.794C279.912 263.526 308.352 275.315 318.623 300.128C328.891 324.94 317.1 353.38 292.287 363.649C277.782 328.606 268.427 331.427 260.989 313.455ZM306.592 260.956C284.913 262.657 285.955 252.819 267.052 254.302C264.952 227.532 284.954 204.127 311.725 202.025C338.496 199.93 361.901 219.931 364 246.701C326.19 249.666 325.979 259.437 306.592 260.956Z" fill="#F0F0F0" />
+                          </svg>
+                          Hon Kong</span>
+                      </Link>
+                    </li>
 
-                        <div className="menu-item relative sm:absolute py-[12px]  sm:top-[60px] top-[10px]">
 
-                          <ul className="rounded-lg max-w-md  bg-[#fff] border-1 border-[#A2A2A2] px-3 py-2 z-10">
-                            <li className="pt-[5px]">
-                              <Link
-                                href="/hong-kong"
-                                className="font-[cd-r] font-[500] no-underline sm:text-[14px] text-[#000]"
-                              >Hon-Kong
-                              </Link>
-                            </li>
-                            <li className="pt-[2px]">
-                              <Link
-                                href="/"
-                                className="font-[cd-r] font-[500] no-underline sm:text-[14px] text-[#000]"
-                              >Singapore
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </span>
-                  
-                    </Link>
-                    <Link href="#" className="block sm:pt-[0px] pt-[15px] sm:ml-5 no-underline align-items-center  header-text-para" ><button className="no-underline block z-10 sm:pt-[7px] pt-[15px] menulist ff-type font-[100] cursor-pointer  text-[#fff] text-start text-[13px] bg-[#000] px-5 py-2 rounded-[30px]" type="button">Log in</button></Link>
-                  </div>
-                </div>
+                  </ul>
+                )}
               </div>
+              <button className="px-4 py-1 bg-gray-800 font-[400] text-white w-[120px] rounded-[50px] hover:bg-gray-700">
+                Log In
+              </button>
             </div>
           </div>
         </div>
-      </header >
 
-    </div >
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden absolute right-[18px] text-gray-600 text-2xl"
+          aria-label="Toggle Menu"
+          onClick={toggleMenu}
+        >
+          ☰
+        </button>
+
+        {/* Mobile Half-Screen Menu */}
+        <div
+          className={`fixed top-0 left-0 min-h-[50%] w-full bg-white z-50 transform ${isMenuOpen ? "translate-y-0" : "-translate-y-full"
+            } transition-transform duration-300 ease-in-out overflow-y-auto`}
+          style={{ height: isMenuOpen ? 'auto' : '50%' }} // Allow height to grow with content
+        >
+          <div className="d-flex justify-between pb-5">
+          <Link  href="/"  className="absolute top-4 left-4 text-2xl text-gray-600">
+              <svg width="142" height="54" viewBox="0 0 202 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.9244 14.9517C8.42554 14.3356 2.07586 26.9608 0.963385 33.3504C-3.28114 17.1938 7.52414 7.73487 13.4573 5.025C28.2447 -0.862571 38.9587 7.47815 42.4673 12.3845C49.0395 20.942 47.6018 30.612 46.0615 34.3773C40.4477 49.6439 27.0638 51.2926 21.0735 50.2087C9.41326 48.0987 10.8616 35.8035 13.4573 31.5533C18.248 23.7092 26.0148 25.2207 27.9195 27.8736C29.8657 31.9244 33.2252 32.0667 34.9367 31.5533C38.8389 30.1156 39.1299 26.7325 38.7876 25.2207C37.4868 17.964 29.0035 15.3511 24.9244 14.9517Z" fill="#212833" />
+                <path d="M70.7458 38.5563C61.6218 38.5563 55.669 32.7148 55.669 24.2028C55.669 15.5796 61.6218 9.79368 70.7458 9.79368C79.0352 9.79368 85.0993 14.4669 85.0993 21.3655V21.9218H79.1465V21.588C79.1465 17.3042 76.031 15.1902 70.6345 15.1902C64.4035 15.1902 61.6218 18.1387 61.6218 24.2028C61.6218 30.1556 64.4035 33.1599 70.6345 33.1599C76.031 33.1599 79.1465 31.0458 79.1465 26.762V26.3725H85.0993V26.9845C85.0993 33.8831 79.0352 38.5563 70.7458 38.5563ZM95.551 38H89.5426V0.725381H95.551V38ZM115.246 38.5563C106.066 38.5563 99.8909 32.7148 99.8909 24.2028C99.8909 15.5796 106.066 9.79368 115.246 9.79368C124.481 9.79368 130.656 15.5796 130.656 24.2028C130.656 32.7148 124.481 38.5563 115.246 38.5563ZM115.246 33.2155C121.978 33.2155 124.759 30.0444 124.759 24.2028C124.759 18.3056 121.978 15.0789 115.246 15.0789C108.57 15.0789 105.788 18.3056 105.788 24.2028C105.788 30.0444 108.57 33.2155 115.246 33.2155ZM146.533 38.5563C138.744 38.5563 134.961 33.3824 134.961 26.9845V10.35H140.914V25.3711C140.914 30.5451 143.306 33.1599 149.148 33.1599C155.267 33.1599 158.105 30.0444 158.105 24.0359V10.35H164.057V38H158.55V29.4324H158.216C157.326 34.1056 153.654 38.5563 146.533 38.5563ZM181.7 38.5563C172.965 38.5563 168.125 32.7148 168.125 24.2028C168.125 15.5796 172.91 9.79368 181.31 9.79368C187.875 9.79368 191.603 13.1873 192.715 17.8606H193.049V0.725381H199.058V38H193.55V30.0444H193.16C191.992 35.5521 187.931 38.5563 181.7 38.5563ZM174.189 24.2028C174.189 30.8232 177.583 33.0486 183.536 33.0486C189.433 33.0486 193.049 30.2669 193.049 24.481V24.0359C193.049 18.1387 189.6 15.2458 183.425 15.2458C177.639 15.2458 174.189 17.5268 174.189 24.2028ZM55.824 51H54.6121V42.7982H55.9342V46.5686H56.0076C56.2524 45.5403 57.0604 44.7935 58.5171 44.7935C60.3901 44.7935 61.4184 46.0667 61.4184 47.9641C61.4184 49.8371 60.3779 51.1224 58.4437 51.1224C57.0604 51.1224 56.1668 50.4614 55.9097 49.2495H55.824V51ZM55.9342 48.0253C55.9342 49.2984 56.7176 49.9105 58.0275 49.9105C59.3618 49.9105 60.0963 49.4208 60.0963 47.9641C60.0963 46.4951 59.3496 45.9932 58.052 45.9932C56.6809 45.9932 55.9342 46.6298 55.9342 47.9274V48.0253ZM65.1136 51.1224C63.3998 51.1224 62.5674 49.984 62.5674 48.5762V44.9159H63.8772V48.2212C63.8772 49.3596 64.4036 49.935 65.689 49.935C67.0355 49.935 67.6599 49.2495 67.6599 47.9274V44.9159H68.9697V51H67.7578V49.1148H67.6843C67.4885 50.1431 66.6805 51.1224 65.1136 51.1224ZM73.2924 51.1224C71.3338 51.1224 70.2198 50.3512 70.2198 48.9434V48.9067H71.5419V49.0046C71.5419 49.8003 72.0193 50.0574 73.2924 50.0574C74.4798 50.0574 74.8348 49.8126 74.8348 49.2739C74.8348 48.772 74.541 48.6129 73.6719 48.4905L72.007 48.2701C70.8563 48.1232 70.1586 47.6336 70.1586 46.6175C70.1586 45.5525 71.1256 44.7935 72.9986 44.7935C74.8593 44.7935 75.9855 45.5403 75.9855 46.9848V47.0215H74.6757V46.948C74.6757 46.2258 74.3085 45.8463 72.9619 45.8463C71.8479 45.8463 71.4562 46.0911 71.4562 46.6665C71.4562 47.1439 71.701 47.3153 72.6191 47.4377L74.0269 47.6336C75.4714 47.8172 76.1324 48.3069 76.1324 49.3107C76.1324 50.4491 75.0062 51.1224 73.2924 51.1224ZM78.6532 44.2059H77.3312V42.7982H78.6532V44.2059ZM78.6532 51H77.3312V44.9159H78.6532V51ZM81.4444 51H80.1223V44.9159H81.3342V46.8011H81.4199C81.6036 45.7729 82.4115 44.7935 83.9539 44.7935C85.6433 44.7935 86.4757 45.932 86.4757 47.3398V51H85.1536V47.6948C85.1536 46.5563 84.6395 45.981 83.3786 45.981C82.0443 45.981 81.4444 46.6665 81.4444 47.9886V51ZM90.959 51.1224C88.9636 51.1224 87.6538 49.9962 87.6538 47.9641C87.6538 46.0667 88.9514 44.7935 90.9345 44.7935C92.8197 44.7935 94.1051 45.8341 94.1051 47.6825C94.1051 47.9029 94.0928 48.0743 94.0561 48.2579H88.8902C88.9391 49.4331 89.5145 50.0574 90.9222 50.0574C92.1954 50.0574 92.7218 49.6412 92.7218 48.9189V48.821H94.0438V48.9312C94.0438 50.2288 92.7707 51.1224 90.959 51.1224ZM90.91 45.8341C89.5634 45.8341 88.9758 46.4339 88.9024 47.5234H92.8564V47.4989C92.8564 46.3727 92.2076 45.8341 90.91 45.8341ZM98.2169 51.1224C96.2582 51.1224 95.1442 50.3512 95.1442 48.9434V48.9067H96.4663V49.0046C96.4663 49.8003 96.9438 50.0574 98.2169 50.0574C99.4043 50.0574 99.7593 49.8126 99.7593 49.2739C99.7593 48.772 99.4655 48.6129 98.5964 48.4905L96.9315 48.2701C95.7808 48.1232 95.083 47.6336 95.083 46.6175C95.083 45.5525 96.0501 44.7935 97.9231 44.7935C99.7838 44.7935 100.91 45.5403 100.91 46.9848V47.0215H99.6002V46.948C99.6002 46.2258 99.2329 45.8463 97.8864 45.8463C96.7724 45.8463 96.3806 46.0911 96.3806 46.6665C96.3806 47.1439 96.6255 47.3153 97.5436 47.4377L98.9514 47.6336C100.396 47.8172 101.057 48.3069 101.057 49.3107C101.057 50.4491 99.9307 51.1224 98.2169 51.1224ZM105.132 51.1224C103.174 51.1224 102.06 50.3512 102.06 48.9434V48.9067H103.382V49.0046C103.382 49.8003 103.859 50.0574 105.132 50.0574C106.32 50.0574 106.675 49.8126 106.675 49.2739C106.675 48.772 106.381 48.6129 105.512 48.4905L103.847 48.2701C102.696 48.1232 101.999 47.6336 101.999 46.6175C101.999 45.5525 102.966 44.7935 104.839 44.7935C106.699 44.7935 107.826 45.5403 107.826 46.9848V47.0215H106.516V46.948C106.516 46.2258 106.148 45.8463 104.802 45.8463C103.688 45.8463 103.296 46.0911 103.296 46.6665C103.296 47.1439 103.541 47.3153 104.459 47.4377L105.867 47.6336C107.311 47.8172 107.972 48.3069 107.972 49.3107C107.972 50.4491 106.846 51.1224 105.132 51.1224ZM114.385 51.1224C112.426 51.1224 111.312 50.3512 111.312 48.9434V48.9067H112.634V49.0046C112.634 49.8003 113.112 50.0574 114.385 50.0574C115.572 50.0574 115.927 49.8126 115.927 49.2739C115.927 48.772 115.633 48.6129 114.764 48.4905L113.099 48.2701C111.949 48.1232 111.251 47.6336 111.251 46.6175C111.251 45.5525 112.218 44.7935 114.091 44.7935C115.952 44.7935 117.078 45.5403 117.078 46.9848V47.0215H115.768V46.948C115.768 46.2258 115.401 45.8463 114.054 45.8463C112.94 45.8463 112.549 46.0911 112.549 46.6665C112.549 47.1439 112.793 47.3153 113.712 47.4377L115.119 47.6336C116.564 47.8172 117.225 48.3069 117.225 49.3107C117.225 50.4491 116.099 51.1224 114.385 51.1224ZM121.484 51.1224C119.489 51.1224 118.179 49.9962 118.179 47.9641C118.179 46.0667 119.476 44.7935 121.459 44.7935C123.345 44.7935 124.63 45.8341 124.63 47.6825C124.63 47.9029 124.618 48.0743 124.581 48.2579H119.415C119.464 49.4331 120.039 50.0574 121.447 50.0574C122.72 50.0574 123.247 49.6412 123.247 48.9189V48.821H124.569V48.9312C124.569 50.2288 123.296 51.1224 121.484 51.1224ZM121.435 45.8341C120.088 45.8341 119.501 46.4339 119.427 47.5234H123.381V47.4989C123.381 46.3727 122.733 45.8341 121.435 45.8341ZM129.856 51H128.46C127.15 51 126.343 50.4246 126.343 48.9434V46.0177H125.314V44.9159H126.343V43.5816H127.652V44.9159H129.856V46.0177H127.652V48.87C127.652 49.6167 127.995 49.8126 128.754 49.8126H129.856V51ZM133.462 51.1224C131.748 51.1224 130.915 49.984 130.915 48.5762V44.9159H132.225V48.2212C132.225 49.3596 132.752 49.935 134.037 49.935C135.384 49.935 136.008 49.2495 136.008 47.9274V44.9159H137.318V51H136.106V49.1148H136.032C135.837 50.1431 135.029 51.1224 133.462 51.1224ZM140.086 53.0811H138.764V44.9159H139.976V46.6053H140.086C140.331 45.4791 141.188 44.7935 142.62 44.7935C144.505 44.7935 145.57 46.0789 145.57 47.9641C145.57 49.8493 144.529 51.1224 142.632 51.1224C141.261 51.1224 140.38 50.4002 140.135 49.2862H140.086V53.0811ZM140.086 48.062C140.086 49.3107 140.881 49.9227 142.179 49.9227C143.489 49.9227 144.248 49.4208 144.248 47.9641C144.248 46.4951 143.477 46.0054 142.204 46.0054C140.845 46.0054 140.086 46.642 140.086 47.9519V48.062ZM151.945 51.1224C149.986 51.1224 148.872 50.3512 148.872 48.9434V48.9067H150.194V49.0046C150.194 49.8003 150.672 50.0574 151.945 50.0574C153.132 50.0574 153.487 49.8126 153.487 49.2739C153.487 48.772 153.194 48.6129 152.324 48.4905L150.66 48.2701C149.509 48.1232 148.811 47.6336 148.811 46.6175C148.811 45.5525 149.778 44.7935 151.651 44.7935C153.512 44.7935 154.638 45.5403 154.638 46.9848V47.0215H153.328V46.948C153.328 46.2258 152.961 45.8463 151.614 45.8463C150.5 45.8463 150.109 46.0911 150.109 46.6665C150.109 47.1439 150.353 47.3153 151.272 47.4377L152.679 47.6336C154.124 47.8172 154.785 48.3069 154.785 49.3107C154.785 50.4491 153.659 51.1224 151.945 51.1224ZM159.044 51.1224C157.049 51.1224 155.739 49.9962 155.739 47.9641C155.739 46.0667 157.036 44.7935 159.02 44.7935C160.905 44.7935 162.19 45.8341 162.19 47.6825C162.19 47.9029 162.178 48.0743 162.141 48.2579H156.975C157.024 49.4331 157.6 50.0574 159.007 50.0574C160.28 50.0574 160.807 49.6412 160.807 48.9189V48.821H162.129V48.9312C162.129 50.2288 160.856 51.1224 159.044 51.1224ZM158.995 45.8341C157.648 45.8341 157.061 46.4339 156.987 47.5234H160.941V47.4989C160.941 46.3727 160.293 45.8341 158.995 45.8341ZM164.747 51H163.425V44.9159H164.637V46.5563H164.723C164.906 45.577 165.567 44.7935 166.816 44.7935C168.199 44.7935 168.799 45.7851 168.799 46.9358V47.7315H167.489V47.1929C167.489 46.3237 167.122 45.9198 166.216 45.9198C165.176 45.9198 164.747 46.4951 164.747 47.5846V51ZM173.779 51H172.164L169.324 44.9159H170.78L172.947 49.7146H173.045L175.212 44.9159H176.644L173.779 51ZM178.889 44.2059H177.567V42.7982H178.889V44.2059ZM178.889 51H177.567V44.9159H178.889V51ZM183.431 51.1224C181.423 51.1224 180.113 49.8371 180.113 47.9641C180.113 46.0667 181.423 44.7935 183.431 44.7935C185.255 44.7935 186.589 45.8218 186.589 47.3398V47.4622H185.279V47.3887C185.279 46.4461 184.594 45.981 183.406 45.981C182.035 45.981 181.423 46.6298 181.423 47.9641C181.423 49.2739 182.035 49.935 183.406 49.935C184.594 49.935 185.279 49.4698 185.279 48.5272V48.4415H186.589V48.5762C186.589 50.0941 185.255 51.1224 183.431 51.1224ZM190.872 51.1224C188.877 51.1224 187.567 49.9962 187.567 47.9641C187.567 46.0667 188.864 44.7935 190.848 44.7935C192.733 44.7935 194.018 45.8341 194.018 47.6825C194.018 47.9029 194.006 48.0743 193.969 48.2579H188.803C188.852 49.4331 189.428 50.0574 190.835 50.0574C192.108 50.0574 192.635 49.6412 192.635 48.9189V48.821H193.957V48.9312C193.957 50.2288 192.684 51.1224 190.872 51.1224ZM190.823 45.8341C189.477 45.8341 188.889 46.4339 188.815 47.5234H192.769V47.4989C192.769 46.3727 192.121 45.8341 190.823 45.8341ZM198.13 51.1224C196.171 51.1224 195.057 50.3512 195.057 48.9434V48.9067H196.379V49.0046C196.379 49.8003 196.857 50.0574 198.13 50.0574C199.317 50.0574 199.672 49.8126 199.672 49.2739C199.672 48.772 199.379 48.6129 198.509 48.4905L196.845 48.2701C195.694 48.1232 194.996 47.6336 194.996 46.6175C194.996 45.5525 195.963 44.7935 197.836 44.7935C199.697 44.7935 200.823 45.5403 200.823 46.9848V47.0215H199.513V46.948C199.513 46.2258 199.146 45.8463 197.799 45.8463C196.685 45.8463 196.294 46.0911 196.294 46.6665C196.294 47.1439 196.539 47.3153 197.457 47.4377L198.864 47.6336C200.309 47.8172 200.97 48.3069 200.97 49.3107C200.97 50.4491 199.844 51.1224 198.13 51.1224Z" fill="#212833" />
+              </svg>
+              </Link>
+          <button
+            className="absolute top-4 right-4 text-2xl text-gray-600"
+            onClick={toggleMenu}
+          >
+            ✕
+          </button>
+          </div>
+         
+          <nav className="flex flex-col items-start justify-start pl-6 pt-12 space-y-4 text-gray-600 font-medium">
+            <a
+              href="/about"
+              className="hover:text-gray-900 text-lg text-black no-underline"
+            >
+              About
+            </a>
+
+          
+
+            <div className="relative flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              {/* Dropdown 1 */}
+              <div className="space-y-5">
+
+      <div className="relative">
+        <button
+          className="flex items-center text-lg text-black"
+          onClick={() => handleMenuClick("incorporation1")}
+        >
+          Incorporation 
+          <span className="ml-1 text-sm">▼</span>
+        </button>
+
+        {openMenu === "incorporation1" && (
+          <div
+            className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out z-10"
+            style={{
+              background: "white",
+              border: "1px solid #e5e5e5",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <ul className="pl-5 py-0 space-y-2 mt-4">
+              <Link href="/incorporation/forLocals" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                  For Locals
+                </li>
+              </Link>
+              <Link href="/incorporation/incorporation(Foreigners)" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                  For Foreigners
+                </li>
+              </Link>
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {/* Incorporation Dropdown 2 */}
+      <div className="relative">
+        <button
+          className="flex items-center text-lg text-black"
+          onClick={() => handleMenuClick("Accounting")}
+        >
+        Accounting
+          <span className="ml-1 text-sm">▼</span>
+        </button>
+
+        {openMenu === "Accounting" && (
+          <div
+            className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out z-10"
+            style={{
+              background: "white",
+              border: "1px solid #e5e5e5",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <ul className="pl-5 py-0 space-y-2 mt-4">
+              <Link href="/accounting/accounting-services" className="no-underline">
+              <p className="text-[#9F9F9F] text-[18px] font-[cd-m]">GET STARTED</p>
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Accounting Services
+                </li>
+              </Link>
+              <Link href="/accounting/accounting-for-ecommerce" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Accounting for Ecommerce
+                </li>
+              </Link>
+              <Link href="/accounting/bookkeeping" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Bookkeeping
+                </li>
+              </Link>
+              <p className="text-[#9F9F9F] text-[18px] font-[cd-m] pb-3">EXPLORE MENU</p>
+              <Link href="/accounting/invoicing" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Invoicing
+                </li>
+              </Link>
+              <Link href="/accounting/ecommerce-insights" className="no-underline">
+                        <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] text-black font-[500]">
+                        Ecommerce Insights
+                        </li>
+                        </Link>
+              <Link href="/accounting/reporting" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Reporting
+                </li>
+              </Link>
+              <Link href="/accounting/personal-expenses" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Personal Expenses
+                </li>
+              </Link>
+              <Link href="/accounting/purchases" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
+                Purchases
+                </li>
+              </Link>
+
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+
+            </div>
+            <Link href="/secretary" className="no-underline">
+              <span className="hover:text-gray-900 text-lg text-black no-underline">
+              Secretary
+              </span>
+            </Link>
+            <Link href="/pricing" className="no-underline">
+              <span className="hover:text-gray-900 text-lg text-black no-underline">
+              Pricing
+              </span>
+            </Link>
+
+            <div className="relative">
+        <button
+          className="flex items-center text-lg text-black"
+          onClick={() => handleMenuClick("incorporation3")}
+        >
+          <div className="d-flex items-center gap-3">
+          <svg className="shadow rounded-circle" width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M505 252.475C505 391.969 392 505 252.5 505C113 505 0 391.969 0 252.475C0 247.274 0.15 242.124 0.51 237.023H504.51C504.837 242.124 505 247.274 505 252.475Z" fill="#F2F2F2" />
+                            <path d="M505 252.475H0C0 247.274 0.15 242.124 0.51 237.023C8.43 104.75 118.27 0 252.51 0C386.75 0 496.57 104.75 504.55 237.023C504.85 242.124 505 247.274 505 252.475Z" fill="#EF2B2D" />
+                            <path d="M172.98 102.48L177.07 113.722L188.97 114.262L179.43 121.472L182.7 133.114L172.76 126.423L162.84 132.973L166.25 121.572L156.83 114.042L168.83 113.872L172.98 102.48Z" fill="white" />
+                            <path d="M253.47 102.48L257.56 113.722L269.46 114.262L259.92 121.472L263.2 133.114L253.25 126.423L243.33 132.973L246.75 121.572L237.32 114.042L249.33 113.872L253.47 102.48Z" fill="white" />
+                            <path d="M193.711 143.634L197.801 154.875L209.701 155.425L200.161 162.626L203.441 174.277L193.491 167.587L183.571 174.137L186.991 162.736L177.561 155.205L189.561 155.035L193.711 143.634Z" fill="white" />
+                            <path d="M239.189 143.634L243.269 154.875L255.179 155.425L245.629 162.626L248.909 174.277L238.959 167.587L229.049 174.137L232.459 162.736L223.039 155.205L235.039 155.035L239.189 143.634Z" fill="white" />
+                            <path d="M214.65 73.6177L218.74 84.8688L230.64 85.4088L221.1 92.6196L224.37 104.261L214.43 97.57L204.51 104.121L207.92 92.7196L198.5 85.1888L210.5 85.0188L214.65 73.6177Z" fill="white" />
+                            <path d="M189.859 198.15C179.411 201.845 168.23 202.979 157.253 201.459C146.276 199.939 135.824 195.807 126.773 189.411C117.723 183.016 110.338 174.542 105.239 164.702C100.14 154.862 97.4755 143.943 97.4688 132.86C97.462 121.777 100.113 110.854 105.2 101.008C110.287 91.1615 117.661 82.6791 126.704 76.2723C135.746 69.8656 146.194 65.7213 157.169 64.1874C168.144 62.6535 179.327 63.7747 189.779 67.4568C172.651 67.7668 156.329 74.7922 144.329 87.0199C132.329 99.2476 125.611 115.699 125.622 132.833C125.632 149.966 132.37 166.409 144.385 178.622C156.4 190.835 172.73 197.841 189.859 198.13V198.15Z" fill="white" />
+                            <path opacity="0.12" d="M393.219 72.8876C350.809 39.5048 297.934 22.2501 243.999 24.1928C120.329 28.3532 21.439 131.993 22.789 255.736C23.0098 277.969 26.4764 300.051 33.0791 321.282C34.4202 325.652 37.1596 329.461 40.876 332.123C44.5924 334.784 49.0801 336.151 53.649 336.014C304.779 327.483 381.699 151.865 399.989 95.2898C401.282 91.3111 401.327 87.0318 400.116 83.0271C398.906 79.0224 396.499 75.484 393.219 72.8876Z" fill="white" />
+                          </svg>
+                          SK
+          </div>
+       
+        </button>
+
+        {openMenu === "incorporation3" && (
+          <div
+            className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out z-10"
+            style={{
+              background: "white",
+              border: "1px solid #e5e5e5",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <ul className="pl-5 py-2 space-y-2 mt-4">
+              <Link href="/" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[18px] font-[500] text-black">
+                <div className="d-flex items-center gap-3">
+             <svg className="shadow rounded-circle" width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M505 252.475C505 391.969 392 505 252.5 505C113 505 0 391.969 0 252.475C0 247.274 0.15 242.124 0.51 237.023H504.51C504.837 242.124 505 247.274 505 252.475Z" fill="#F2F2F2" />
+                            <path d="M505 252.475H0C0 247.274 0.15 242.124 0.51 237.023C8.43 104.75 118.27 0 252.51 0C386.75 0 496.57 104.75 504.55 237.023C504.85 242.124 505 247.274 505 252.475Z" fill="#EF2B2D" />
+                            <path d="M172.98 102.48L177.07 113.722L188.97 114.262L179.43 121.472L182.7 133.114L172.76 126.423L162.84 132.973L166.25 121.572L156.83 114.042L168.83 113.872L172.98 102.48Z" fill="white" />
+                            <path d="M253.47 102.48L257.56 113.722L269.46 114.262L259.92 121.472L263.2 133.114L253.25 126.423L243.33 132.973L246.75 121.572L237.32 114.042L249.33 113.872L253.47 102.48Z" fill="white" />
+                            <path d="M193.711 143.634L197.801 154.875L209.701 155.425L200.161 162.626L203.441 174.277L193.491 167.587L183.571 174.137L186.991 162.736L177.561 155.205L189.561 155.035L193.711 143.634Z" fill="white" />
+                            <path d="M239.189 143.634L243.269 154.875L255.179 155.425L245.629 162.626L248.909 174.277L238.959 167.587L229.049 174.137L232.459 162.736L223.039 155.205L235.039 155.035L239.189 143.634Z" fill="white" />
+                            <path d="M214.65 73.6177L218.74 84.8688L230.64 85.4088L221.1 92.6196L224.37 104.261L214.43 97.57L204.51 104.121L207.92 92.7196L198.5 85.1888L210.5 85.0188L214.65 73.6177Z" fill="white" />
+                            <path d="M189.859 198.15C179.411 201.845 168.23 202.979 157.253 201.459C146.276 199.939 135.824 195.807 126.773 189.411C117.723 183.016 110.338 174.542 105.239 164.702C100.14 154.862 97.4755 143.943 97.4688 132.86C97.462 121.777 100.113 110.854 105.2 101.008C110.287 91.1615 117.661 82.6791 126.704 76.2723C135.746 69.8656 146.194 65.7213 157.169 64.1874C168.144 62.6535 179.327 63.7747 189.779 67.4568C172.651 67.7668 156.329 74.7922 144.329 87.0199C132.329 99.2476 125.611 115.699 125.622 132.833C125.632 149.966 132.37 166.409 144.385 178.622C156.4 190.835 172.73 197.841 189.859 198.13V198.15Z" fill="white" />
+                            <path opacity="0.12" d="M393.219 72.8876C350.809 39.5048 297.934 22.2501 243.999 24.1928C120.329 28.3532 21.439 131.993 22.789 255.736C23.0098 277.969 26.4764 300.051 33.0791 321.282C34.4202 325.652 37.1596 329.461 40.876 332.123C44.5924 334.784 49.0801 336.151 53.649 336.014C304.779 327.483 381.699 151.865 399.989 95.2898C401.282 91.3111 401.327 87.0318 400.116 83.0271C398.906 79.0224 396.499 75.484 393.219 72.8876Z" fill="white" />
+                          </svg>  Singapore
+              </div>
+                </li>
+              </Link>
+              <Link href="/hong-kong" className="no-underline">
+                <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[18px] font-[500] text-black">
+                <div className="d-flex items-center gap-3">
+                <svg width="30" height="30" viewBox="0 0 505 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 252.5C0 113.048 113.048 0 252.5 0V0C391.952 0 505 113.048 505 252.5V252.5C505 391.952 391.952 505 252.5 505V505C113.048 505 0 391.952 0 252.5V252.5Z" fill="#D80027" />
+                            <path d="M270.754 201.363C265.672 222.505 256.64 218.474 252.207 236.911C226.1 230.635 210.02 204.38 216.297 178.269C222.572 152.162 248.829 136.082 274.937 142.358C266.072 179.235 275.3 182.454 270.754 201.363ZM203.003 217.029C221.541 228.397 214.913 235.741 231.079 245.654C217.04 268.545 187.104 275.723 164.212 261.685C141.32 247.647 134.141 217.708 148.18 194.817C180.512 214.644 186.422 206.862 203.003 217.029ZM196.967 286.306C213.507 272.188 218.443 280.759 232.867 268.448C250.301 288.873 247.875 319.563 227.451 336.997C207.025 354.431 176.335 352.004 158.903 331.581C187.749 306.961 182.174 298.933 196.967 286.306ZM260.989 313.455C252.671 293.363 262.348 291.314 255.1 273.794C279.912 263.526 308.352 275.315 318.623 300.128C328.891 324.94 317.1 353.38 292.287 363.649C277.782 328.606 268.427 331.427 260.989 313.455ZM306.592 260.956C284.913 262.657 285.955 252.819 267.052 254.302C264.952 227.532 284.954 204.127 311.725 202.025C338.496 199.93 361.901 219.931 364 246.701C326.19 249.666 325.979 259.437 306.592 260.956Z" fill="#F0F0F0" />
+                          </svg>  Hong kong
+              </div>
+                </li>
+              </Link>
+            </ul>
+          </div>
+        )}
+      </div>
+
+
+            <button className="px-4 py-2 mb-4 w-[120px] bg-gray-800 text-white rounded-[50px] hover:bg-gray-700 mt-4">
+              Log In
+            </button>
+          </nav>
+        </div>
+
+      </header>
+    </section>
   );
-}
+};
+
+export default Header;

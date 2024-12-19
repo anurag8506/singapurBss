@@ -18,30 +18,33 @@ export default function Home() {
         <>
             <Header />
             <section className='bg-[#fff]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32">
+                <div className="overflow-hidden sm:px-20 px-6 sm:pt-[100px] pt-[40px] py-[40px]">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center pb-[20px]">
+                        <div className="row align-items-center ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-se] text-[#212833] text-[33px] leading-[35px] p-text sm:text-left sm:text-[45px] sm:leading-[45px]">
+                                    <p className="font-[cd-b] text-[#212833] text-[33px] leading-[35px] p-text sm:text-left sm:text-[45px] sm:leading-[45px]">
                                     Comprehensive Accounting Services for All Your Financial Needs
                                     </p>
                                 </div>
-                                <div className='col-md-10'>
+                                <div className='col-md-6'>
                                     <p className="font-[cd-r] p-text sm:text-left text-[18px]  text-[#212833]  ">Focus on growing your business while we handle the financial admin. Our local experts and all-in-one accounting services make managing taxes effortless.</p>
                                     <div className="sm:flex sm:justify-start justify-center items-center sm:pt-[50px] pt-[10px] pb-2 sm:gap-3 gap-2">
-                                        <button className="bg-[#212833] border border-dark  text-white font-[cd-m] sm:w-[230px]  w-full   py-[8px] rounded-full sm:mb-4 mb-3 tracking-wider">
+                                        <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833]  py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] sm:w-[260px] w-full ">
                                         Book a consultation
                                         </button>
-                                        <button className="bg-[#fff] border border-dark text-[#000] font-[cd-m] sm:w-[160px]  w-full  px-4 py-[8px] rounded-full sm:mb-4 tracking-wider">
+                                        <div className='sm:mt-[0px] mt-[10px]'>
+                                        <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] sm:w-[140px] w-full ">
                                             Pricing
                                         </button>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-md-6 mb-4'>
+                            <div className='col-md-6 '>
                                 <div className='d-flex justify-content-end'>
-                                    <div className='col-md-12'>
+                                    <div className='col-md-10'>
                                         <Image
                                             src="/assets/asp.png"
                                             alt=".."
@@ -60,7 +63,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6 py-[20px]">
+            <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6 py-[30px]">
                 <div >
                     
                         <div className="text-center  ">
@@ -70,7 +73,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="row justify-center  pb-3">
-                                <div className="col-md-6 sm:pt-5 pt-2 sm:pb-5 pb-2  ">
+                                <div className="col-md-6 sm:pt-5 pt-2 sm:pb-[50px] pb-[20px] ">
                                     <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[28px] text-[#212833]  sm:leading-[38px] leading-[32px] text-center">Complete Transparency and Control Over Your Finances</p>
                                 </div>
                             </div>
@@ -90,6 +93,9 @@ export default function Home() {
                                         Your dedicated accountant is on-call via live chat and responds within a day.
                                         
                                         </p>
+                                    </div>
+                                    <div className='sm:pt-4 pb-4'>
+                                    <button className='border border-dark rounded-full text-[#000] py-[8px] font-[cd-m] text-center tracking-wider w-[160px] hover:bg-[#000] hover:text-[#fff]'>Learn More</button>
                                     </div>
                                 </div>
                             </div>
@@ -114,8 +120,7 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className='sm:pt-4 pb-4'>
-                                    <button className='border border-dark rounded-full text-[#000] py-[8px] font-[cd-m] text-center tracking-wider w-[160px]'>Learn More</button>
-
+                                    <button className='border border-dark rounded-full text-[#000] py-[8px] font-[cd-m] text-center tracking-wider w-[160px] hover:bg-[#000] hover:text-[#fff]'>Learn More</button>
                                     </div>
                                 </div>
                             </div>
@@ -138,6 +143,9 @@ export default function Home() {
                                         Securely store all your important documents in one place. We automate the upload of bank statements, invoices, bills, and expenses for easy tax filing.
                                         </p>
 
+                                    </div>
+                                    <div className='sm:pt-4 pb-4'>
+                                    <button className='border border-dark rounded-full text-[#000] py-[8px] font-[cd-m] text-center tracking-wider w-[160px] hover:bg-[#000] hover:text-[#fff]'>Learn More</button>
                                     </div>
                       
                                 </div>
@@ -162,6 +170,9 @@ export default function Home() {
                                         </p>
 
                                     </div>
+                                    <div className='sm:pt-4 pb-4'>
+                                    <button className='border border-dark rounded-full text-[#000] py-[8px] font-[cd-m] text-center tracking-wider w-[160px] hover:bg-[#000] hover:text-[#fff]'>Learn More</button>
+                                    </div>
                       
                                 </div>
                             </div>
@@ -174,7 +185,7 @@ export default function Home() {
                 </div>
             
             </section>
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  sm:py-[30px] py-[20px]">
+            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  sm:py-[50px] py-[20px]">
                 <div className="row justify-center">
                     <div className="col-md-12 sm:pb-2 m-0 p-0">
                         <div className="text-center   ">
@@ -185,7 +196,7 @@ export default function Home() {
 
                             </div>
                             <div className="row justify-center  m-0 p-0 sm:pb-4">
-                                <div className="col-md-6 sm:pt-3  ">
+                                <div className="col-md-8 sm:pt-3  ">
                                     <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[26px]   text-[#212833]   sm:leading-[38px] leading-[29px] text-center">Accounting Solutions Tailored for Businesses at Every Stage, from Startups to Scaling Enterprises</p>
                                 </div>
                             </div>
@@ -246,7 +257,7 @@ export default function Home() {
                     <div className='col-md-5 pt-4'><p className='text-[#000] text-center text-[25px] leading-[28px] font-[cd-se]'>Stay in tune with your business finances</p></div>
                 </div>
             </section>
-            <section className="bg-[#F3EFE7] sm:px-20 px-6  py-[20px]">
+            <section className="bg-[#F3EFE7] sm:px-20 px-6  sm:py-[50px] py-[20px]">
                 <div className="overflow-hidden">
                    
                     <div className='flex justify-center !sm:pt-5 pt-4'>
@@ -396,11 +407,11 @@ export default function Home() {
                                         <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                         Get this plan
                                     </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                             Talk to an expert
                                         </button>
                                     </div>
@@ -442,11 +453,11 @@ export default function Home() {
                                         <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                         Get this plan
                                     </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                             Talk to an expert
                                         </button>
                                     </div>
@@ -489,11 +500,11 @@ export default function Home() {
                                         <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                         Get this plan
                                     </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                             Talk to an expert
                                         </button>
                                     </div>
@@ -535,11 +546,11 @@ export default function Home() {
                                         <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
                                     </div>
                                     <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='bg-[#212833] w-full py-[13px] text-[#fff] text-[16px] rounded-full border border-[#212833]'>
+                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                         Get this plan
                                     </button>
                                     <div className='pt-3'>
-                                        <button className='bg-[#fff] w-full py-[13px] text-[#212833] text-[16px] border border-dark rounded-full'>
+                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
                                             Talk to an expert
                                         </button>
                                     </div>
@@ -578,7 +589,7 @@ export default function Home() {
             </section>
         
             
-            <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6  py-[30px]">
+            <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6  sm:py-[50px] py-[20px]">
                 <div className="container-fluid p-0">
                     <div className="row justify-center">
                         <div className="col-md-6">
@@ -609,7 +620,7 @@ export default function Home() {
                                     <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
 
                                     <div className="sm:py-6">
-                                        <Link href="/"><button className="font-[cd-m]  text-[16px] text-[#212833] border-[#212833] border-[1px]  rounded-[5px] px-8 py-[8px]" type="button">Learn More</button></Link>
+                                        <Link href="/"><button className="font-[cd-m]  text-[16px] text-[#212833] border-[#212833] border-[1px]  rounded-[5px] px-8 py-[8px] rounded-full hover:bg-[#000] hover:text-[#fff]">Learn More</button></Link>
                                     </div>
 
                                 </div>
@@ -631,7 +642,7 @@ export default function Home() {
                                     <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
 
                                     <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m]  text-[16px] text-[#212833] border-[#212833] border-[1px]  rounded-[5px] px-8 py-[8px]" type="button">Learn More</button></Link>
+                                        <Link href="/"><button className="font-[cd-m]  text-[16px] text-[#212833] border-[#212833] border-[1px]  rounded-[5px] px-8 py-[8px] rounded-full hover:bg-[#000] hover:text-[#fff]">Learn More</button></Link>
                                     </div>
 
                                 </div>
@@ -653,7 +664,7 @@ export default function Home() {
                                     <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
 
                                     <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m]  text-[16px] text-[#212833] border-[#212833] border-[1px]  rounded-[5px] px-8 py-[8px]" type="button">Learn More</button></Link>
+                                        <Link href="/"><button className="font-[cd-m]  text-[16px] text-[#212833] border-[#212833] border-[1px]  rounded-[5px] px-8 py-[8px] rounded-full hover:bg-[#000] hover:text-[#fff]">Learn More</button></Link>
                                     </div>
 
                                 </div>

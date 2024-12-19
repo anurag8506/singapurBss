@@ -23,16 +23,16 @@ export default function Home() {
             <Header />
 
             <section className='bg-[#FFFCF5]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
+                <div className="overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[50px] ">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center pb-4 pt-4">
+                        <div className="row align-items-center pb-4 ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-9'>
-                                    <p className=" font-[cd-se]  font-[500] no-underline sm:text-[50px] text-[30px]  text-[#212833]    sm:leading-[45px] leading-[30px]">Easily record your personal expenses
+                                    <p className=" font-[cd-se]  font-[500] no-underline sm:text-[50px] text-[30px]  text-[#212833]    sm:leading-[45px] leading-[30px] p-text">Easily record your personal expenses
                                     </p>
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] font-[500] no-underline sm:text-[16px] text-[14px]   text-[#212833]  ">Manage your personal expenses and maintain compliance when reporting your personal spending with Cloud Bss. Simply upload receipts, categorize them, and enjoy streamlined deductions.</p>
+                                    <p className="font-[cd-r] font-[500] no-underline sm:text-[16px] text-[14px]   text-[#212833]  p-text ">Manage your personal expenses and maintain compliance when reporting your personal spending with Cloud Bss. Simply upload receipts, categorize them, and enjoy streamlined deductions.</p>
                                     <div className='sm:flex sm:justify-start justify-center   '>
                                         <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2 sm:mr-4">
                                             <button className="bg-[#212833] border border-dark text-white font-[cd-m] sm:w-[200px] w-full   px-6 py-[10px] rounded-full mb-4 ">

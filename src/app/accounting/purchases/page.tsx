@@ -24,16 +24,16 @@ export default function Home() {
             <Header />
 
             <section className='bg-[#FFFCF5]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
+                <div className="overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[50px] ">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center pb- pt-4">
+                        <div className="row align-items-center ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-9'>
-                                    <p className=" font-[cd-se]  font-[500] no-underline sm:text-[50px] text-[30px] text-[#212833]    sm:leading-[45px] leading-[30px]">Organize your invoices and schedule your payments
+                                    <p className=" font-[cd-se]  font-[500] no-underline sm:text-[50px] text-[30px] text-[#212833]    sm:leading-[45px] leading-[30px] p-text">Organize your invoices and schedule your payments
                                     </p>
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833]  ">Submit your bills and receipts to maintain full oversight of upcoming dues and payment schedules.</p>
+                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833]  p-text ">Submit your bills and receipts to maintain full oversight of upcoming dues and payment schedules.</p>
                                     <div className='sm:flex sm:justify-start justify-center   '>
                                         <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2 sm:mr-4">
                                             <button className="bg-[#212833] border border-dark text-white font-medium sm:w-[200px] w-full   px-6 py-[10px] rounded-full mb-4 ">

@@ -285,11 +285,11 @@ export default function Home() {
             <div className="bg-[#FFFCF5]">
                 <Header />
                 <section>
-                    <div className="overflow-hidden sm:px-20 px-6  pt-32 pb-10">
+                    <div className="overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[50px] pb-10">
                         <div className="container-fluid p-0">
                             <div className="row justify-center  pb-10">
-                                <div className="col-md-6 sm:pt-1 ">
-                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px] px-6 text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation Services in India</p>
+                                <div className="col-md-6 ">
+                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation Services in India</p>
                                     <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833] text-center">Company incorporation in India does not have to be a hassle. We handle the process for you in just a few steps online. Let is  start by checking if your company name is available.</p>
                                     <div className="sm:flex justify-center items-center gap-2 pt-4">
                                         <input
@@ -384,7 +384,7 @@ export default function Home() {
 
                                 <div className="row justify-center pt-2 sm:pb-4 pb-2">
                                     <div className="col-md-6 pt-3 ">
-                                        <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] px-6 text-[#212833] text-center sm:leading-[45px] leading-[30px]">Company incorporation in India: are you local?</p>
+                                        <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">Company incorporation in India: are you local?</p>
                                     </div>
                                 </div>
                             </div>
@@ -487,7 +487,7 @@ export default function Home() {
 
                                 <div className="row justify-center  sm:pb-4 pb-3">
                                     <div className="col-md-8 sm:pt-3 pt-4  ">
-                                        <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px] px-6 text-[#fff] text-center sm:leading-[48px] leading-[30px]">Why choose Cloud Bss for your company incorporation?</p>
+                                        <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#fff] text-center sm:leading-[48px] leading-[30px]">Why choose Cloud Bss for your company incorporation?</p>
                                     </div>
                                 </div>
                             </div>
@@ -682,9 +682,7 @@ export default function Home() {
                                     <div className="row justify-center pb-4">
                                         <div className="col-md-6 pt-3 text-center">
 
-                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] px-6 text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
-
-
+                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
 
                                         </div>
                                     </div>

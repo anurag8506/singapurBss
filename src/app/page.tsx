@@ -11,13 +11,11 @@ export default function Home() {
         <>
             <div className="bg-[#f3efe7]">
                 <Header />
-                <section className="overflow-hidden sm:px-20 px-6  pt-32 pb-10">
+                <section className="overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[50px] pb-10">
                     <div className="flex items-center justify-center">
-                        <div className="flex items-center px-4 py-2 border rounded-full border-black">
-                            <div className="flex -space-x-2">
-
-                                <Image
-                                    src="/assets/Group 17583.png"
+                        <div className="flex items-center px-2 py-2 border rounded-full border-black">
+                            <div className="flex">
+                                <Image src="/assets/Group 17583.png"
                                     alt="Person 1"
 
                                     width='50'
@@ -27,7 +25,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="ml-3 font-[cd-m] font-[500] no-underline sm:text-[13px] text-[#212833]">
+                            <div className="ml-3 font-[cd-m] font-[500] no-underline sm:text-[13px] text-[12px] text-[#212833] sm:w-full w-[180px] ">
                                 Trusted by 200k+ Companies
                             </div>
                         </div>
@@ -35,32 +33,42 @@ export default function Home() {
 
                 </section>
                 <section>
-                    <div className="overflow-hidden ">
+                    <div className="overflow-hidden  sm:px-20 px-6 ">
                         <div className="container-fluid p-0">
                             <div className="row justify-center ">
                                 <div className="col-md-8">
                                     <div className="text-center">
-                                        <p className="font-[cd-se]  no-underline sm:text-[45px] text-[30px] px-6 text-[#212833] text-center sm:leading-[50px] leading-[30px]">We free you from manual Accounting, untangle E‑commerce, and set up Companies</p>
+                                        <p className="sm:font-[cd-b] font-[cd-b]  sm:text-[50px] text-[28px]   text-[#212833] text-center sm:leading-[48px] leading-[33px]">We free you from manual Accounting, untangle E-commerce, and set up Companies</p>
 
                                     </div>
                                 </div>
                                 <div className="col-md-6 ">
-                                    <p className="font-[cd-r] text-center font-[500] no-underline sm:text-[18px] px-6 text-[#212833] text-center">Let our experts take care of invoices, reports, and taxes while you grow your business</p>
+                                    <p className="font-[cd-r] text-center sm:text-[25px] text-[20px] sm:leading-[28px] leading-[23px] text-[#212833] ">Let our experts take care of invoices, reports, and taxes while you grow your business</p>
                                 </div>
-
-
-                                <div className="col-md-8 mb-5">
-                                    <div className="text-center" >
-                                        <Link href="/">
-                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[10px] rounded-[30px] text-center">Login</button>
+                                <div className="col-md-8 mb-4 pt-3 ">
+                                    <div className="text-center">
+                                        <div className="flex justify-center gap-2">
+                                            <div className="mb-3">
+                                            <Link href="/">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] w-full">
+                                                Login
+                                            </button>
                                         </Link>
-                                        <Link href='/'>
-                                            <button className="font-[cd-m] font-[500] ms-[15px] text-[14px] text-[#fff] bg-[#212833] px-5 py-[10px] rounded-[30px] text-center ">Schedule a call</button>
+                                            </div>
+                                            <div>
+                                            <Link href="/">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] w-full">
+                                                Schedule a call
+                                            </button>
                                         </Link>
-
-
+                                                </div>
+                                        </div>
+                                    
+                                      
                                     </div>
                                 </div>
+
+
 
                             </div>
                         </div>
@@ -73,42 +81,38 @@ export default function Home() {
 
                 <section className=" overflow-hidden ">
                     <div className="container-fluid p-0  ">
-                        <div className="row justify-center  sm:px-0 px-6 " >
+                        <div className="row justify-center align-items-center  px-0  " >
                             <div className="col-md-12 sm:pt-4 ">
                                 <Image src='/assets/trusted.png' alt=".." width='3000' height='3000' className="w-full" />
 
                             </div>
 
-                            <div className="col-md-3 ">
-                                <p className="font-[cd-m] font-[500]  sm:text-[18px] text-[18px] px-6 text-[#212833] text-center pt-4">Trusted by Cloud Bss entrepreneurs around the world</p>
+                            <div className="col-md-3 px-6">
+                                <p className="font-[cd-m] font-[500]  sm:text-[20px] leading-[23px] text-[20px] px-6 text-[#212833]  pt-4 p-text">Trusted by Cloud Bss entrepreneurs around the world</p>
                             </div>
-                            <div className="col-md-9 ">
-                                <div className="row justify-between ">
+                            <div className="col-md-9 mb-5 px-6 ">
+                                <div className="row justify-between px-6">
                                     <div className="col-md-3 col-6">
-                                        <p className="font-[cd-m] font-[500]  sm:text-[18px] text-[18px] text-[#212833] text-center pt-4">89%</p>
-                                        <p className="font-[cd-r] font-[500]  text-[16px]  text-[#7C7C7C] text-center ">of customers recommend Cloud Bss service</p>
+                                        <p className="font-[cd-m] font-[500]  sm:text-[25px] text-[20px] text-[#212833] text-center pt-4 ">89%</p>
+                                        <p className="font-[cd-r] font-[500]  text-[16px]  text-[#7C7C7C] text-center leading-[19px] ">of customers recommend Cloud Bss service</p>
                                     </div>
                                     <div className="col-md-3 col-6">
-                                        <p className="font-[cd-m] font-[500] sm:text-[18px] text-[18px] text-[#212833 text-center pt-4">15,000+</p>
-                                        <p className="font-[cd-r] font-[500]   text-[16px] text-[#7C7C7C] text-center "> Cloud Bss clients worldwide</p>
+                                        <p className="font-[cd-m] font-[500] sm:text-[25px] text-[20px] text-[#212833 text-center pt-4">15,000+</p>
+                                        <p className="font-[cd-r] font-[500]   text-[16px] text-[#7C7C7C] text-center leading-[19px] "> Cloud Bss clients worldwide</p>
                                     </div>
                                     <div className="col-md-3 col-6">
-                                        <p className="font-[cd-m] font-[500] sm:text-[18px] text-[18px] text-[#212833 text-center pt-4">6,555</p>
-                                        <p className="font-[cd-r] font-[500]  text-[16px] text-[#7C7C7C] text-center ">Companies opened in India</p>
+                                        <p className="font-[cd-m] font-[500] sm:text-[25px] text-[20px] text-[#212833 text-center pt-4">6,555</p>
+                                        <p className="font-[cd-r] font-[500]  text-[16px] text-[#7C7C7C] text-center leading-[19px] ">Companies opened in India</p>
                                     </div>
                                     <div className="col-md-3 col-6">
-                                        <p className="font-[cd-m] font-[500] sm:text-[18px] text-[18px] text-[#212833 text-center pt-4">4,243</p>
-                                        <p className="font-[cd-r] font-[500] text-[16px] text-[14px] text-[#7C7C7C] text-center ">India companies chose cloud bss secretaries</p>
+                                        <p className="font-[cd-m] font-[500] sm:text-[25px] text-[20px] text-[#212833 text-center pt-4">4,243</p>
+                                        <p className="font-[cd-r] font-[500] text-[16px] text-[14px] text-[#7C7C7C] text-center leading-[19px] ">India companies chose cloud bss secretaries</p>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div className="col-md-12 mb-4">
-                            <div>
-                                <p className="font-[cd-se] font-[500]  text-[22px] text-[#212833] text-center pt-4">Incorporation</p>
-                            </div>
-                        </div>
+
 
 
                     </div>
@@ -118,30 +122,38 @@ export default function Home() {
             <section className="bg-[#fff] overflow-hidden sm:px-20 px-6 sm:py-10 py-10">
                 <div className="container-fluid p-0">
                     <div className="row justify-center">
-                        <div className="col-md-6 pb-4">
-                            <div className="text-center px-6 ">
-                                <p className="font-[cd-se]  no-underline sm:text-[45px] text-[30px] px-6 text-[#212833] text-center sm:leading-[50px] leading-[30px]">You grow your business, we’ll do the rest</p>
-
+                        <div className="col-md-12">
+                            <div>
+                                <p className="font-[cd-se] font-[500]  text-[18px] text-[#212833] text-center pt-4">Incorporation</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 sm:pb-[50px] pb-[20px]">
+                            <div className="text-center ">
+                                <p className="font-[cd-se]  sm:text-[40px] text-[28px]  text-[#212833] text-center sm:leading-[50px] leading-[31px]">You grow your business, we&apos;ll do the rest</p>
                             </div>
                         </div>
                     </div>
                     <div className="d-flex justify-center">
                         <div className="col-md-10">
                             <div className="row align-items-center justify-between">
-                                <div className="col-md-5 mb-4">
+                                <div className="col-md-5 mb-5">
                                     <div className="d-flex justify-content-center">
-
                                         <Image src='/assets/grow1.png' alt=".." width='3000' height='3000' className="w-full" />
-
                                     </div>
                                 </div>
-                                <div className="col-md-5 mb-4">
-                                    <p className='font-[cd-r] font-[500] text-[#7C7C7C] sm:text-[16px] text-[16px] mb-0 '>Get your company registered fast and online, and fast-tracked to a business account. All government fees and must-have services are included, for foreigners and India locals.</p>
-                                    <div className="d-flex pt-4 justify-content-sm-start justify-content-between gap-2 ">
-                                        <button className="bg-[#fff] py-2 font-[cd-m] text-[14px] text-[13px]  text-[#212833] border border-dark rounded-full sm:w-[160px] w-[150px]  tracking-wider">
-                                            LET’S START IT
-                                        </button>
-                                        <button className="bg-[#212833] px-2 py-2 font-[cd-m]  sm:text-[14px] text-[13px]  text-[#fff] border border-dark rounded-[30px] sm:w-[230px] w-[220px]  tracking-wider ">LET’S SEE HOW IT WORKS</button>
+                                <div className="col-md-5 mb-5">
+                                    <p className='font-[cd-r] font-[500] text-[#7C7C7C] sm:text-[18px] text-[18px] mb-0 p-text '>Get your company registered fast and online, and fast-tracked to a business account. All government fees and must-have services are included, for foreigners and India locals.</p>
+                                    <div className="sm:flex pt-4 justify-content-sm-start justify-content-between gap-2 ">
+
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full">
+                                                LET’S START IT
+                                            </button>
+                                        </div>
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-4 py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider w-full">LET&apos;S SEE HOW IT WORKS</button>
+
+                                        </div>
                                     </div>
                                 </div>
 
@@ -153,7 +165,7 @@ export default function Home() {
                     <div className="d-flex justify-center">
                         <div className="col-md-10">
                             <div className="row align-items-center justify-content-between">
-                                <div className="col-md-5 order-md-2 order-1 mb-4">
+                                <div className="col-md-5 order-md-2 order-1 mb-5">
                                     <Image
                                         src="/assets/brunette-businesswoman-posing 2.png"
                                         alt="Corporate Secretary"
@@ -165,22 +177,27 @@ export default function Home() {
                                 </div>
 
                                 {/* Text Content Column */}
-                                <div className="col-md-5 order-md-1 order-2 mb-4">
+                                <div className="col-md-5 order-md-1 order-2 mb-5">
 
 
-                                    <p className="font-[cd-se] font-[500] text-[#212833] sm:text-[22px] text-[22px] mb-3">
+                                    <p className="font-[cd-se] font-[500] text-[#212833] sm:text-[22px] text-[22px] mb-3 p-text">
                                         Corporate Secretary
                                     </p>
-                                    <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-0">
+                                    <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[18px] mb-0 p-text">
                                         Your compliance in check. We track deadlines, file documents, and answer questions daily. All standard resolutions and routine filings are included in the plan.
                                     </p>
-                                    <div className="d-flex pt-4 gap-2">
-                                        <button className="bg-[#fff] px-2 py-2 font-[cd-m] text-[14px] font-[500] text-[#212833] border border-dark rounded-[30px] sm:w-[170px] w-full tracking-wider ">
-                                            READY TO START
-                                        </button>
-                                        <button className="bg-[#212833] px-2 py-2 font-[cd-m] text-[14px] font-[500] text-[#fff] border border-dark rounded-[30px] sm:w-[160px] w-full  tracking-wider ">
-                                            TELL ME MORE
-                                        </button>
+                                    <div className="sm:flex pt-4 gap-2">
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full">
+                                                READY TO START
+                                            </button>
+
+                                        </div>
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full">
+                                                TELL ME MORE
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -190,61 +207,67 @@ export default function Home() {
                     </div>
 
                     <div className="d-flex justify-center">
-                    <div className="col-md-10">
-                        <div className="row align-items-center justify-between">
-                    <div className="col-md-5  mb-4">
-                    
-                                <Image src='/assets/closeup-economist-using-calculator-while-going-through-bills-taxes-office 2.png' alt=".." width='3000' height='3000' className="w-full" />
-                       
-                    </div>
-                    <div className="col-md-5   mb-4">
-                      
-                                <p className='font-[cd-se] font-[500] text-[#212833] text-[22px] mb-3  '>Accounting and Taxation</p>
-                                <p className='font-[cd-r] font-[500] text-[#7C7C7C]  text-[16px] mb-0 '>A personal Chartered Accountant who gets to know your business: files reports, optimises tax, and keeps books tamed. Get solutions for your industry and forget manual labour.</p>
-                                <div className="d-flex pt-4 gap-2">
+                        <div className="col-md-10">
+                            <div className="row align-items-center justify-between">
+                                <div className="col-md-5  mb-5">
 
-                                    <button className="bg-[#fff] px-2 py-2 font-[cd-m]  text-[14px] font-[500] text-[#212833] border border-dark rounded-[30px] sm:w-[180px] w-full tracking-wider ">PERFECT,  LET’S GO</button>
-
-
-                                    <button className="bg-[#212833] px-2 py-2 font-[cd-m]  text-[14px] font-[500] text-[#fff] border border-dark rounded-[30px] sm:w-[160px] w-full  tracking-wider ">MORE DETAILS</button>
+                                    <Image src='/assets/closeup-economist-using-calculator-while-going-through-bills-taxes-office 2.png' alt=".." width='3000' height='3000' className="w-full" />
 
                                 </div>
-                          
-                    </div>
+                                <div className="col-md-5   mb-5">
 
-                        </div>
-
-                        </div>
-                        </div>
-                        
-                        <div className="d-flex justify-center">
-                    <div className="col-md-10">
-                        <div className="row align-items-center justify-between">
-                    <div className="col-md-5 mb-4 order-md-1 order-2">
-                     
-                          
-                                <p className='font-[cd-se] font-[500] text-[#212833] text-[22px] mb-3 '>Break free from the paperwork</p>
-                                <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-0 '>Just dump any documents that need sorting on us: we’ll categorise, tag, and store them. Then we ll create management reports, tax returns, and draft resolutions.</p>
-                                <div className="d-flex pt-4 gap-2">
-
-                                    <button className="bg-[#fff] px-2 py-2 font-[cd-se]  text-[13px] font-[500] text-[#212833] border border-dark rounded-[30px] sm:w-[160px] w-full  tracking-wider "> READY TO START</button>
+                                    <p className='font-[cd-se] font-[500] text-[#212833] text-[22px] mb-3 p-text  '>Accounting and Taxation</p>
+                                    <p className='font-[cd-r] font-[500] text-[#7C7C7C]  text-[18px] mb-0 p-text '>A personal Chartered Accountant who gets to know your business: files reports, optimises tax, and keeps books tamed. Get solutions for your industry and forget manual labour.</p>
+                                    <div className="sm:flex pt-4 gap-2">
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full">PERFECT,  LET’S GO</button>
+                                        </div>
 
 
-                                    <button className="bg-[#212833] px-2 py-2 font-[cd-se]  text-[13px] font-[500] text-[#fff] border border-dark rounded-[30px] sm:w-[160px] w-full  tracking-wider">TELL ME MORE</button>
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full">MORE DETAILS</button>
+                                        </div>
+
+                                    </div>
 
                                 </div>
-                       
-                        
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div className="col-md-5 mb-4 order-md-2 order-1">
-                     
-                                <Image src='/assets/aaa.png' alt=".." width='3000' height='3000' className="w-full" />
+                    <div className="d-flex justify-center">
+                        <div className="col-md-10">
+                            <div className="row align-items-center justify-between">
+                                <div className="col-md-5 mb-4 order-md-1 order-2">
+
+
+                                    <p className='font-[cd-se] font-[500] text-[#212833] text-[22px] mb-3 p-text '>Break free from the paperwork</p>
+                                    <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[18px] mb-0 p-text '>Just dump any documents that need sorting on us: we’ll categorise, tag, and store them. Then we ll create management reports, tax returns, and draft resolutions.</p>
+                                    <div className="sm:flex pt-4 gap-2">
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full"> READY TO START</button>
+                                        </div>
+
+
+                                        <div className="pt-3">
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833] bg-[#fff] border-[1px] border-[#212833]  py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] tracking-wider px-4 w-full">TELL ME MORE</button>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div className="col-md-5 mb-4 order-md-2 order-1">
+
+                                    <Image src='/assets/aaa.png' alt=".." width='3000' height='3000' className="w-full" />
+                                </div>
+
                             </div>
-                    
-                            </div>
-                            </div>
-                            </div>
+                        </div>
+                    </div>
 
 
 
@@ -254,17 +277,16 @@ export default function Home() {
             <section className="bg-[#F3EFE7] sm:px-20 px-6 ">
                 <div className="overflow-hidden">
                     <div className="container-fluid p-0">
-                        <div className="row p-5 justify-content-center  ">
-                            <div className="col-md-8">
-                                <p  className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[50px] leading-[30px]">Facilitate the day-to-day of your clients with a complete solution</p>
+                        <div className="row pt-[30px] justify-content-center  ">
+                            <div className="col-md-8 sm:pt-[40px] pt-[10px] sm:pb-[40px] pb-[10px] ">
+                                <p className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[43px] leading-[33px]">Facilitate the day to day of your clients with a complete solution</p>
                             </div>
 
                         </div>
                         <div className="d-flex justify-center">
-                        <div className="col-md-10">
-                            <div className="row justify-between">
-                                <div className="col-md-3 mb-4">
-                                    
+                            <div className="col-md-10 mb-5">
+                                <div className="row justify-between">
+                                    <div className="col-md-4 sm:mb-[40px] mb-[10px]">
                                         <div className="d-flex align-items-center mb-3">
                                             <div>
                                                 <svg className="m-0 p-0" width="30" height="30" viewBox="0 0 39 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,14 +294,14 @@ export default function Home() {
                                                 </svg>
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Billing</span>
+                                                <span className="font-[cd-se] font-[500] text-[25px] p-0 ml-2 text-[#212833]">Billing</span>
                                             </div>
                                         </div>
-                                        <p className="font-[cd-r] font-[500] text-[16px] text-[#454545] ">Your customer can create and send invoices from their phone the moment they make a sale.</p>
-                                    
-                                </div>
-                                <div className="col-md-3 mb-4">
-                                   
+                                        <p className="font-[cd-r] font-[500] text-[18px] text-[#454545] ">Your customer can create and send invoices from their phone the moment they make a sale.</p>
+
+                                    </div>
+                                    <div className="col-md-4 sm:mb-[40px] mb-[10px]">
+
                                         <div className="d-flex align-items-center mb-3">
                                             <div>
                                                 <svg width="30" height="30" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -288,13 +310,13 @@ export default function Home() {
 
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Document Manager</span>
+                                                <span className="font-[cd-se] font-[500] text-[25px] p-0 ml-2 text-[#212833]">Document Manager</span>
                                             </div>
                                         </div>
-                                        <p className="font-[cd-r] font-[500] text-[16px] text-[#454545]">Provide your client with a cloud folder to share documents that are automatically sorted.</p>
+                                        <p className="font-[cd-r] font-[500] text-[18px] text-[#454545]">Provide your client with a cloud folder to share documents that are automatically sorted.</p>
                                     </div>
-                                <div className="col-md-3 mb-4">
-                                    
+                                    <div className="col-md-4 sm:mb-[40px] mb-[10px]">
+
                                         <div className="d-flex align-items-center mb-3">
                                             <div>
                                                 <svg width="30" height="30" viewBox="0 0 47 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,36 +325,36 @@ export default function Home() {
 
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Treasury</span>
+                                                <span className="font-[cd-se] font-[500] text-[25px] p-0 ml-2 text-[#212833]">Treasury</span>
                                             </div>
                                         </div>
-                                        <p className="font-[cd-r] font-[500] text-[16px]  text-[#454545] ">Your client has all the information in real time on the financial status of their business.</p>
+                                        <p className="font-[cd-r] font-[500] text-[18px]  text-[#454545] ">Your client has all the information in real time on the financial status of their business.</p>
                                     </div>
-                            
-                                
+
+
+                                </div>
+                                <div className="row justify-between ">
+                                    <div className="col-md-4 sm:mb-[40px] mb-[10px] ">
+                                        <div className="d-flex align-items-center mb-3  ">
+                                            <div className="d-flex align-items-center gap-2">
+                                                <svg width="25" height="25" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.05 16.5C28.05 15.587 27.3103 14.85 26.4 14.85H6.6C5.68975 14.85 4.95 15.587 4.95 16.5C4.95 17.413 5.68975 18.15 6.6 18.15H26.4C27.3103 18.15 28.05 17.413 28.05 16.5ZM33 28.05V26.4C33 25.487 32.2603 24.75 31.35 24.75C30.4397 24.75 29.7 25.487 29.7 26.4V28.05C29.7 28.9602 28.9589 29.7 28.05 29.7H26.4C25.4898 29.7 24.75 30.437 24.75 31.35C24.75 32.263 25.4898 33 26.4 33H28.05C30.7794 33 33 30.7794 33 28.05ZM33 6.6V4.95C33 2.22062 30.7794 0 28.05 0H26.4C25.4898 0 24.75 0.737 24.75 1.65C24.75 2.563 25.4898 3.3 26.4 3.3H28.05C28.9589 3.3 29.7 4.03975 29.7 4.95V6.6C29.7 7.513 30.4397 8.25 31.35 8.25C32.2603 8.25 33 7.513 33 6.6ZM8.25 31.35C8.25 30.437 7.51025 29.7 6.6 29.7H4.95C4.04112 29.7 3.3 28.9602 3.3 28.05V26.4C3.3 25.487 2.56025 24.75 1.65 24.75C0.73975 24.75 0 25.487 0 26.4V28.05C0 30.7794 2.22062 33 4.95 33H6.6C7.51025 33 8.25 32.263 8.25 31.35ZM1.65 8.25C0.73975 8.25 0 7.513 0 6.6V4.95C0 2.22062 2.22062 0 4.95 0H6.6C7.51025 0 8.25 0.737 8.25 1.65C8.25 2.563 7.51025 3.3 6.6 3.3H4.95C4.04112 3.3 3.3 4.03975 3.3 4.95V6.6C3.3 7.513 2.56025 8.25 1.65 8.25Z" fill="#212833" />
+                                                </svg>
+                                                <span className="font-[cd-se] font-[500] text-[25px] p-0 ml-2 text-[#212833] leading-[20px]">
+                                                    Digitization of expenses
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        {/* Description Text */}
+                                        <p className="font-[cd-r] font-[500] text-[18px] text-[#454545] mt-2">
+                                            If your client generates a deductible expense, with a photo of the ticket
+                                            or invoice, CleverScan technology will extract the data.
+                                        </p>
                                     </div>
-                                    <div className="row justify-between">
-                                    <div className="col-md-3 mb-4">
-  <div className="d-flex align-items-center  mb-2">
-    <div className="d-flex align-items-center gap-2">
-    <svg width="25" height="25" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.05 16.5C28.05 15.587 27.3103 14.85 26.4 14.85H6.6C5.68975 14.85 4.95 15.587 4.95 16.5C4.95 17.413 5.68975 18.15 6.6 18.15H26.4C27.3103 18.15 28.05 17.413 28.05 16.5ZM33 28.05V26.4C33 25.487 32.2603 24.75 31.35 24.75C30.4397 24.75 29.7 25.487 29.7 26.4V28.05C29.7 28.9602 28.9589 29.7 28.05 29.7H26.4C25.4898 29.7 24.75 30.437 24.75 31.35C24.75 32.263 25.4898 33 26.4 33H28.05C30.7794 33 33 30.7794 33 28.05ZM33 6.6V4.95C33 2.22062 30.7794 0 28.05 0H26.4C25.4898 0 24.75 0.737 24.75 1.65C24.75 2.563 25.4898 3.3 26.4 3.3H28.05C28.9589 3.3 29.7 4.03975 29.7 4.95V6.6C29.7 7.513 30.4397 8.25 31.35 8.25C32.2603 8.25 33 7.513 33 6.6ZM8.25 31.35C8.25 30.437 7.51025 29.7 6.6 29.7H4.95C4.04112 29.7 3.3 28.9602 3.3 28.05V26.4C3.3 25.487 2.56025 24.75 1.65 24.75C0.73975 24.75 0 25.487 0 26.4V28.05C0 30.7794 2.22062 33 4.95 33H6.6C7.51025 33 8.25 32.263 8.25 31.35ZM1.65 8.25C0.73975 8.25 0 7.513 0 6.6V4.95C0 2.22062 2.22062 0 4.95 0H6.6C7.51025 0 8.25 0.737 8.25 1.65C8.25 2.563 7.51025 3.3 6.6 3.3H4.95C4.04112 3.3 3.3 4.03975 3.3 4.95V6.6C3.3 7.513 2.56025 8.25 1.65 8.25Z" fill="#212833" />
-                                            </svg>
-      <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833] leading-[20px]">
-        Digitization of expenses
-      </span>
-    </div>
-  </div>
 
-  {/* Description Text */}
-  <p className="font-[cd-r] font-[500] text-[16px] text-[#454545] mt-2 mb-0">
-    If your client generates a deductible expense, with a photo of the ticket
-    or invoice, CleverScan technology will extract the data.
-  </p>
-</div>
+                                    <div className="col-md-4 sm:mb-[40px] mb-[10px]">
 
-                                <div className="col-md-3 mb-4">
-                                  
                                         <div className="d-flex align-items-center mb-3">
                                             <div>
                                                 <svg width="30" height="30" viewBox="0 0 32 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,15 +364,15 @@ export default function Home() {
 
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Mobile app</span>
+                                                <span className="font-[cd-se] font-[500] text-[25px] p-0 ml-2 text-[#212833]">Mobile app</span>
                                             </div>
                                         </div>
-                                        <p className="font-[cd-r] font-[500] text-[16px] text-[#454545]">Make it easy for your client to review information and manage their business wherever they are.</p>
+                                        <p className="font-[cd-r] font-[500] text-[18px] text-[#454545]">Make it easy for your client to review information and manage their business wherever they are.</p>
                                     </div>
-                                
 
-                                <div className="col-md-3 mb-4">
-                                 
+
+                                    <div className="col-md-4 sm:mb-[40px] mb-[10px]">
+
                                         <div className="d-flex align-items-center mb-3">
                                             <div>
                                                 <svg width="30" height="30" viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -361,24 +383,24 @@ export default function Home() {
 
                                             </div>
                                             <div>
-                                                <span className="font-[cd-se] font-[500] text-[20px] p-0 ml-2 text-[#212833]">Reports</span>
+                                                <span className="font-[cd-se] font-[500] text-[25px] p-0 ml-2 text-[#212833]">Reports</span>
                                             </div>
                                         </div>
-                                        <p  className="font-[cd-r] font-[500] text-[16px] text-[#454545]" >
+                                        <p className="font-[cd-r] font-[500] text-[18px] text-[#454545]" >
                                             Offer your client more useful and accessible advice, which allows them to achieve their goals.</p>
                                     </div>
-                               
-                                <div className="w-full pb-5 ">
-                                    <button className="w-full border border-dark py-[12px] rounded-full text-[#212833] font-[cd-m] font-[500] text-[14px]  ">
-                                        Schedule a Demo
-                                    </button>
+
+                                    <div className="w-full sm:pb-[40px] pb-[10px] pt-4 ">
+                                        <button className="font-[cd-m] font-[500] sm:text-[22px] text-[16px] text-[#212833]  border-[1px] border-[#212833] px-5 py-[10px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] w-full ">
+                                            Schedule a Demo
+                                        </button>
+                                    </div>
+
+
+
                                 </div>
 
-
-
                             </div>
-
-                        </div>
 
                         </div>
 
@@ -393,45 +415,45 @@ export default function Home() {
                 <div className="overflow-hidden sm:px-20 px-6 ">
                     <div className="container-fluid p-0">
                         <div className="row justify-content-center">
-                            <div className="col-md-12 mb-4">
-                                <p  className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[50px] leading-[30px] pt-4" >Here’s how Cloud Bss works</p>
+                            <div className="col-md-12 sm:pt-[60px] pt-[20px] sm:pb-[40px] pb-[20px]">
+                                <p className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[50px] leading-[30px] pt-4" >Here’s how Cloud Bss works</p>
                             </div>
-                            </div>
-                            <div className="d-flex justify-center">
+                        </div>
+                        <div className="d-flex justify-center">
                             <div className="col-md-10">
-                            <div className="row justify-between align-items-start">
-                            <div className="col-md-4 mb-4">
-                                <div className="rounded-[10px] ">
-                                    <Image src='/assets/image 11.png' alt=".." width='5000' height='5000' className="w-full" />
-                                    <p className="font-[cd-se] font-[500] text-[#212833] text-[20px]  pt-4 mb-2">Uploading docs  is easy</p>
-                                    <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-3">Snap a phone picture, drag and drop a file from your desktop, or forward an email with docs attached.</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 mb-4">
-                                <div className="rounded-[10px] ">
-                                    <Image src='/assets/image 12.png' alt=".." width='5000' height='5000' className="w-full" />
+                                <div className="row justify-between align-items-start">
+                                    <div className="col-md-4 mb-4">
+                                        <div className="rounded-[10px] ">
+                                            <Image src='/assets/image 11.png' alt=".." width='5000' height='5000' className="w-full" />
+                                            <p className="font-[cd-se] font-[500] text-[#212833] text-[22px]  pt-4 mb-2">Uploading docs  is easy</p>
+                                            <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[18px] mb-3">Snap a phone picture, drag and drop a file from your desktop, or forward an email with docs attached.</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mb-4">
+                                        <div className="rounded-[10px] ">
+                                            <Image src='/assets/image 12.png' alt=".." width='5000' height='5000' className="w-full" />
 
-                                    <p className="font-[cd-se] font-[500] text-[#212833] text-[20px]  pt-4 mb-2">We organise docs  ourselves</p>
-
-
-                                    <p className="font-[cd-r] font-[500] text-[#7C7C7C] sm:text-[16px] text-[14px] mb-3">We store all docs neatly, match them, tag accounts, and report what’s missing. Everyday.</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 mb-4">
-                                <div className="rounded-[10px] ">
-                                    <Image src='/assets/image 13.png' alt=".." width='5000' height='5000' className="w-full" />
-
-                                    <p className="font-[cd-se] font-[500] text-[#212833] text-[20px]  pt-4 mb-2">Expert advice is only a few clicks away</p>
+                                            <p className="font-[cd-se] font-[500] text-[#212833] text-[22px]  pt-4 mb-2">We organise docs  ourselves</p>
 
 
-                                    <p className="font-[cd-r] font-[500] text-[#7C7C7C] sm:text-[16px] text-[14px] mb-3">No question is too complicated. We  are on-call through live chat and respond within 24 hours.</p>
+                                            <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[18px]  mb-3">We store all docs neatly, match them, tag accounts, and report what’s missing. Everyday.</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mb-4">
+                                        <div className="rounded-[10px] ">
+                                            <Image src='/assets/image 13.png' alt=".." width='5000' height='5000' className="w-full" />
+
+                                            <p className="font-[cd-se] font-[500] text-[#212833] text-[22px]  pt-4 mb-2">Expert advice is only a few clicks away</p>
+
+
+                                            <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[18px]  mb-3">No question is too complicated. We  are on-call through live chat and respond within 24 hours.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                            </div>
-                            </div>
-                        
-                        <div className="col-md-12 pt-4 pb-3">
+
+                        <div className="col-md-12 sm:pt-[50px] pt-[0px]  pb-3">
                             <p className="border border-t border-[#BFBFBF] w-full"></p>
                         </div>
                     </div>
@@ -440,19 +462,19 @@ export default function Home() {
             </section>
 
 
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  py-5">
+            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  sm:py-[80px] py-[30px]">
                 <div className="container-fluid p-0">
                     <div className="row justify-center">
-                        <div className="col-md-6">
+                        <div className="col-md-6 pt-1">
                             <div className="text-center">
-                                <p className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[40px] leading-[30px]">Explore over 600 resources for managing small business finances</p>
+                                <p className="font-[cd-se]  sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[43px] leading-[33px]">Explore over 600 resources for managing small business finances</p>
 
                             </div>
                         </div>
                     </div>
 
                     <div className="row justify-between pt-14">
-                        <div className="col-md-4">
+                        <div className="col-md-4 mb-4">
                             <div>
                                 <div className="">
                                     <Image
@@ -464,11 +486,11 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
+                                    <p className='font-[cd-se] text-[#0D0D0D] text-[25px]  leading-[28px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
+                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[18px]  sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
 
                                     <div className="sm:py-6">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[16px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
+                                        <Link href="/"><button className="font-[cd-m] font-[500] text-[18px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] ">Learn More</button></Link>
                                     </div>
 
                                 </div>
@@ -486,11 +508,11 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
+                                    <p className='font-[cd-se] text-[#0D0D0D] text-[25px]  leading-[28px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
+                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[18px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
 
                                     <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[14px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
+                                        <Link href="/"><button className="font-[cd-m] font-[500] text-[18px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] ">Learn More</button></Link>
                                     </div>
 
                                 </div>
@@ -508,11 +530,11 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
+                                    <p className='font-[cd-se] text-[#0D0D0D] text-[25px]  leading-[28px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
+                                    <p className='font-[cd-r]  text-[18px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
 
                                     <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[14px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
+                                        <Link href="/"><button className="font-[cd-m] font-[500] text-[18px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] ">Learn More</button></Link>
                                     </div>
 
                                 </div>
@@ -528,17 +550,17 @@ export default function Home() {
                 <div className="container-fluid p-0">
                     <div className="row align-items-center">
                         <div className="col-md-6 mb-4">
-                           
-                                <p className="font-[cd-se]  no-underline sm:text-[38px] text-[30px]  text-[#fff]  sm:leading-[38px] leading-[30px]">Get tips on how to run your business smarter</p>
-                                <div className="col-md-9">
+
+                            <p className="font-[cd-se]  no-underline sm:text-[38px] text-[30px]  text-[#fff]  sm:leading-[38px] leading-[30px]">Get tips on how to run your business smarter</p>
+                            <div className="col-md-9">
                                 <p className='font-[cd-r] text-[#ABABAB] text-[16px]  pt-4 mb-0'>Learn crucial tips on how to save money and build a flourishing business, with real entrepreneurs sharing their own experiences.</p>
                                 <div className="sm:flex  items-center gap-4  pt-4">
                                     <input
                                         type="email"
                                         placeholder="Email address"
-                                        className="w-full px-4 py-2 rounded-full  text-[#0D0D0D]  border border-gray-400 mb-4 "
+                                        className="w-[1200px] px-4 py-2 rounded-full  text-[#0D0D0D]  border border-gray-400 mb-4 outline-none"
                                     />
-                                    <button className="bg-white  text-[#0D0D0D]  font-[cd-m] px-6 py-2 rounded-full w-[140px] w-full mb-4 ">
+                                    <button className="bg-white  text-[#0D0D0D]  font-[cd-m] py-2 rounded-full w-[100px] w-full mb-4 ">
                                         SUBSCRIBE
                                     </button>
 
@@ -546,8 +568,8 @@ export default function Home() {
                                 <p className="text-[#fff] text-[14px]"><a className="no-underline text-[#ABABAB] " href="#">By clicking, you agree to our</a> Terms & Conditions, Privacy and Data Protection Policy
                                 </p>
 
-                                </div>
-                            
+                            </div>
+
 
                         </div>
                         <div className="col-md-6 ">

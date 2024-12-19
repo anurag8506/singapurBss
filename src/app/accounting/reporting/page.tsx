@@ -23,19 +23,19 @@ export default function Home() {
             <Header />
 
             <section className='bg-[#FFFCF5]'>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
+                <div className="overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[50px] ">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center pb-4 pt-4">
+                        <div className="row align-items-center pb-4 ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-9'>
-                                    <p className=" font-[cd-se]  no-underline sm:text-[50px] text-[30px]   text-[#212833]    sm:leading-[45px] leading-[30px]">Access essential business metrics anytime, anywhere
+                                    <p className=" font-[cd-b]  no-underline sm:text-[50px] text-[30px]   text-[#212833]    sm:leading-[45px] leading-[30px] p-text">Access essential business metrics anytime, anywhere
                                     </p>
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]    text-[#212833]  ">The Cloud BSS Dashboard provides a comprehensive view of your business finances by processing all your documents to extract key operational insights, enabling you to clearly understand your business  is performance at any moment.,</p>
+                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]    text-[#212833] p-text  ">The Cloud BSS Dashboard provides a comprehensive view of your business finances by processing all your documents to extract key operational insights, enabling you to clearly understand your business  is performance at any moment.,</p>
                                     <div className='sm:flex sm:justify-start justify-center   '>
                                         <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2 sm:mr-4">
-                                            <button className="bg-[#212833] border border-dark text-white font-medium sm:w-[200px] w-full   px-6 py-[10px] rounded-full mb-4 ">
+                                            <button className="bg-[#212833] border border-dark text-white font-medium sm:w-[200px] w-full   px-6 py-[10px] rounded-full mb-4  p-text">
                                                 Get Started
                                             </button>
                                         </div>

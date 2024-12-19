@@ -223,12 +223,12 @@ export default function Home() {
              <>
             <Header />
 
-            <section className='bg-[#FFFCF5] '>
-                <div className="overflow-hidden sm:px-20 px-6  pt-32 ">
+            <section className='bg-[#fff] '>
+                <div className="overflow-hidden sm:px-20 px-6 sm:pt-[100px] pt-[50px] pb-5 ">
                     <div className="container-fluid p-0">
                         <div className="row justify-center  pb-5">
                             <div  className="col-md-7 sm:pt-1 ">
-                                <p className="font-[cd-se] font-[500] no-underline sm:text-[50px] text-[30px] text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation For Foreigners in India</p>
+                                <p className="font-[cd-se] font-[500] no-underline sm:text-[50px] text-[30px] text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation For Foreigners in India</p>
                                 <p className="font-[cd-r] font-[500] no-underline sm:text-[18px] text-[16px]  text-[#212833] text-center">We’ll get your company registered, set up the annual reporting, and help open a bank account online — no need to go anywhere</p>
                                 <div className="flex justify-content-center items-center pt-4">
 
@@ -512,7 +512,7 @@ export default function Home() {
                                     <div className="row justify-center pb-4">
                                         <div className="col-md-6 pt-3 text-center">
 
-                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] px-6 text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
+                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
 
 
 

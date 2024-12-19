@@ -23,16 +23,16 @@ export default function Home() {
             <Header />
 
             <section className='bg-[#FFFCF5]'>
-                <div className="overflow-hidden sm:px-20 px-6 py-10  pt-32 ">
+                <div className="overflow-hidden sm:px-20 px-6 py-10 sm:pt-[100px] pt-[50px] ">
                     <div className="container-fluid p-0">
-                        <div className="row align-items-center  pt-4">
+                        <div className="row align-items-center ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-9'>
-                                    <p className=" font-[cd-se]     no-underline sm:text-[50px] text-[30px]  text-[#212833]    sm:leading-[50px] leading-[30px]">E-commerce insights at your fingertips
+                                    <p className=" font-[cd-se] no-underline sm:text-[50px] text-[30px]  text-[#212833]    sm:leading-[50px] leading-[30px] p-text">E-commerce insights at your fingertips
                                     </p>
                                 </div>
                                 <div className='col-md-10'>
-                                    <p className="font-[cd-r] text-[16px]    text-[#212833]  ">See your sales, returns, and fees when you connect your marketplaces. Make smarter business decisions with online retail insights about performance and profitability.
+                                    <p className="font-[cd-r] text-[16px]  text-[#212833] p-text ">See your sales, returns, and fees when you connect your marketplaces. Make smarter business decisions with online retail insights about performance and profitability.
                                     </p>
                                     <div className='sm:flex sm:justify-start justify-center   '>
                                         <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2 sm:mr-4">
