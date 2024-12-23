@@ -34,43 +34,34 @@ export default function Header1() {
                   </h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
+                      <Link href="/incorporation/forLocals" className="text-white no-underline hover:underline ">
                         For Foreigners
-                      </a>
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                        For India & PRs
-                      </a>
+                      <Link href="/incorporation/incorporation(Foreigners)" className="text-white no-underline hover:underline">
+                      For Singaporeans & PRs
+                     </Link >
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="/incorporation/aspire-business-account" className="text-white no-underline hover:underline">
+                      Aspire Business Account
+                     </Link >
                     </li>
                   </ul>
                   <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >OTHER SERVICES</h3>
                   <ul className="list-unstyled">
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Nominee Directo
-                      </a>
+                      <Link href="/nominee-director" className="text-white no-underline hover:underline">
+                      Nominee Director
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                        For India & PRs
-                      </a>
+                      <Link href="/convert-sole-proprietorship-into-pte-ltd" className="text-white no-underline hover:underline">
+                      Convert Sole Proprietorship into Pte Ltd.
+                     </Link >
                     </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                        For India & PRs
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                       Convert Sole Proprietorship into Pte Ltd .
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Special Purpose Vehicle (SPV)
-                      </a>
-                    </li>
+                  
                   </ul>
               
                 </div>
@@ -87,65 +78,49 @@ export default function Header1() {
                   </h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
+                      <Link href="/accounting/accounting-services" className="text-white no-underline hover:underline ">
                       Accounting & Tax
-                      </a>
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <Link href="/accounting/accounting-for-ecommerce" className="text-white no-underline hover:underline">
                       Ecommerce Accounting
-                      </a>
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Accounting for Amazon
-                      </a>
+                      <Link href="/accounting/bookkeeping" className="text-white no-underline hover:underline">
+                    Bookkeeping
+                     </Link >
                     </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      GST Registration
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Bookkeeping
-                      </a>
-                    </li>
+                 
 
                   </ul>
-                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >COMPANY</h3>
+                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >COMPANY SECRETARY
+                  </h3>
                   <ul className="list-unstyled">
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      About Us
-                      </a>
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Company Secretary
+                     </Link >
+                    </li>
+               
+                   
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Transfer of Shares
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Contact Us
-                      </a>
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Allotment of Shares
+                     </Link >
                     </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Careers at CloudBss
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Privacy Policy
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Terms & Conditions
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Terms of Business
-                      </a>
-                    </li>
+                  
+                   
+                  
+                  
                   </ul>
+                
               
                 </div>
                 </div>
@@ -161,64 +136,29 @@ export default function Header1() {
                   <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]"> FEATURES</h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
+                      <Link href="#" className="text-white no-underline hover:underline ">
                       Invoicing
-                      </a>
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Ecommerce Insights
-                      </a>
+                      <Link href="#" className="text-white no-underline hover:underline">
+                     Ecommerce Insights
+                     </Link >
+                    </li>
+                
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                    Reporting
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Personal Expenses
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Purchases
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <Link href="#" className="text-white no-underline hover:underline">
                       Demo
-                      </a>
+                     </Link >
                     </li>
 
                   </ul>
-                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] pt-5" >COMPANY SECRETARY
-                  </h3>
-                  <ul className="list-unstyled">
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Company Secretary
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                Annual Return Filing
-                      </a>
-                    </li>
-                   
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Transfer of Shares
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Allotment of Shares
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Switch Secretary
-                      </a>
-                    </li>
-                  
-                  
-                  </ul>
+                
               
                 </div>
                 </div>
@@ -229,30 +169,47 @@ export default function Header1() {
                 <div className=" ">
                 <div className="col-md-12">
                 <div  className="col-12">
-                  <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">PARTNERS</h3>
+                  <h3 className="font-semibold mb-3 text-[16px] text-[#939393] " >COMPANY</h3>
                   <ul className="list-unstyled">
-                    <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
-                      Our Partners
-                      </a>
-                    </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Ecommerce Insights
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Aspire Business Account
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      White Label Solutions
-                      </a>
-                    </li>
-                
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      About Us
+                     </Link >
 
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Our Partners
+                     </Link >
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Contact Us
+                     </Link >
+                    </li>
+                    
+               
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Careers at CloudBss
+                     </Link >
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Privacy Policy
+                     </Link >
+                    </li>
+                 
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Terms & Conditions
+                     </Link >
+                    </li>
+                    <li  className="font-[cd-r] mb-2 text-[14px]">
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Terms of Business
+                     </Link >
+                    </li>
                   </ul>
                 
               
@@ -274,46 +231,32 @@ export default function Header1() {
                   <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">RESOURCES</h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
+                      <Link href="#" className="text-white no-underline hover:underline ">
                       Our Blog
-                      </a>
+                     </Link >
                     </li>
+                  
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Webinars
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <Link href="#" className="text-white no-underline hover:underline">
                       Company Name Search
-                      </a>
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      SSIC Business Activity Code Search
-                      </a>
+                      <Link href="#" className="text-white no-underline hover:underline">
+                      Business Name Generator
+                     </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Founder’s Career Test
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
-                      Startup Name Generator
-                      </a>
-                    </li>
-                    <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <Link href="#" className="text-white no-underline hover:underline">
                       Margin Calculator
-                      </a>
+                     </Link >
                     </li>
-                   
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <Link href="#" className="text-white no-underline hover:underline">
                       Ebay Fee Calculator
-                      </a>
+                     </Link >
                     </li>
+                
 
                   </ul>
                 
