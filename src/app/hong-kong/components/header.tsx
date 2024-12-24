@@ -272,7 +272,7 @@ const Header = () => {
 
         {openMenu === "incorporation3" && (
           <div
-            className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out z-10"
+            className="sm:absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out z-10"
             style={{
               background: "white",
               border: "1px solid #e5e5e5",
