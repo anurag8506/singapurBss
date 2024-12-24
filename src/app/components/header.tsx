@@ -89,7 +89,7 @@ const Header = () => {
                   </button>
 
                   {openMenu === "services" && (
-                    <div className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
+                    <div className="absolute left-[-2] top-[20px] py-1  w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
                       <ul className="pl-5 py-2 space-y-2 mt-3 ">
                         <p className="font-[cd-m] text-[18px] text-[#9F9F9F]">GET STARTED</p>
                         <Link href="/accounting/accounting-services" className="no-underline">
@@ -150,7 +150,7 @@ const Header = () => {
                   </button>
 
                   {openMenu === "pricing" && (
-                    <div className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
+                    <div className="absolute left-[-2] top-[20px] py-1 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
                       <ul className="pl-5 py-2 space-y-2 mt-3">
 
                         <Link href="/pricing/incorporation-prices" className="no-underline">
