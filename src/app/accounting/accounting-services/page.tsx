@@ -198,7 +198,7 @@ export default function Home() {
                         <div className="col-md-5 mb-4">
                           
                                     <p className='text-[22px] font-[cd-se] text-[#fff]'>Experts on your side</p>
-                                    <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-0 '>Get an expert accounting team for your business from day one. Our India-based team helps founders get their taxes right from the start. Got questions? Get a response via live chat within one working day.
+                                    <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-0 '>Get an expert accounting team for your business from day one. Our  Singapore -based team helps founders get their taxes right from the start. Got questions? Get a response via live chat within one working day.
                                     </p>
 
 
@@ -247,7 +247,7 @@ export default function Home() {
 
                                 <div className="row justify-center  sm:pb-4 pb-3">
                                     <div className="col-md-6 sm:pt-3  ">
-                                        <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[25px]   text-[#212833]   sm:leading-[40px] leading-[30px] text-center   ">Business accounting services in India we provide</p>
+                                        <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[25px]   text-[#212833]   sm:leading-[40px] leading-[30px] text-center   ">Business accounting services in  Singapore  we provide</p>
                                     </div>
                                 </div>
                             </div>

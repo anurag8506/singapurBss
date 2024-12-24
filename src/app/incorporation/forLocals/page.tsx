@@ -289,8 +289,8 @@ export default function Home() {
                         <div className="container-fluid p-0">
                             <div className="row justify-center  pb-10">
                                 <div className="col-md-6 ">
-                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation Services in India</p>
-                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833] text-center">Company incorporation in India does not have to be a hassle. We handle the process for you in just a few steps online. Let is  start by checking if your company name is available.</p>
+                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation Services in  Singapore </p>
+                                    <p className="font-[cd-r] font-[500] no-underline text-[16px]  text-[#212833] text-center">Company incorporation in  Singapore  does not have to be a hassle. We handle the process for you in just a few steps online. Let is  start by checking if your company name is available.</p>
                                     <div className="sm:flex justify-center items-center gap-2 pt-4">
                                         <input
                                             type="search"
@@ -384,7 +384,7 @@ export default function Home() {
 
                                 <div className="row justify-center pt-2 sm:pb-4 pb-2">
                                     <div className="col-md-6 pt-3 ">
-                                        <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">Company incorporation in India: are you local?</p>
+                                        <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">Company incorporation in  Singapore : are you local?</p>
                                     </div>
                                 </div>
                             </div>
@@ -591,8 +591,8 @@ export default function Home() {
                                 <div className="row justify-center pb-4">
                                     <div className="col-md-6 pt-3 text-center">
 
-                                        <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] px-6 text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
-                                        <p className="font-[cd-r] font-[500]  text-[18px]  text-[#212833]  sm:text-center text-left text-center">Let’s try and understand the types of business structures available in India:
+                                        <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] px-6 text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in  Singapore </p>
+                                        <p className="font-[cd-r] font-[500]  text-[18px]  text-[#212833]  sm:text-center text-left text-center">Let’s try and understand the types of business structures available in  Singapore :
                                         </p>
 
 
@@ -682,7 +682,7 @@ export default function Home() {
                                     <div className="row justify-center pb-4">
                                         <div className="col-md-6 pt-3 text-center">
 
-                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
+                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in  Singapore </p>
 
                                         </div>
                                     </div>

@@ -57,7 +57,7 @@ export default function Header1() {
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="/convert-sole-proprietorship-into-pte-ltd" className="text-white no-underline hover:underline">
+                      <Link href="/convert-sole-proprietorship" className="text-white no-underline hover:underline">
                       Convert Sole Proprietorship into Pte Ltd.
                      </Link >
                     </li>
@@ -99,19 +99,19 @@ export default function Header1() {
                   </h3>
                   <ul className="list-unstyled">
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/secretary" className="text-white no-underline hover:underline">
                       Company Secretary
                      </Link >
                     </li>
                
                    
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/transfer-of-shares" className="text-white no-underline hover:underline">
                       Transfer of Shares
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/allotment-of-Shares" className="text-white no-underline hover:underline">
                       Allotment of Shares
                      </Link >
                     </li>
@@ -136,23 +136,23 @@ export default function Header1() {
                   <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]"> FEATURES</h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline ">
+                      <Link href="/accounting/invoicing" className="text-white no-underline hover:underline ">
                       Invoicing
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/accounting/ecommerce-insights" className="text-white no-underline hover:underline">
                      Ecommerce Insights
                      </Link >
                     </li>
                 
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/accounting/reporting" className="text-white no-underline hover:underline">
                     Reporting
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/demo" className="text-white no-underline hover:underline">
                       Demo
                      </Link >
                     </li>
@@ -172,25 +172,25 @@ export default function Header1() {
                   <h3 className="font-semibold mb-3 text-[16px] text-[#939393] " >COMPANY</h3>
                   <ul className="list-unstyled">
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/about" className="text-white no-underline hover:underline">
                       About Us
                      </Link >
 
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/our-partners" className="text-white no-underline hover:underline">
                       Our Partners
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/contact-us" className="text-white no-underline hover:underline">
                       Contact Us
                      </Link >
                     </li>
                     
                
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/careers" className="text-white no-underline hover:underline">
                       Careers at CloudBss
                      </Link >
                     </li>
@@ -237,22 +237,22 @@ export default function Header1() {
                     </li>
                   
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/company-name-search" className="text-white no-underline hover:underline">
                       Company Name Search
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/business-name-generator" className="text-white no-underline hover:underline">
                       Business Name Generator
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/margin-calculator" className="text-white no-underline hover:underline">
                       Margin Calculator
                      </Link >
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <Link href="#" className="text-white no-underline hover:underline">
+                      <Link href="/ebay-fee-calculator" className="text-white no-underline hover:underline">
                       Ebay Fee Calculator
                      </Link >
                     </li>
@@ -342,7 +342,7 @@ export default function Header1() {
                 </div>
             </div>
             </div>
-            <p className="text-[#C1C1C1] text-[12px] pt-4 font-[cd-r]" >Copyright © 2023–2024 Cloud Bss. Pvt. Ltd., India. All rights reserved. Cloud Bss. Pvt. Ltd. has obtained waiver towards the The India Code on Take-overs and Mergers (Code) and is not subjected to the implications arising from the requirements of the Code. All the protections afforded by the Code do not apply to the shareholders of Cloud Bss, including the right to receive a minimum offer price from an offeror in a mandatory or voluntary offer. Here is further information.</p>
+            <p className="text-[#C1C1C1] text-[12px] pt-4 font-[cd-r]" >Copyright © 2023–2024 Cloud Bss. Pvt. Ltd.,  Singapore . All rights reserved. Cloud Bss. Pvt. Ltd. has obtained waiver towards the The  Singapore  Code on Take-overs and Mergers (Code) and is not subjected to the implications arising from the requirements of the Code. All the protections afforded by the Code do not apply to the shareholders of Cloud Bss, including the right to receive a minimum offer price from an offeror in a mandatory or voluntary offer. Here is further information.</p>
         </div>
         <div className="col-md-6 mb-4 pt-4">
            <div className="justify-content-end d-flex gap-4">

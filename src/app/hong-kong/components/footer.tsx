@@ -130,22 +130,22 @@ export default function Header1() {
                   <h3 className=" font-[cd-b]  mb-3 text-[16px] text-[#939393]">COMPANY</h3>
                   <ul className="list-unstyled">
                     <li className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline ">
+                      <a href="/hong-kong/about" className="text-white no-underline hover:underline ">
                       About Us
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <a href="/hong-kong/our-partners" className="text-white no-underline hover:underline">
                       Our Partners
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <a href="/hong-kong/career" className="text-white no-underline hover:underline">
                       Career at Cloud Bss
                       </a>
                     </li>
                     <li  className="font-[cd-r] mb-2 text-[14px]">
-                      <a href="#" className="text-white no-underline hover:underline">
+                      <a href="/hong-kong/contact-us" className="text-white no-underline hover:underline">
                       Contact Us
                       </a>
                     </li>

@@ -27,7 +27,7 @@ export default function Home() {
                                                 <div className="col-md-12">
                                                     <div className="sm:p-5 p-3 pt-4">
                                                         <p className='font-[cd-m] font-[500]  text-[#212833] text-[20px] mb-2'>Joint venture</p>
-                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign entity will elect a local partner in India with whom it wishes to enter into a joint venture to operate its business in India. A Letter of Intent or Memorandum of Understanding (MOU) is signed between the foreign entity and the local partner, which will state the joint venture agreement basis. The joint venture agreement contains all the business terms, and it must be consistent with regional and international law. 
+                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign entity will elect a local partner in  Singapore  with whom it wishes to enter into a joint venture to operate its business in  Singapore . A Letter of Intent or Memorandum of Understanding (MOU) is signed between the foreign entity and the local partner, which will state the joint venture agreement basis. The joint venture agreement contains all the business terms, and it must be consistent with regional and international law. 
                                                         </p>
 
                                                     </div>
@@ -65,9 +65,9 @@ export default function Home() {
                                                 <div className="col-md-12">
                                                     <div className="sm:p-5 p-3 pt-4">
                                                         <p className='font-[cd-m] font-[500]  text-[#212833] text-[20px] mb-2'>Wholly-owned subsidiary</p>
-                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign national/company can invest 100% FDI in an Indian company through the automatic route for the purpose of registering foreign in India. When a foreign entity invests 100% FDI in an Indian company, the Indian company will become a wholly-owned subsidiary of the foreign entity/company.
+                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign national/company can invest 100% FDI in an  Singapore n company through the automatic route for the purpose of registering foreign in  Singapore . When a foreign entity invests 100% FDI in an  Singapore n company, the  Singapore n company will become a wholly-owned subsidiary of the foreign entity/company.
                                                         </p>
-                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 pt-2'>A foreign company can register a liaison office, project office or branch office in India to carry on its operations in India. However, opening these offices requires RBI or government approval. </p>
+                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 pt-2'>A foreign company can register a liaison office, project office or branch office in  Singapore  to carry on its operations in  Singapore . However, opening these offices requires RBI or government approval. </p>
 
                                                     </div>
 
@@ -104,7 +104,7 @@ export default function Home() {
                                                 <div className="col-md-12">
                                                     <div className="sm:p-5 p-3 pt-4">
                                                         <p className='font-[cd-m] font-[500]  text-[#212833] text-[20px] mb-2'>Liaison office</p>
-                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign company can establish a liaison office for all liaison activities in India. The parent company (foreign company) will meet all the expenses of a liaison office through foreign remittance.</p>
+                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign company can establish a liaison office for all liaison activities in  Singapore . The parent company (foreign company) will meet all the expenses of a liaison office through foreign remittance.</p>
 
                                                     </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
                                                 <div className="col-md-12">
                                                     <div className="sm:p-5 p-3 pt-4">
                                                         <p className='font-[cd-m] font-[500]  text-[#212833] text-[20px] mb-2'>Project office</p>
-                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign company can establish a project office in India to execute projects awarded to them by an Indian Company. However, to establish such a project office, the foreign company may be required to obtain approval from the Reserve Bank of India.
+                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign company can establish a project office in  Singapore  to execute projects awarded to them by an  Singapore n Company. However, to establish such a project office, the foreign company may be required to obtain approval from the Reserve Bank of  Singapore .
                                                         </p>
                                                     </div>
                                                 </div>
@@ -183,7 +183,7 @@ export default function Home() {
                                                 <div className="col-md-12">
                                                     <div className="sm:p-5 p-3 pt-4">
                                                         <p className='font-[cd-m] font-[500]  text-[#212833] text-[20px] mb-2'>Branch office</p>
-                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign company can establish a branch office in India. To establish a branch office, the foreign company must be a large business and provide proof of profitability. 
+                                                        <p className='font-[cd-r] font-[500] text-[#7C7C7C] text-[14px] mb-0 '>A foreign company can establish a branch office in  Singapore . To establish a branch office, the foreign company must be a large business and provide proof of profitability. 
 
                                                         </p>
 
@@ -228,7 +228,7 @@ export default function Home() {
                     <div className="container-fluid p-0">
                         <div className="row justify-center  pb-5">
                             <div  className="col-md-7 sm:pt-1 ">
-                                <p className="font-[cd-se] font-[500] no-underline sm:text-[50px] text-[30px] text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation For Foreigners in India</p>
+                                <p className="font-[cd-se] font-[500] no-underline sm:text-[50px] text-[30px] text-[#212833] text-center sm:leading-[50px] leading-[30px]">Company Incorporation For Foreigners in  Singapore </p>
                                 <p className="font-[cd-r] font-[500] no-underline sm:text-[18px] text-[16px]  text-[#212833] text-center">We’ll get your company registered, set up the annual reporting, and help open a bank account online — no need to go anywhere</p>
                                 <div className="flex justify-content-center items-center pt-4">
 
@@ -404,7 +404,7 @@ export default function Home() {
                     <div className="row justify-center ">
                                 <div className="col-md-6 sm:pt-1 ">
                                     <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[25px] text-[#212833] text-center sm:leading-[40px] leading-[25px] pt-4 ">Have a name? Check it now</p>
-                                    <p className="font-[cd-r] font-[500] text-[14px]   text-[#212833] text-center">Company incorporation in India does not have to be a hassle. We handle the process for you in just a few steps online. Let is  start by checking if your company name is available.</p>
+                                    <p className="font-[cd-r] font-[500] text-[14px]   text-[#212833] text-center">Company incorporation in  Singapore  does not have to be a hassle. We handle the process for you in just a few steps online. Let is  start by checking if your company name is available.</p>
                                     <div className="sm:flex justify-center items-center gap-2 pt-4">
                                         <input
                                             type="search"
@@ -434,7 +434,7 @@ export default function Home() {
 
                                 <div className="row justify-center pb-4">
                                     <div className="col-md-6 pt-4 text-center">
-                                        <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[25px]  text-[#212833] sm:leading-[40px] leading-[25px] text-center ">What are the Ways in Which Foreign companies can be Registered in India?</p>
+                                        <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[25px]  text-[#212833] sm:leading-[40px] leading-[25px] text-center ">What are the Ways in Which Foreign companies can be Registered in  Singapore ?</p>
                                     </div>
                                 </div>
                             </div>
@@ -512,7 +512,7 @@ export default function Home() {
                                     <div className="row justify-center pb-4">
                                         <div className="col-md-6 pt-3 text-center">
 
-                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in India</p>
+                                            <p className="font-[cd-se]  no-underline sm:text-[40px] text-[28px] text-[#212833] text-center sm:leading-[45px] leading-[30px]">What are the types of business structures in  Singapore </p>
 
 
 

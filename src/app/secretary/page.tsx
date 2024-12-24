@@ -25,7 +25,7 @@ export default function Home() {
                         <div className="row align-items-center pb-4 ">
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-8'>
-                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] sm:leading-[40px] leading-[30px] p-text">Company Secretarial services in India</p>
+                                    <p className="font-[cd-se]  no-underline sm:text-[45px] text-[28px]  text-[#212833] sm:leading-[40px] leading-[30px] p-text">Company Secretarial services in  Singapore </p>
 
 
                                 </div>
@@ -310,7 +310,7 @@ export default function Home() {
                                         <div className='col-md-10 mb-4 '>
                                             <div>
                                                 <p className="font-[cd-se] font-[500] text-[#212833] text-[22px]  mb-2">
-                                                    Transfer of shares in India
+                                                    Transfer of shares in  Singapore 
                                                 </p>
                                                 <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-0">
                                                     Transfer of shares in a private limited company — a procedure when a shareholder sells all of his shares or some of them to a company or an individual. It must happen in accordance with the company’s Constitution and the legal requirements.
@@ -340,7 +340,7 @@ export default function Home() {
                                         <div className='col-md-10 mb-4 '>
                                             <div>
                                                 <p className="font-[cd-se] font-[500] text-[#212833] text-[22px]  mb-2">
-                                                    Allotment of shares in India
+                                                    Allotment of shares in  Singapore 
                                                 </p>
                                                 <p className="font-[cd-r] font-[500] text-[#7C7C7C] text-[16px] mb-0">
                                                     According to Companies Act, Allotment of shares is a procedure of creating and issuing shares, either for new or existing shareholders. To initiate the process, the directors must get the existing shareholders’ approval at a general meeting.

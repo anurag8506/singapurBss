@@ -646,7 +646,7 @@ export default function Home() {
             </div>
             <p className='font-[cd-m]'>Nominee Director</p>
 
-<p>At least one of your directors has to be a Singapore resident. Hiring a nominee is a common and legal practice.  A nominee puts their name on your papers but can’t make any core business decisions. If there’s any wrongdoing, such as late or incorrect reports, the nominee director shares legal responsibility. That’s why you have to get an accounting package with this service.</p>
+<p>At least one of your directors has to be a Singapore resident. Hiring a nominee is a common and legal practice.A nominee puts their name on your papers but can’t make any core business decisions. If there’s any wrongdoing, such as late or incorrect reports, the nominee director shares legal responsibility. That’s why you have to get an accounting package with this service.</p>
 
                      <div className='pt-4 pb-4'>
                 <div className='border border-dark'></div>
@@ -787,7 +787,7 @@ export default function Home() {
             </div>
             <p className='font-[cd-m]'>Nominee Director</p>
 
-<p>At least one of your directors has to be a Singapore resident. Hiring a nominee is a common and legal practice.  A nominee puts their name on your papers but can’t make any core business decisions. If there’s any wrongdoing, such as late or incorrect reports, the nominee director shares legal responsibility. That’s why you have to get an accounting package with this service.</p>
+<p>At least one of your directors has to be a Singapore resident. Hiring a nominee is a common and legal practice.A nominee puts their name on your papers but can’t make any core business decisions. If there’s any wrongdoing, such as late or incorrect reports, the nominee director shares legal responsibility. That’s why you have to get an accounting package with this service.</p>
 
                      <div className='pt-4 pb-4'>
                 <div className='border border-dark'></div>
@@ -838,7 +838,7 @@ export default function Home() {
             </div>
             <p className='font-[cd-m]'>Nominee Director</p>
 
-<p>At least one of your directors has to be a Singapore resident. Hiring a nominee is a common and legal practice.  A nominee puts their name on your papers but can’t make any core business decisions. If there’s any wrongdoing, such as late or incorrect reports, the nominee director shares legal responsibility. That’s why you have to get an accounting package with this service.</p>
+<p>At least one of your directors has to be a Singapore resident. Hiring a nominee is a common and legal practice.A nominee puts their name on your papers but can’t make any core business decisions. If there’s any wrongdoing, such as late or incorrect reports, the nominee director shares legal responsibility. That’s why you have to get an accounting package with this service.</p>
 
                      <div className='pt-4 pb-4'>
                 <div className='border border-dark'></div>

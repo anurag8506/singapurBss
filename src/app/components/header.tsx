@@ -77,7 +77,7 @@ const Header = () => {
 
            
                 <div
-                  className="relative"
+                  className="relative z-50"
                   onMouseEnter={() => handleMouseEnter("services")}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -90,7 +90,7 @@ const Header = () => {
 
                   {openMenu === "services" && (
                     <div className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out">
-                      <ul className="pl-5 py-2 space-y-2 mt-3">
+                      <ul className="pl-5 py-2 space-y-2 mt-3 ">
                         <p className="font-[cd-m] text-[18px] text-[#9F9F9F]">GET STARTED</p>
                         <Link href="/accounting/accounting-services" className="no-underline">
                         <li className="hover:bg-gray-100 mb-3 leading-[18px] text-[16px] font-[500] text-black">
@@ -138,7 +138,7 @@ const Header = () => {
                 </div>
 
                 <div
-                  className="relative"
+                  className="relative z-50"
                   onMouseEnter={() => handleMouseEnter("pricing")}
                   onMouseLeave={handleMouseLeave}
                 >
