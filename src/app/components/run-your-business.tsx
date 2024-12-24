@@ -36,7 +36,7 @@ export default function Home() {
 
                         </div>
                         <div className="col-md-6 ">
-                            <div className="d-flex sm:justify-end">
+                            <div className="d-flex sm:justify-end justify-center">
                                 <div className="col-md-6">
                             <Image src="/assets/original-4703d0ba72b72f87fa49a618a24a1f6d 1.gif" className="w-full"
                                 width={1080}
