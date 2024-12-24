@@ -4,7 +4,10 @@ import Header from '../../components/header';
 
 import Footer from '../../components/footer'
 import Image from 'next/image';
-import Link from 'next/link';
+
+import RunBusiness from '../../components/run-your-business'
+import ResourcesForManaging from "../../components/resources-for-managing"
+
 
 import "bootstrap/dist/css/bootstrap.min.css"
 export default function Home() {
@@ -26,7 +29,7 @@ export default function Home() {
                                 <div className='col-md-10'>
                                     <p className="font-[cd-r] font-[500] no-underline text-[16px] text-[#212833] p-text  ">Free yourself from financial admin. Our dedicated experts and easy-to-use tools make managing your money and paying the right tax effortless.</p>
                                     <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2">
-                                        <button className="bg-[#212833] text-white font-[cd-m] sm:w-[180px]  w-[180px]  px-6 py-[10px] rounded-full mb-4 tracking-wider">
+                                        <button className=" text-[#000] font-[cd-m] sm:w-[180px]  w-[180px] border border-dark px-6 py-[8px] rounded-full mb-4 tracking-wider hover:bg-[#000] hover:text-[#fff] ">
                                             Get Started
                                         </button>
                                     </div>
@@ -808,128 +811,8 @@ export default function Home() {
 
                 </div>
             </section>
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  py-5">
-                <div className="container-fluid p-0">
-                    <div className="row justify-center">
-                        <div className="col-md-6">
-                            <div className="text-center">
-                                <p className="font-[cd-se]  no-underline sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[40px] leading-[30px]">Explore over 600 resources for managing small business finances</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row justify-between pt-14">
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 20.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[16px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 21.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[14px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 22.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[22px]  leading-[25px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] bg-[#fff] text-[14px] text-[#212833] border-[#212833] border-[2px]  rounded-[5px] px-10 py-[10px]" type="button">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-5 py-5">
-                <div className="container-fluid p-0">
-                    <div className="row align-items-center">
-                        <div className="col-md-6 mb-4">
-                           
-                                <p className="font-[cd-se]  no-underline sm:text-[38px] text-[30px]  text-[#fff]  sm:leading-[38px] leading-[30px]">Get tips on how to run your business smarter</p>
-                                <div className="col-md-9">
-                                <p className='font-[cd-r] text-[#ABABAB] text-[16px]  pt-4 mb-0'>Learn crucial tips on how to save money and build a flourishing business, with real entrepreneurs sharing their own experiences.</p>
-                                <div className="sm:flex  items-center gap-4  pt-4">
-                                    <input
-                                        type="email"
-                                        placeholder="Email address"
-                                        className="w-full px-4 py-2 rounded-full  text-[#0D0D0D]  border border-gray-400 mb-4 "
-                                    />
-                                    <button className="bg-white  text-[#0D0D0D]  font-[cd-m] px-6 py-2 rounded-full w-[140px] w-full mb-4 ">
-                                        SUBSCRIBE
-                                    </button>
-
-                                </div>
-                                <p className="text-[#fff] text-[14px]"><a className="no-underline text-[#ABABAB] " href="#">By clicking, you agree to our</a> Terms & Conditions, Privacy and Data Protection Policy
-                                </p>
-
-                                </div>
-                            
-
-                        </div>
-                        <div className="col-md-6 ">
-                            <Image src="/assets/original-4703d0ba72b72f87fa49a618a24a1f6d 1.gif" className="w-full"
-                                width={1080}
-                                height={1080}
-                                alt="no-img"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
+       <ResourcesForManaging/>
+            <RunBusiness/>
 
 
 

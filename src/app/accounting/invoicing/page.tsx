@@ -4,7 +4,7 @@ import Header from '../../components/header';
 
 import Footer from '../../components/footer'
 import Image from 'next/image';
-import { useState } from 'react';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -12,11 +12,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "bootstrap/dist/css/bootstrap.min.css"
+import RunBusiness from '../../components/run-your-business'
+import FAQ from "../../components/faq"
+
 export default function Home() {
-    const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
-const toggleFAQ = (index: number) => {
-    setActiveFAQ(activeFAQ === index ? null : index);
-  };
+
     return (
         <>
             <Header />
@@ -36,7 +36,7 @@ const toggleFAQ = (index: number) => {
                                     <p className="font-[cd-r]  no-underline text-[16px] p-text   text-[#212833] ">Generate and dispatch invoices swiftly to accelerate payment collection and maintain control of your cash flow.</p>
                                     <div className='sm:flex sm:justify-start justify-center   '>
                                     <div className="flex sm:justify-start justify-center   items-center sm:pt-4 pt-2 sm:mr-4">
-                                        <button className="bg-[#212833] border border-dark text-white font-medium sm:w-[200px] w-[200px]   px-6 py-[10px] rounded-full mb-4 ">
+                                        <button className="border border-dark  font-medium sm:w-[200px] w-[200px]   px-6 py-[8px] rounded-full mb-4 text-[#000] hover:bg-[#000] hover:text-[#fff] ">
                                         Get Started
                                         </button>
                                     </div>
@@ -238,7 +238,7 @@ const toggleFAQ = (index: number) => {
                                     <p className='font-[cd-r]   text-[#7C7C7C] sm:text-[16px]  mb-0 '>Get rid of app clutter: we are the only accounting and financial management solution you will need. Finally, all your data, tools and accounting details are in one place – as they should be.
                                     </p>
                                     <div className="items-center  pt-4">
-                                        <button className="bg-[#212833] border border-dark text-white font-medium sm:w-[220px] w-[220px]   px-6 py-[10px] rounded-full mb-4 tracking-wider ">
+                                        <button className=" border border-dark text-[#000] font-medium sm:w-[220px] w-[220px]   px-6 py-[8px] rounded-full mb-4 tracking-wider hover:bg-[#000] hover:text-[#fff] ">
                                         Get Started
                                         </button>
                                     </div>
@@ -417,152 +417,9 @@ const toggleFAQ = (index: number) => {
 
    
 
-            <section className="bg-[#F3EFE7] sm:px-20 px-6 pb-20 py-5">
-                <div className="overflow-hidden">
-                    <div className="row justify-center">
-                        <div className="col-md-6">
-                            <p className="font-[cd-se] text-center no-underline sm:text-[35px] text-[28px] text-[#212833] sm:leading-[45px] leading-[30px]">Frequently Asked Questions on Company Registration</p>
-                            <div className="d-flex justify-center">
-                                <button className="text-[#212833] underline mt-2 text-center font-[cd-m] text-[16px]">More FAQs</button>
+            <FAQ />
 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row pt-5">
-                        <div className="col-md-12 mb-4">
-                            {/* FAQs */}
-                            <div  >
-
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(1)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 1 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 1 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(2)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">What happens if my company name is already taken?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 2 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 2 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(3)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 3 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 3 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(4)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 4 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 4 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(5)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 5 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 5 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(6)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">How do I check if my company is registered or not?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 6 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 6 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-5 py-5">
-                <div className="container-fluid p-0">
-                    <div className="row align-items-center">
-                        <div className="col-md-6 mb-4">
-                            <div className="col-md-8">
-                                <p className='font-[cd-m] text-[#fff] sm:text-[30px] text-[18px] leading-[20px] sm:leading-[30px]  mb-0'>Get tips on how to run your business smarter</p>
-                                <p className='font-[cd-r] text-[#ABABAB] sm:text-[16px] text-[14px] pt-4 mb-0'>Learn crucial tips on how to save money and build a flourishing business, with real entrepreneurs sharing their own experiences.</p>
-                                <div className="sm:flex justify-center items-center gap-4 max-w-lg mx-auto pt-4">
-                                    <input
-                                        type="email"
-                                        placeholder="Email address"
-                                        className="w-full px-4 py-2 rounded-full text-[#212833] border  bg-transparent mb-4  text-white "
-                                    />
-                                    <button className="bg-white text-[#212833] font-medium px-6 py-2 rounded-full sm:w-[140px] w-full mb-4 ">
-                                        SUBSCRIBE
-                                    </button>
-
-                                </div>
-                                <p className="text-[#fff] text-[14px]"><a className="no-underline text-[#ABABAB] " href="#">By clicking, you agree to our</a> Terms & Conditions, Privacy and Data Protection Policy
-                                </p>
-                            </div>
-
-                        </div>
-                        <div className="col-md-6 ">
-                            <div className='d-flex justify-content-end'>
-                                <Image src="/assets/original-4703d0ba72b72f87fa49a618a24a1f6d 1.png" className="w-full"
-                                    width={1080}
-                                    height={1080}
-                                    alt="no-img"
-                                />
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
+<RunBusiness />
 
     
       

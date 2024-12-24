@@ -198,7 +198,7 @@ const Header = () => {
               {/* Dropdown 1 */}
               <div className="space-y-5">
 
-      <div className="relative">
+      <div className="relative ">
         <button
           className="flex items-center text-lg text-black"
           onClick={() => handleMenuClick("incorporation1")}
@@ -209,7 +209,7 @@ const Header = () => {
 
         {openMenu === "incorporation1" && (
           <div
-            className="absolute left-0 mt-2 w-[280px] bg-white shadow-md rounded-md transition-all ease-in-out z-10"
+            className="relative left-0 mt-2 w-[280px] bg-white rounded-md transition-all ease-in-out z-10 bg-white border border-[0.5px] border-[#9F9F9F]"
             style={{
               background: "white",
               border: "1px solid #e5e5e5",

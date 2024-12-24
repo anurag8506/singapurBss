@@ -2,19 +2,19 @@
 import Header from '../components/header';
 import Footer from '../components/footer'
 import Image from 'next/image';
+import FAQ from '../../components/faq'
+
 
 
 import { useState } from "react";
 
 export default function Home() {
     const [activeRegStep, setActiveRegStep] = useState<number | null>(null);
-    const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
+
     const regStep = (index: number) => {
         setActiveRegStep(activeRegStep === index ? null : index);
     };
-    const toggleFAQ = (index: number) => {
-        setActiveFAQ(activeFAQ === index ? null : index);
-    };
+
     return (
         <>
             <Header />
@@ -558,115 +558,7 @@ export default function Home() {
                 </div>
 
             </section>          
-            <section className="bg-[#fff] sm:px-20 px-6  py-5">
-                <div className="overflow-hidden">
-                    <div className="row justify-center">
-                        <div className="col-md-6 sm:pt-4">
-                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[30px]">Frequently Asked Questions on Company Registration</p>
-                            <div className="d-flex justify-center">
-                                <button className="text-[#212833] underline mt-2 text-center font-[cd-m] text-[16px]">More FAQs</button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row pt-5">
-                        <div className="col-md-12 mb-4">
-                            {/* FAQs */}
-                            <div  >
-
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(1)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 1 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 1 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(2)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">What happens if my company name is already taken?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 2 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 2 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(3)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 3 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 3 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(4)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 4 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 4 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(5)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 5 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 5 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(6)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">How do I check if my company is registered or not?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 6 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 6 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
+       <FAQ/>
 
 
 

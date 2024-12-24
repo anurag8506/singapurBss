@@ -4,7 +4,10 @@ import Header from '../components/header';
 import { useState } from "react";
 import Footer from '../components/footer'
 import Image from 'next/image';
-import Link from 'next/link';
+import RunBusiness from '../components/run-your-business'
+import ResourcesForManaging from "../components/resources-for-managing"
+
+
 
 import "bootstrap/dist/css/bootstrap.min.css"
 export default function Home() {
@@ -110,7 +113,7 @@ export default function Home() {
 
                                             </div>
                                         </div>
-                                        
+
                                         <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
@@ -152,7 +155,7 @@ export default function Home() {
 
                                             </div>
                                         </div>
-                                        
+
                                         <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
@@ -344,7 +347,7 @@ export default function Home() {
                                                 <p className="text-[16px] text-gray-500"> BigCommerce (Nasdaq: BIGC) is a leading software-as-a-service (SaaS) ecommerce platform that empowers merchants of all sizes to build, innovate and grow their businesses online. As a leading Open SaaS solution, BigCommerce provides merchants sophisticated enterprise-grade functionality, customization and performance with simplicity and ease of use. Tens of thousands of B2B and B2C companies across 150 countries and numerous industries use BigCommerce to create beautiful, engaging online stores, including Ben & Jerry&apos;s, Molton Brown, S.C. Johnson, Skullcandy, Sony and Vodafone..</p>
                                             </div>
                                         </div>
-                                        
+
                                         <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
@@ -415,7 +418,7 @@ export default function Home() {
                                 <div className="col-md-10 mb-4 p-0 m-0">
                                     <div className='row'>
 
-                                <div className="col-md-4 mb-4 d-flex">
+                                        <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
                                                     <Image
@@ -496,8 +499,8 @@ export default function Home() {
                         <div className="container-fluid p-0">
                             <div className="row justify-content-center">
                                 <div className="col-md-10 mb-4 p-0 m-0">
-                                  <div className='row'>
-                                  <div className="col-md-4 mb-4 d-flex">
+                                    <div className='row'>
+                                        <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
                                                     <Image
@@ -520,7 +523,7 @@ export default function Home() {
 
                                             </div>
                                         </div>
-                                      
+
                                         <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
@@ -540,7 +543,7 @@ export default function Home() {
 
                                             </div>
                                         </div>
-                                  </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -555,8 +558,8 @@ export default function Home() {
                         <div className="container-fluid p-0">
                             <div className="row justify-content-center">
                                 <div className="col-md-10 mb-4 p-0 m-0">
-                                 <div className='row'>
-                                             <div className="col-md-4 mb-4 d-flex">
+                                    <div className='row'>
+                                        <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
                                                     <Image
@@ -619,7 +622,7 @@ export default function Home() {
                                                     Kapaga is a cross-border payment service providing tailored business accounts to SMEs in the UK. We embolden international trade by simplifying complex corporate structures, consolidating accounts into one multi-banking platform, and providing competitive FX rates and dedicated account management. Kapaga is the leading provider of financial services for UK SMEs as we combine intuitive functionality and dedicated expertise through a product of passion and a wide variety of business banking services.</p>
                                             </div>
                                         </div>
-                                 </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -627,8 +630,8 @@ export default function Home() {
                     </div>
                 </section>
             );
-        } 
-  
+        }
+
         else if (selectedButton === 'btn5') {
             return (
                 <section>
@@ -636,8 +639,8 @@ export default function Home() {
                         <div className="container-fluid p-0">
                             <div className="row justify-content-center">
                                 <div className="col-md-10 mb-4 p-0 m-0">
-                                  <div className='row'>
-                                  <div className="col-md-4 mb-4 d-flex">
+                                    <div className='row'>
+                                        <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
                                                     <Image
@@ -694,7 +697,7 @@ export default function Home() {
 
                                             </div>
                                         </div>
-                                  </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -710,27 +713,27 @@ export default function Home() {
                         <div className="container-fluid p-0">
                             <div className="row justify-content-center">
                                 <div className="col-md-10 mb-4 p-0 m-0">
-                                <div className='row'>
-                                <div className="col-md-4 mb-4 d-flex">
-        <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
-            <div className="text-center">
-                <Image
-                    src="/assets/Group 17874.png"
-                    alt="Amazon Web Services"
-                    className="mx-auto w-full object-contain"
-                    width={1080}
-                    height={1080}
-                />
-            </div>
-            <p className="text-[16px] text-gray-500 pt-4">Compliance & Accounting Software</p>
-            <h3 className="font-[cd-m] text-[25px] leading-[28px] mt-4">Hellotax</h3>
+                                    <div className='row'>
+                                        <div className="col-md-4 mb-4 d-flex">
+                                            <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
+                                                <div className="text-center">
+                                                    <Image
+                                                        src="/assets/Group 17874.png"
+                                                        alt="Amazon Web Services"
+                                                        className="mx-auto w-full object-contain"
+                                                        width={1080}
+                                                        height={1080}
+                                                    />
+                                                </div>
+                                                <p className="text-[16px] text-gray-500 pt-4">Compliance & Accounting Software</p>
+                                                <h3 className="font-[cd-m] text-[25px] leading-[28px] mt-4">Hellotax</h3>
 
-            <p className="text-[16px] text-gray-500">
-                Cloud BSS clients get bespoke pricing up to 15% off on hellotax products.</p>
-            <p className="text-[16px] text-gray-500">Hellotax is an innovative tech company that builds automated solutions for VAT compliance. Companies of every size use their software to ensure their VAT compliance while selling online in Europe.</p>
-        </div>
-    </div>
-                                </div>
+                                                <p className="text-[16px] text-gray-500">
+                                                    Cloud BSS clients get bespoke pricing up to 15% off on hellotax products.</p>
+                                                <p className="text-[16px] text-gray-500">Hellotax is an innovative tech company that builds automated solutions for VAT compliance. Companies of every size use their software to ensure their VAT compliance while selling online in Europe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -746,8 +749,8 @@ export default function Home() {
                         <div className="container-fluid p-0">
                             <div className="row justify-content-center">
                                 <div className="col-md-10 mb-4 p-0 m-0">
-                                <div className='row'>
-                                <div className="col-md-4 mb-4 d-flex">
+                                    <div className='row'>
+                                        <div className="col-md-4 mb-4 d-flex">
                                             <div className="bg-[#F3EDE6] p-3 h-100 rounded-[20px] w-100 d-flex flex-column">
                                                 <div className="text-center">
                                                     <Image
@@ -776,7 +779,7 @@ export default function Home() {
                                                 </ul>
                                             </div>
                                         </div>
-                                </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -805,7 +808,7 @@ export default function Home() {
                                 <div className="flex justify-content-center items-center pt-4">
 
 
-                                    <button className="bg-[#212833] text-white font-[cd-m] sm:w-[200px]  w-[200px]  py-[12px] rounded-full mb-4">
+                                    <button className="border border-dark  text-[#000] font-[cd-m] sm:w-[200px]  w-[200px]  py-[8px] rounded-full mb-4 hover:bg-[#000] hover:text-[#fff]" >
                                         Become a partner
                                     </button>
                                 </div>
@@ -917,129 +920,11 @@ export default function Home() {
 
                 </div>
             </section>
-            
-            <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  sm:py-[80px] py-[30px]">
-                <div className="container-fluid p-0">
-                    <div className="row justify-center">
-                        <div className="col-md-6 pt-1">
-                            <div className="text-center">
-                                <p className="font-[cd-se]  sm:text-[40px] text-[30px]  text-[#212833] text-center sm:leading-[43px] leading-[33px]">Explore over 600 resources for managing small business finances</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row justify-between pt-14">
-                        <div className="col-md-4 mb-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 20.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[25px]  leading-[28px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[18px]  sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6">
-                                        <Link href="/"><button className="font-[cd-m] font-[500] text-[18px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] ">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 21.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[25px]  leading-[28px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[14px] text-[#4F4F4F]  text-[18px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] font-[500] text-[18px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] ">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div>
-                                <div className="">
-                                    <Image
-                                        src="/assets/image 22.png"
-                                        className="w-full"
-                                        width={1080}
-                                        height={1080}
-                                        alt="no-img"
-                                    />
-                                </div>
-                                <div className="pt-6 sm:pb-0 pb-4">
-                                    <p className='font-[cd-se] text-[#0D0D0D] text-[25px]  leading-[28px]  mb-0'>How to Deal with Inflation&apos;s Effects on Your Small Business</p>
-                                    <p className='font-[cd-r]  text-[18px] text-[#4F4F4F]  text-[16px] sm:pt-6 pt-3'>A year end package with everything you need to file comes standard with Cloud Inc. Upgrade your plan, and cross even more off your to-do list. With Premium, you get expert tax prep, filing, and year-round tax advisory support.</p>
-
-                                    <div className="sm:py-6 py-3">
-                                        <Link href="/"><button className="font-[cd-m] font-[500] text-[18px] text-[#212833] bg-[#fff] border-[1px] border-[#212833] px-5 py-[8px] rounded-[30px] text-center hover:bg-[#000] hover:text-[#fff] ">Learn More</button></Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
 
 
-                </div>
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-5 py-5">
-                <div className="container-fluid p-0">
-                    <div className="row align-items-center">
-                        <div className="col-md-6 mb-4">
 
-                            <p className="font-[cd-se]  no-underline sm:text-[38px] text-[30px]  text-[#fff]  sm:leading-[38px] leading-[30px]">Get tips on how to run your business smarter</p>
-                            <div className="col-md-9">
-                                <p className='font-[cd-r] text-[#ABABAB] text-[16px]  pt-4 mb-0'>Learn crucial tips on how to save money and build a flourishing business, with real entrepreneurs sharing their own experiences.</p>
-                                <div className="sm:flex  items-center gap-4  pt-4">
-                                    <input
-                                        type="email"
-                                        placeholder="Email address"
-                                        className="w-[1200px] px-4 py-2 rounded-full  text-[#0D0D0D]  border border-gray-400 mb-4 outline-none"
-                                    />
-                                    <button className="bg-white  text-[#0D0D0D]  font-[cd-m] py-2 rounded-full w-[100px] w-full mb-4 ">
-                                        SUBSCRIBE
-                                    </button>
-
-                                </div>
-                                <p className="text-[#fff] text-[14px]"><a className="no-underline text-[#ABABAB] " href="#">By clicking, you agree to our</a> Terms & Conditions, Privacy and Data Protection Policy
-                                </p>
-
-                            </div>
-
-
-                        </div>
-                        <div className="col-md-6 ">
-                            <Image src="/assets/original-4703d0ba72b72f87fa49a618a24a1f6d 1.gif" className="w-full"
-                                width={1080}
-                                height={1080}
-                                alt="no-img"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
+            <ResourcesForManaging />
+            <RunBusiness />
 
 
 

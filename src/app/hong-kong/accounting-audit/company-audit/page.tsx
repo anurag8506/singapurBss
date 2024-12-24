@@ -7,13 +7,14 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import FAQ from '../../components/faq'
+
+
 
 import { useState } from "react";
 export default function Home() {
-    const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
-    const toggleFAQ = (index: number) => {
-        setActiveFAQ(activeFAQ === index ? null : index);
-    };
+
+
     const [activeRegStep, setActiveRegStep] = useState<number | null>(null);
 
     const regStep = (index: number) => {
@@ -29,19 +30,19 @@ export default function Home() {
                             <div className="col-md-6 mb-4">
                                 <div className='col-md-9'>
                                     <p className="font-[cd-b] text-[#212833] text-[28px] leading-[35px] p-text sm:text-left sm:text-[45px] sm:leading-[45px]">
-                                    Hassle-free company audit services in Hong Kong
+                                        Hassle-free company audit services in Hong Kong
                                     </p>
                                 </div>
                                 <div className='col-md-10'>
                                     <p className="font-[cd-r] p-text sm:text-left text-[18px]  text-[#212833]  ">We handle all admin and paperwork, answer your queries quickly, and provide advice at every stage. Our audit services come at a flat, transparent fee, so there’s no need to worry about any unexpected extra charges.</p>
                                     <div className="sm:flex sm:justify-start justify-center items-center sm:pt-[50px] pt-[10px] pb-2 sm:gap-3 gap-2">
                                         <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833]  py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] sm:w-[260px] w-full ">
-                                        Book a consultation
+                                            Book a consultation
                                         </button>
                                         <div className='sm:mt-[0px] mt-[10px]'>
-                                        <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] sm:w-[140px] w-full ">
-                                            Pricing
-                                        </button>
+                                            <button className="font-[cd-m] font-[500] text-[14px] text-[#212833]  border-[1px] border-[#212833] py-[8px] rounded-[30px] text-center bg-[#fff] hover:bg-[#000] hover:text-[#fff] sm:w-[140px] w-full ">
+                                                Pricing
+                                            </button>
 
                                         </div>
                                     </div>
@@ -70,113 +71,113 @@ export default function Home() {
             </section>
             <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6 py-[30px]">
                 <div >
-                    
-                        <div className="text-center  ">
-                            <div className='d-flex justify-center'>
-                                <div className="px-2 py-[10px] font-[cd-m]  text-[16px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider sm:pt-4 ">
+
+                    <div className="text-center  ">
+                        <div className='d-flex justify-center'>
+                            <div className="px-2 py-[10px] font-[cd-m]  text-[16px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider sm:pt-4 ">
                                 WHY CLOUD BSS
-                                </div>
-                            </div>
-                            <div className="row justify-center  pb-3">
-                                <div className="col-md-6 sm:pt-5 pt-2 sm:pb-5 pb-2  ">
-                                    <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[28px] text-[#212833]  sm:leading-[38px] leading-[32px] text-center">Comprehensive company audit services</p>
-                                </div>
                             </div>
                         </div>
-                        <div className="row m-0 p-0 ">
-                            <div className="col-md-3 mb-4 ">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image src="/assets/image 33 (1).png" alt="Start secure trading quickly"  width="90" height="90" className="object-contain" />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]    leading-[20px] ">
+                        <div className="row justify-center  pb-3">
+                            <div className="col-md-6 sm:pt-5 pt-2 sm:pb-5 pb-2  ">
+                                <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[28px] text-[#212833]  sm:leading-[38px] leading-[32px] text-center">Comprehensive company audit services</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row m-0 p-0 ">
+                        <div className="col-md-3 mb-4 ">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image src="/assets/image 33 (1).png" alt="Start secure trading quickly" width="90" height="90" className="object-contain" />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]    leading-[20px] ">
                                         Access to experts
-                                        
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-0">
+
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-0">
                                         You get access to an Cloud Bss expert who will answer your questions and give you guidance. Your app connects you directly an auditor — you&apos;ll never be left in the dark.
-                                        
-                                        </p>
-                                    </div>
+
+                                    </p>
                                 </div>
                             </div>
-                            <div className="col-md-3 mb-4 ">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image
-                                            src="/assets/image 31 (1).png"
-                                            alt="Start secure trading quickly"
-                                            width="90"
-                                            height="90"
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]  mb-2  leading-[20px] ">
+                        </div>
+                        <div className="col-md-3 mb-4 ">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image
+                                        src="/assets/image 31 (1).png"
+                                        alt="Start secure trading quickly"
+                                        width="90"
+                                        height="90"
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]  mb-2  leading-[20px] ">
                                         Simple app-based process
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-4">
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-4">
                                         From the day you complete your incorporation, we become your one-stop provider that handles all your documents. All you have to do is attend to any app notifications, and our in-house team will handle everything in the Cloud Bss app.
-                                        </p>
+                                    </p>
 
-                                    </div>
-                      
                                 </div>
+
                             </div>
-                            <div className="col-md-3 mb-4 d-flex ">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image
-                                            src="/assets/image 39 (3).png"
-                                            alt="Start secure trading quickly"
-                                            width="90"
-                                            height="90"
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]   leading-[20px] ">
+                        </div>
+                        <div className="col-md-3 mb-4 d-flex ">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image
+                                        src="/assets/image 39 (3).png"
+                                        alt="Start secure trading quickly"
+                                        width="90"
+                                        height="90"
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]   leading-[20px] ">
                                         An on-the-ground team
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-3">
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-3">
                                         Our company auditors are based in Hong Kong and know local business requirements like the back of their hands. We&apos;ll get your compliance up to scratch.
-                                        </p>
-                                    </div>
-                                  
+                                    </p>
                                 </div>
+
                             </div>
-                            <div className="col-md-3 mb-4">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image
-                                            src="/assets/image 40 (3).png"
-                                            alt="Start secure trading quickly"
-                                            width="90"
-                                            height="90"
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]  mb-2  leading-[20px] ">
+                        </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image
+                                        src="/assets/image 40 (3).png"
+                                        alt="Start secure trading quickly"
+                                        width="90"
+                                        height="90"
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]  mb-2  leading-[20px] ">
                                         Convenient storage for documents
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-4">
-All your company documents are stored in one, secure place which you can access whenever you need to.
-                                        </p>
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-4">
+                                        All your company documents are stored in one, secure place which you can access whenever you need to.
+                                    </p>
 
-                                    </div>
-                      
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
 
-                
+                    </div>
+
+
 
 
                 </div>
-            
+
             </section>
             <section className="bg-[#F3EFE7] sm:px-20 px-6  py-[10px]">
                 <div className="overflow-hidden">
@@ -320,91 +321,91 @@ All your company documents are stored in one, secure place which you can access 
             </section>
             <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6 py-[30px]">
                 <div >
-                    
-                        <div className="text-center  ">
-                            <div className='d-flex justify-center'>
-                                <div className="px-2 py-[10px] font-[cd-m]  text-[16px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider sm:pt-4 ">
+
+                    <div className="text-center  ">
+                        <div className='d-flex justify-center'>
+                            <div className="px-2 py-[10px] font-[cd-m]  text-[16px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider sm:pt-4 ">
                                 WHY CLOUD BSS
-                                </div>
-                            </div>
-                            <div className="row justify-center  pb-3">
-                                <div className="col-md-6 sm:pt-5 pt-2 sm:pb-5 pb-2  ">
-                                    <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[28px] text-[#212833]  sm:leading-[38px] leading-[32px] text-center">Comprehensive company audit services</p>
-                                </div>
                             </div>
                         </div>
-                        <div className="row m-0 p-0 ">
-                            <div className="col-md-4 mb-4 ">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image src="/assets/image 41 (2).png" alt="Start secure trading quickly"  width="90" height="90" className="object-contain" />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]    leading-[20px] ">
+                        <div className="row justify-center  pb-3">
+                            <div className="col-md-6 sm:pt-5 pt-2 sm:pb-5 pb-2  ">
+                                <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[28px] text-[#212833]  sm:leading-[38px] leading-[32px] text-center">Comprehensive company audit services</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row m-0 p-0 ">
+                        <div className="col-md-4 mb-4 ">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image src="/assets/image 41 (2).png" alt="Start secure trading quickly" width="90" height="90" className="object-contain" />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]    leading-[20px] ">
                                         Get an instant quote from us
-                                        
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-0">
+
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-0">
                                         Speak to our experts who will guide you on the necessary documents to provide for getting a quote. This will be based on your company&apos;s yearly revenue.
-                                        
-                                        </p>
-                                    </div>
+
+                                    </p>
                                 </div>
                             </div>
-                            <div className="col-md-4 mb-4 ">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image
-                                            src="/assets/image 42 (1).png"
-                                            alt="Start secure trading quickly"
-                                            width="90"
-                                            height="90"
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]  mb-2  leading-[20px] ">
+                        </div>
+                        <div className="col-md-4 mb-4 ">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image
+                                        src="/assets/image 42 (1).png"
+                                        alt="Start secure trading quickly"
+                                        width="90"
+                                        height="90"
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]  mb-2  leading-[20px] ">
                                         Submit documents
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-4">
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-4">
                                         Once we&apos;ve confirmed our audit services are a good fit, we collect your documents via the Cloud Bss app to start the audit process.
-                                        </p>
+                                    </p>
 
-                                    </div>
-                      
                                 </div>
+
                             </div>
-                            <div className="col-md-4 mb-4 d-flex ">
-                                <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
-                                    <div className="mb-4  align-items-center sm:h-[80px]">
-                                        <Image
-                                            src="/assets/image 34 (3).png"
-                                            alt="Start secure trading quickly"
-                                            width="90"
-                                            height="90"
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]   leading-[20px] ">
+                        </div>
+                        <div className="col-md-4 mb-4 d-flex ">
+                            <div className="bg-white rounded-[10px] p-4 d-flex flex-column h-100">
+                                <div className="mb-4  align-items-center sm:h-[80px]">
+                                    <Image
+                                        src="/assets/image 34 (3).png"
+                                        alt="Start secure trading quickly"
+                                        width="90"
+                                        height="90"
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="flex-grow-1">
+                                    <p className="font-[cd-se] font-[500]  text-[#212833]  text-[20px]   leading-[20px] ">
                                         The audit and report
-                                        </p>
-                                        <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-3">
+                                    </p>
+                                    <p className="font-[cd-r] text-[#7C7C7C] text-[16px] mb-3">
                                         We process your company audit within the required timeline. Our auditor will prepare the report, get your company director&apos;s signature, and then arrange regular tax reporting for you.
-                                        </p>
-                                    </div>
-                                  
+                                    </p>
                                 </div>
-                            </div>
-                        
 
+                            </div>
                         </div>
 
-                
+
+                    </div>
+
+
 
 
                 </div>
-            
+
             </section>
             <section className="bg-[#F3EFE7] overflow-hidden sm:px-20 px-6  sm:py-[30px] py-[20px]">
                 <div className="row justify-center">
@@ -412,7 +413,7 @@ All your company documents are stored in one, secure place which you can access 
                         <div className="text-center   ">
                             <div className='d-flex justify-center'>
                                 <div className="px-2 py-[10px] font-[cd-m]  text-[18px]  text-[#212833] rounded-[30px] sm:w-[180px] w-[180px] tracking-wider ">
-                                DEADLINES
+                                    DEADLINES
                                 </div>
 
                             </div>
@@ -420,104 +421,104 @@ All your company documents are stored in one, secure place which you can access 
                                 <div className="col-md-4 sm:pt-3  ">
                                     <p className="font-[cd-se] font-[500]  sm:text-[35px] text-[26px]   text-[#212833]   sm:leading-[38px] leading-[29px] text-center">Profits Tax Return deadlines in Hong Kong</p>
                                 </div>
-                                </div>
-                                <div className="row justify-center  m-0 p-0 sm:pb-4">
+                            </div>
+                            <div className="row justify-center  m-0 p-0 sm:pb-4">
                                 <div className='col-md-6'>
-                                    <p  className='font-[cd-r] text-[#232323] text-[16px]'>Based on your company&apos;s year-end date, take note of the deadline that your company needs to submit your Profits Tax Return with audit documents. Speak to our experts and get advice on when and how you need to start the audit process.</p>
+                                    <p className='font-[cd-r] text-[#232323] text-[16px]'>Based on your company&apos;s year-end date, take note of the deadline that your company needs to submit your Profits Tax Return with audit documents. Speak to our experts and get advice on when and how you need to start the audit process.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='flex justify-center '>
                         <div className='col-md-10'>
-                        <div className=" py-5">
-      {/* Table Wrapper */}
-      <div className="bg-white rounded-lg shadow-sm p-4">
-        {/* Responsive Table */}
-        <div className="overflow-hidden">
-          <table className="table-auto w-full text-left  hidden md:table">
-            <thead className="border-b border-gray-300">
-              <tr>
-                <th className="px-4 py-2 text-[18px] font-[cd-m] whitespace-wrap">
-                  Company year-end date
-                </th>
-                <th className="px-4 py-2 text-[18px] font-[cd-m] whitespace-wrap leading-[20px]">
-                  Standard deadline for submitting Profits Tax Return to the government (IRD)
-                </th>
-                <th className="px-4 py-2 text-[18px] font-[cd-m] whitespace-wrap">
-                  Extended due date
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  April 1 - November 30 (N code)
-                </td>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  May 2 of the next year
-                </td>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  No extension
-                </td>
-              </tr>
-              <tr >
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  December 1 - 31 (D code)
-                </td>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  August 15 of the next year
-                </td>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  No extension
-                </td>
-              </tr>
-              <tr>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  January 1 - March 31 (M code)
-                </td>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  November 15 of the same year
-                </td>
-                <td className="px-4 py-2 text-[14px]  whitespace-wrap">
-                  January 31 of the next year for companies that have suffered a tax loss (application must be lodged on or before October 31)
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                            <div className=" py-5">
+                                {/* Table Wrapper */}
+                                <div className="bg-white rounded-lg shadow-sm p-4">
+                                    {/* Responsive Table */}
+                                    <div className="overflow-hidden">
+                                        <table className="table-auto w-full text-left  hidden md:table">
+                                            <thead className="border-b border-gray-300">
+                                                <tr>
+                                                    <th className="px-4 py-2 text-[18px] font-[cd-m] whitespace-wrap">
+                                                        Company year-end date
+                                                    </th>
+                                                    <th className="px-4 py-2 text-[18px] font-[cd-m] whitespace-wrap leading-[20px]">
+                                                        Standard deadline for submitting Profits Tax Return to the government (IRD)
+                                                    </th>
+                                                    <th className="px-4 py-2 text-[18px] font-[cd-m] whitespace-wrap">
+                                                        Extended due date
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        April 1 - November 30 (N code)
+                                                    </td>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        May 2 of the next year
+                                                    </td>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        No extension
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        December 1 - 31 (D code)
+                                                    </td>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        August 15 of the next year
+                                                    </td>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        No extension
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        January 1 - March 31 (M code)
+                                                    </td>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        November 15 of the same year
+                                                    </td>
+                                                    <td className="px-4 py-2 text-[14px]  whitespace-wrap">
+                                                        January 31 of the next year for companies that have suffered a tax loss (application must be lodged on or before October 31)
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
-      
-          <div className="md:hidden">
-            <div className="border-b border-gray-300 py-2">
-              <h3 className="font-semibold text-sm">Company year-end date</h3>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">April 1 - November 30 (N code)</p>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">December 1 - 31 (D code)</p>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">January 1 - March 31 (M code)</p>
-            </div>
 
-            <div className="border-b border-gray-300 py-2">
-              <h3 className="font-semibold text-sm mt-2">Standard deadline for submitting Profits Tax Return to the government (IRD)</h3>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">May 2 of the next year</p>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">August 15 of the next year</p>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">November 15 of the same year</p>
-            </div>
+                                        <div className="md:hidden">
+                                            <div className="border-b border-gray-300 py-2">
+                                                <h3 className="font-semibold text-sm">Company year-end date</h3>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">April 1 - November 30 (N code)</p>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">December 1 - 31 (D code)</p>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">January 1 - March 31 (M code)</p>
+                                            </div>
 
-            <div className="border-b border-gray-300 py-2">
-              <h3 className="font-semibold text-sm mt-2">Extended due date</h3>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">No extension</p>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">No extension</p>
-              <p className="px-4 py-2 text-[14px]  whitespace-wrap">January 31 of the next year for companies that have suffered a tax loss (application must be lodged on or before October 31)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                                            <div className="border-b border-gray-300 py-2">
+                                                <h3 className="font-semibold text-sm mt-2">Standard deadline for submitting Profits Tax Return to the government (IRD)</h3>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">May 2 of the next year</p>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">August 15 of the next year</p>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">November 15 of the same year</p>
+                                            </div>
+
+                                            <div className="border-b border-gray-300 py-2">
+                                                <h3 className="font-semibold text-sm mt-2">Extended due date</h3>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">No extension</p>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">No extension</p>
+                                                <p className="px-4 py-2 text-[14px]  whitespace-wrap">January 31 of the next year for companies that have suffered a tax loss (application must be lodged on or before October 31)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
                 </div>
-               
+
             </section>
             <section className="bg-[#fff] overflow-hidden sm:px-20 px-6  py-10">
                 <div className="container-fluid p-0">
@@ -533,16 +534,16 @@ All your company documents are stored in one, secure place which you can access 
                                         <p className="font-[cd-se] font-[500]  sm:text-[40px] text-[28px]   text-[#212833]   sm:leading-[40px] leading-[32px] text-center   ">Tailored Plans for Your Business</p>
                                         <p className='text-[16px]'>Our packages are customized based on your monthly revenue and include comprehensive bookkeeping services for a single, transparent fee.</p>
                                         <div className='d-flex justify-center'>
-                                      <div className='bg-[#F3EFE7] p-2 flex justify-center align-items-center rounded-full w-[400px]'>
-                                        <div className='d-flex align-items-center justify-around gap-4'>
-                                            <span>Pay monthly</span>
-                                            <div className=' bg-[#fff] p-2 px-6 gap-4  align-items-center justify-around text-[#000] rounded-full d-flex w-[220px] '>
-                                                <span>Pay annually</span>
-                                                <div className='bg-[#0061FE] text-[#fff] p-2 rounded-full px-4 text-center'>-17%</div>
-                                            </div>
-                                        </div>
+                                            <div className='bg-[#F3EFE7] p-2 flex justify-center align-items-center rounded-full w-[400px]'>
+                                                <div className='d-flex align-items-center justify-around gap-4'>
+                                                    <span>Pay monthly</span>
+                                                    <div className=' bg-[#fff] p-2 px-6 gap-4  align-items-center justify-around text-[#000] rounded-full d-flex w-[220px] '>
+                                                        <span>Pay annually</span>
+                                                        <div className='bg-[#0061FE] text-[#fff] p-2 rounded-full px-4 text-center'>-17%</div>
+                                                    </div>
+                                                </div>
 
-                                      </div>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -556,331 +557,222 @@ All your company documents are stored in one, secure place which you can access 
 
                     </div>
                     <Swiper
-      spaceBetween={10} // Space between slides
-      loop={true} // Enable infinite loop (optional)
-      // navigation={true} // Enable navigation arrows
-      modules={[Navigation]} // Use only the Navigation module
-      className="items-center"
-      navigation={{
-        nextEl: '.custom-next', // Reference to your custom Next button
-        prevEl: '.custom-prev', // Reference to your custom Previous button
-      }}
-      breakpoints={{
-        640: { // Small screens (Mobile)
-          slidesPerView: 1, // 1 slide per view on mobile
-        },
-        768: { // Medium screens (Tablet)
-          slidesPerView: 2, // 2 slides per view on tablet
-        },
-        1024: { // Large screens (Desktop)
-          slidesPerView: 3, // 3 slides per view on desktop
-        },
-      }}
-    >
-      {/* Slide 1 */}
-      <SwiperSlide>
-        <div className="sm:mb-0 col-11">
-          <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
-          <div>
-                                <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
-                                    <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
-                                    <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
-                                    <div className='align-items-center d-flex gap-2'>
-                                        <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
-                                        <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
-                                    </div>
-                                    <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                        Get this plan
-                                    </button>
-                                    <div className='pt-3'>
-                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                            Talk to an expert
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className='p-4'>
-                                    <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
-                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                        <li>Incorporation application</li>
-                                        <li>Certificate of Incorporation (CI)</li>
-                                        <li>Articles of Association</li>
-                                        <li>Business Registration Certificate (BRC) for 1 year</li>
-                                        <li>Cloud Bss app document storage</li>
-                                        <li>Neobank account opening assistance</li>
-                                    </ul>
-                                    <div className='pt-2'>
-                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                            <li>Personal Corporate Secretary On‑demand support via live chat</li>
-                                            <li>Annual General Meeting papers</li>
-                                            <li>Annual Returns Filing (NAR1)</li>
-                                            <li>Automated reminders of filing deadlines</li>
-                                            <li>Online shares distribution management and capital table</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-          </div>
-        </div>,
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="sm:mb-0 col-11">
-          <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
-          <div>
-                                <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
-                                    <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
-                                    <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
-                                    <div className='align-items-center d-flex gap-2'>
-                                        <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
-                                        <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
-                                    </div>
-                                    <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                        Get this plan
-                                    </button>
-                                    <div className='pt-3'>
-                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                            Talk to an expert
-                                        </button>
+                        spaceBetween={10} // Space between slides
+                        loop={true} // Enable infinite loop (optional)
+                        // navigation={true} // Enable navigation arrows
+                        modules={[Navigation]} // Use only the Navigation module
+                        className="items-center"
+                        navigation={{
+                            nextEl: '.custom-next', // Reference to your custom Next button
+                            prevEl: '.custom-prev', // Reference to your custom Previous button
+                        }}
+                        breakpoints={{
+                            640: { // Small screens (Mobile)
+                                slidesPerView: 1, // 1 slide per view on mobile
+                            },
+                            768: { // Medium screens (Tablet)
+                                slidesPerView: 2, // 2 slides per view on tablet
+                            },
+                            1024: { // Large screens (Desktop)
+                                slidesPerView: 3, // 3 slides per view on desktop
+                            },
+                        }}
+                    >
+                        {/* Slide 1 */}
+                        <SwiperSlide>
+                            <div className="sm:mb-0 col-11">
+                                <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
+                                    <div>
+                                        <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
+                                            <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
+                                            <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
+                                            <div className='align-items-center d-flex gap-2'>
+                                                <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
+                                                <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
+                                            </div>
+                                            <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
+                                            <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                Get this plan
+                                            </button>
+                                            <div className='pt-3'>
+                                                <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                    Talk to an expert
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className='p-4'>
+                                            <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
+                                            <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                <li>Incorporation application</li>
+                                                <li>Certificate of Incorporation (CI)</li>
+                                                <li>Articles of Association</li>
+                                                <li>Business Registration Certificate (BRC) for 1 year</li>
+                                                <li>Cloud Bss app document storage</li>
+                                                <li>Neobank account opening assistance</li>
+                                            </ul>
+                                            <div className='pt-2'>
+                                                <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
+                                                <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                    <li>Personal Corporate Secretary On‑demand support via live chat</li>
+                                                    <li>Annual General Meeting papers</li>
+                                                    <li>Annual Returns Filing (NAR1)</li>
+                                                    <li>Automated reminders of filing deadlines</li>
+                                                    <li>Online shares distribution management and capital table</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className='p-4'>
-                                    <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
-                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                        <li>Incorporation application</li>
-                                        <li>Certificate of Incorporation (CI)</li>
-                                        <li>Articles of Association</li>
-                                        <li>Business Registration Certificate (BRC) for 1 year</li>
-                                        <li>Cloud Bss app document storage</li>
-                                        <li>Neobank account opening assistance</li>
-                                    </ul>
-                                    <div className='pt-2'>
-                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                            <li>Personal Corporate Secretary On‑demand support via live chat</li>
-                                            <li>Annual General Meeting papers</li>
-                                            <li>Annual Returns Filing (NAR1)</li>
-                                            <li>Automated reminders of filing deadlines</li>
-                                            <li>Online shares distribution management and capital table</li>
-                                        </ul>
+                            </div>,
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="sm:mb-0 col-11">
+                                <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
+                                    <div>
+                                        <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
+                                            <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
+                                            <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
+                                            <div className='align-items-center d-flex gap-2'>
+                                                <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
+                                                <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
+                                            </div>
+                                            <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
+                                            <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                Get this plan
+                                            </button>
+                                            <div className='pt-3'>
+                                                <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                    Talk to an expert
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className='p-4'>
+                                            <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
+                                            <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                <li>Incorporation application</li>
+                                                <li>Certificate of Incorporation (CI)</li>
+                                                <li>Articles of Association</li>
+                                                <li>Business Registration Certificate (BRC) for 1 year</li>
+                                                <li>Cloud Bss app document storage</li>
+                                                <li>Neobank account opening assistance</li>
+                                            </ul>
+                                            <div className='pt-2'>
+                                                <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
+                                                <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                    <li>Personal Corporate Secretary On‑demand support via live chat</li>
+                                                    <li>Annual General Meeting papers</li>
+                                                    <li>Annual Returns Filing (NAR1)</li>
+                                                    <li>Automated reminders of filing deadlines</li>
+                                                    <li>Online shares distribution management and capital table</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-          </div>
-        </div>,
-      </SwiperSlide>
-    
-      <SwiperSlide>
-        <div className="sm:mb-0 col-11">
-          <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
-          <div>
-                                <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
-                                    <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
-                                    <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
-                                    <div className='align-items-center d-flex gap-2'>
-                                        <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
-                                        <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
-                                    </div>
-                                    <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                        Get this plan
-                                    </button>
-                                    <div className='pt-3'>
-                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                            Talk to an expert
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className='p-4'>
-                                    <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
-                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                        <li>Incorporation application</li>
-                                        <li>Certificate of Incorporation (CI)</li>
-                                        <li>Articles of Association</li>
-                                        <li>Business Registration Certificate (BRC) for 1 year</li>
-                                        <li>Cloud Bss app document storage</li>
-                                        <li>Neobank account opening assistance</li>
-                                    </ul>
-                                    <div className='pt-2'>
-                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                            <li>Personal Corporate Secretary On‑demand support via live chat</li>
-                                            <li>Annual General Meeting papers</li>
-                                            <li>Annual Returns Filing (NAR1)</li>
-                                            <li>Automated reminders of filing deadlines</li>
-                                            <li>Online shares distribution management and capital table</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-          </div>
-        </div>,
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="sm:mb-0 col-11">
-          <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
-          <div>
-                                <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
-                                    <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
-                                    <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
-                                    <div className='align-items-center d-flex gap-2'>
-                                        <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
-                                        <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
-                                    </div>
-                                    <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
-                                    <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                        Get this plan
-                                    </button>
-                                    <div className='pt-3'>
-                                        <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
-                                            Talk to an expert
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className='p-4'>
-                                    <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
-                                    <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                        <li>Incorporation application</li>
-                                        <li>Certificate of Incorporation (CI)</li>
-                                        <li>Articles of Association</li>
-                                        <li>Business Registration Certificate (BRC) for 1 year</li>
-                                        <li>Cloud Bss app document storage</li>
-                                        <li>Neobank account opening assistance</li>
-                                    </ul>
-                                    <div className='pt-2'>
-                                        <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
-                                        <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
-                                            <li>Personal Corporate Secretary On‑demand support via live chat</li>
-                                            <li>Annual General Meeting papers</li>
-                                            <li>Annual Returns Filing (NAR1)</li>
-                                            <li>Automated reminders of filing deadlines</li>
-                                            <li>Online shares distribution management and capital table</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-          </div>
-        </div>,
-      </SwiperSlide>
+                            </div>,
+                        </SwiperSlide>
 
-    </Swiper>
+                        <SwiperSlide>
+                            <div className="sm:mb-0 col-11">
+                                <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
+                                    <div>
+                                        <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
+                                            <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
+                                            <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
+                                            <div className='align-items-center d-flex gap-2'>
+                                                <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
+                                                <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
+                                            </div>
+                                            <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
+                                            <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                Get this plan
+                                            </button>
+                                            <div className='pt-3'>
+                                                <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                    Talk to an expert
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className='p-4'>
+                                            <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
+                                            <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                <li>Incorporation application</li>
+                                                <li>Certificate of Incorporation (CI)</li>
+                                                <li>Articles of Association</li>
+                                                <li>Business Registration Certificate (BRC) for 1 year</li>
+                                                <li>Cloud Bss app document storage</li>
+                                                <li>Neobank account opening assistance</li>
+                                            </ul>
+                                            <div className='pt-2'>
+                                                <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
+                                                <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                    <li>Personal Corporate Secretary On‑demand support via live chat</li>
+                                                    <li>Annual General Meeting papers</li>
+                                                    <li>Annual Returns Filing (NAR1)</li>
+                                                    <li>Automated reminders of filing deadlines</li>
+                                                    <li>Online shares distribution management and capital table</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>,
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="sm:mb-0 col-11">
+                                <div className="sm:mb-0 w-full sm:w-[100%] bg-[#fffdfa] border-8 border-[#f3efe7] rounded-[32px] px-6 py-6">
+                                    <div>
+                                        <div className='bg-[#FFFDFA] rounded-[20px] p-4 flex-1'>
+                                            <p className='font-[cd-se] text-[20px] text-[#212833]'>Essential</p>
+                                            <p className='text-[16px] text-[#767676]'>For those who already have a Hong Kong office address</p>
+                                            <div className='align-items-center d-flex gap-2'>
+                                                <p className='text-[25px] font-[cd-m] text-[#212833] p-0 m-0'>HK$</p>
+                                                <p className='text-[35px] font-[cd-b] text-[#212833] p-0 m-0'>5,800</p>
+                                            </div>
+                                            <p className='text-[#767676] text-[14px] pb-2'>HK$3,850 government fees included</p>
+                                            <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                Get this plan
+                                            </button>
+                                            <div className='pt-3'>
+                                                <button className='hover:bg-[#212833] hover:text-[#fff] w-full py-[10px] text-[#000] text-[16px] rounded-full border border-dark'>
+                                                    Talk to an expert
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className='p-4'>
+                                            <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Incorporation</p>
+                                            <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                <li>Incorporation application</li>
+                                                <li>Certificate of Incorporation (CI)</li>
+                                                <li>Articles of Association</li>
+                                                <li>Business Registration Certificate (BRC) for 1 year</li>
+                                                <li>Cloud Bss app document storage</li>
+                                                <li>Neobank account opening assistance</li>
+                                            </ul>
+                                            <div className='pt-2'>
+                                                <p className='font-[cd-se] text-[18px] text-[#212833] pt-3'>Corporate Secretary</p>
+                                                <ul className="list-disc pl-5 text-[14px] font-[cd-r] text-[#212833]">
+                                                    <li>Personal Corporate Secretary On‑demand support via live chat</li>
+                                                    <li>Annual General Meeting papers</li>
+                                                    <li>Annual Returns Filing (NAR1)</li>
+                                                    <li>Automated reminders of filing deadlines</li>
+                                                    <li>Online shares distribution management and capital table</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>,
+                        </SwiperSlide>
+
+                    </Swiper>
 
 
 
                 </div>
             </section>
-         
-                    
-            <section className="bg-[#fff] sm:px-20 px-6  py-5">
-                <div className="overflow-hidden">
-                    <div className="row justify-center">
-                        <div className="col-md-6 sm:pt-4">
-                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[30px]">Frequently Asked Questions on Company Registration</p>
-                            <div className="d-flex justify-center">
-                                <button className="text-[#212833] underline mt-2 text-center font-[cd-m] text-[16px]">More FAQs</button>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row pt-5">
-                        <div className="col-md-12 mb-4">
-                            {/* FAQs */}
-                            <div  >
-
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(1)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 1 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 1 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(2)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">What happens if my company name is already taken?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 2 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 2 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(3)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 3 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 3 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(4)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 4 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 4 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(5)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 5 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 5 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(6)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">How do I check if my company is registered or not?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 6 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 6 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
+            <FAQ />
 
 
 

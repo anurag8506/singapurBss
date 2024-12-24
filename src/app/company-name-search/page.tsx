@@ -3,13 +3,15 @@ import Header from '../components/header';
 import Footer from '../components/footer'
 import Image from 'next/image';
 
+import PreIncorportaion from "../components/pre‑Incorporation"
+import FAQ from "../components/faq"
+
+
 
 import { useState } from "react";
 
 export default function Home() {
 
-
-    const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
     const [activeRegStep, setActiveRegStep] = useState<number | null>(null);
     const [selected, setSelected] = useState<"locals" | "foreigners">("locals");
     const handleToggle = (option: "locals" | "foreigners") => {
@@ -24,9 +26,7 @@ export default function Home() {
     const closeContent = () => {
         setActiveRegStep(null);
     };
-    const toggleFAQ = (index: number) => {
-        setActiveFAQ(activeFAQ === index ? null : index);
-    };
+
 
 
     return (
@@ -50,7 +50,7 @@ export default function Home() {
                                         className="w-full px-4 py-2 rounded-full  text-[#0D0D0D]  border border-dark mb-4 outline-none"
                                     />
                                     <button className=" border border-dark border-[1px] text-[#0D0D0D]  font-[cd-m] py-2 rounded-full sm:!w-[300px] w-full mb-4 hover:text-[#fff] hover:bg-[#000] ">
-                                    Check The Name
+                                        Check The Name
                                     </button>
 
                                 </div>
@@ -350,8 +350,8 @@ export default function Home() {
                                                 <button
                                                     onClick={() => handleToggle("locals")}
                                                     className={`flex-1 py-3 px-2 rounded-full text-sm  ${selected === "locals"
-                                                            ? "bg-[#F3EFE7] text-black shadow"
-                                                            : "text-gray-500"
+                                                        ? "bg-[#F3EFE7] text-black shadow"
+                                                        : "text-gray-500"
                                                         }`}
                                                 >
                                                     For Locals
@@ -361,8 +361,8 @@ export default function Home() {
                                                 <button
                                                     onClick={() => handleToggle("foreigners")}
                                                     className={`flex-1 py-3 px-2 rounded-full text-sm font-medium ${selected === "foreigners"
-                                                            ? "bg-[#F3EFE7] text-black shadow"
-                                                            : "text-gray-500"
+                                                        ? "bg-[#F3EFE7] text-black shadow"
+                                                        : "text-gray-500"
                                                         }`}
                                                 >
                                                     For Foreigners
@@ -617,158 +617,8 @@ export default function Home() {
 
                 </div>
             </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-5 py-5">
-                <div className="container-fluid p-0">
-                    <div className="row align-items-center">
-
-                        <div className="col-md-6 ">
-                            <div className='col-md-6'>
-                                <Image src="/assets/Picture ⏵ sg-inc-checklist@1x.webp (1).png" className="w-full"
-                                    width={1080}
-                                    height={1080}
-                                    alt="no-img"
-                                />
-
-                            </div>
-                        </div>
-                        <div className="col-md-6 mb-4">
-
-                            <div className="col-md-8">
-                                <p className="font-[cd-se]  no-underline sm:text-[38px] text-[30px]  text-[#fff]  sm:leading-[38px] leading-[30px]">Get tips on how to run your business smarter</p>
-                                <p className='font-[cd-r] text-[#ABABAB] text-[16px]  pt-4 mb-0'>Learn crucial tips on how to save money and build a flourishing business, with real entrepreneurs sharing their own experiences.</p>
-                                <div className="sm:flex  items-center gap-4  pt-4">
-                                    <input
-                                        type="email"
-                                        placeholder="Email address"
-                                        className="w-[1200px] px-4 py-2 rounded-full  text-[#0D0D0D]  border border-gray-400 mb-4 outline-none"
-                                    />
-                                    <button className="bg-white  text-[#0D0D0D]  font-[cd-m] py-2 rounded-full w-[100px] w-full mb-4 ">
-                                        SUBSCRIBE
-                                    </button>
-
-                                </div>
-                                <p className="text-[#fff] text-[14px]"><a className="no-underline text-[#ABABAB] " href="#">By clicking, you agree to our</a> Terms & Conditions, Privacy and Data Protection Policy
-                                </p>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section className="bg-[#fff] sm:px-20 px-6  py-5">
-                <div className="overflow-hidden">
-                    <div className="row justify-center">
-                        <div className="col-md-6 sm:pt-4">
-                            <p className="font-[cd-se] text-center  sm:text-[35px] text-[28px] text-[#212833] sm:leading-[38px] leading-[30px]">Frequently Asked Questions on Company Registration</p>
-                            <div className="d-flex justify-center">
-                                <button className="text-[#212833] underline mt-2 text-center font-[cd-m] text-[16px]">More FAQs</button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row pt-5">
-                        <div className="col-md-12 mb-4">
-                            {/* FAQs */}
-                            <div  >
-
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(1)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 1 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 1 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(2)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">What happens if my company name is already taken?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 2 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 2 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(3)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 3 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 3 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(4)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Can a foreign national be a director of a company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 4 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 4 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(5)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">Where can I register my company?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 5 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 5 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-                                <div>
-                                    <div
-                                        className="flex justify-between items-center  cursor-pointer "
-                                        onClick={() => toggleFAQ(6)}
-                                    >
-                                        <p className="font-[cd-m] text-[#212833] text-[16px]">How do I check if my company is registered or not?</p>
-                                        <span className="font-[cd-m] text-[#212833] text-[16px]">{activeFAQ === 6 ? "-" : "+"}</span>
-                                    </div>
-                                    {activeFAQ === 6 && (
-                                        <p className="text-[#7C7C7C] font-[cd-r] text-[13px]">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum maxime nam quo aliquam! Officia deleniti a vel labore necessitatibus autem in assumenda, maiores voluptatibus aliquam dolor saepe! Quam, sit?
-                                        </p>
-                                    )}
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
+            <PreIncorportaion />
+            <FAQ />
 
 
 
